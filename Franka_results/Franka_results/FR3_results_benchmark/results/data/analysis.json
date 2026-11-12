@@ -1,0 +1,10183 @@
+{
+ "summary": {
+  "generated": "2026-11-02T19:08:45",
+  "session": "~/gello_data/medbio_redslot_v1",
+  "n_train": 100,
+  "z_rel_ref_mm": 116.9,
+  "z_grasp_ref_mm": 106.9,
+  "nn_train_median_mm": 33.2,
+  "train_tube_mean": [
+   0.5552,
+   0.0328
+  ],
+  "train_tube_range": {
+   "x": [
+    0.455,
+    0.653
+   ],
+   "y": [
+    -0.211,
+    0.274
+   ]
+  },
+  "train_src_ang_hist30": [
+   6,
+   3,
+   40,
+   1,
+   4,
+   8
+  ],
+  "train_dst_ang_hist30": [
+   5,
+   0,
+   63,
+   4,
+   0,
+   28
+  ],
+  "track_x": {
+   "slope": 0.84,
+   "intercept_m": 0.0823,
+   "r2": 0.86,
+   "n": 13
+  },
+  "track_y": {
+   "slope": 0.94,
+   "intercept_m": 0.014,
+   "r2": 0.89,
+   "n": 13
+  },
+  "spearman_success_vs_nn_tube_mm": -0.31,
+  "spearman_success_vs_nn_hole_mm": -0.01,
+  "spearman_success_vs_nn_joint_mm": -0.88,
+  "spearman_success_vs_nn_src_ang": -0.66,
+  "spearman_success_vs_nn_dst_ang": -0.36,
+  "spearman_success_vs_tube_to_train_mean_mm": 0.65,
+  "spearman_success_vs_close_mean_err_mm": -0.54,
+  "succ_median_nn_tube_mm": 14.3,
+  "zero_median_nn_tube_mm": 17.8,
+  "succ_median_nn_hole_mm": 9.4,
+  "zero_median_nn_hole_mm": 12.0,
+  "succ_median_nn_joint_mm": 25.5,
+  "zero_median_nn_joint_mm": 62.9,
+  "succ_median_n_joint_40": 2.5,
+  "zero_median_n_joint_40": 0.0,
+  "succ_median_nn_src_ang": 0.0,
+  "zero_median_nn_src_ang": 0.8,
+  "succ_median_nn_dst_ang": 0.0,
+  "zero_median_nn_dst_ang": 0.1,
+  "succ_median_close_mean_err_mm": 8.1,
+  "zero_median_close_mean_err_mm": 19.4,
+  "succ_median_close_spread_mm": 4.6,
+  "zero_median_close_spread_mm": 4.0,
+  "fixed": {
+   "n": 8,
+   "n_success": 8,
+   "close_spread_mm": 4.2,
+   "grasp_err_med_mm": 3.3
+  },
+  "grasp_err_median_all_mm": 9.1,
+  "grasp_err_median_ok_mm": 8.7,
+  "grasp_err_median_miss_mm": 128.2,
+  "causes": {
+   "성공": 17,
+   "테두리에 얹힘": 1,
+   "칸 위에서 못 꽂음": 8,
+   "헛잡음": 9,
+   "못 들어 올림": 2,
+   "칸까지 못 감": 2,
+   "칸 옆에 놓음": 1
+  }
+ },
+ "layouts": [
+  {
+   "layout": 1,
+   "n": 3,
+   "n_success": 3,
+   "results": [
+    "success",
+    "success",
+    "success"
+   ],
+   "causes": [
+    "성공",
+    "성공",
+    "성공"
+   ],
+   "tube": [
+    0.5738,
+    0.2573
+   ],
+   "hole_raw": [
+    0.5738,
+    -0.0067
+   ],
+   "hole_plan": [
+    0.5738,
+    -0.0067
+   ],
+   "hole": [
+    0.5738,
+    -0.0067
+   ],
+   "ring_xy": [
+    0.5605153831049554,
+    -0.002076333863805957
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 87.9,
+   "n_caps": 2,
+   "close_mean_err": [
+    -3.1,
+    -1.0
+   ],
+   "close_mean_err_mm": 3.3,
+   "close_spread_mm": 4.7,
+   "pull_to_train_mean": 0.01,
+   "tube_to_train_mean_mm": 225.2,
+   "nn_tube_mm": 7.9,
+   "n_tube_30": 6,
+   "nn_hole_mm": 21.1,
+   "n_hole_30": 2,
+   "nn_joint_mm": 34.4,
+   "nn_joint_ep": "episode_000059",
+   "n_joint_40": 2,
+   "nn_joint_vs_train": 1.04,
+   "nn_src_ang": 0.0,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.0,
+   "n_dst_ang_15": 67,
+   "ref_err_raw": [
+    -8.0,
+    3.3
+   ],
+   "ref_err_plan": [
+    -8.0,
+    3.3
+   ]
+  },
+  {
+   "layout": 2,
+   "n": 3,
+   "n_success": 3,
+   "results": [
+    "success",
+    "success",
+    "success"
+   ],
+   "causes": [
+    "성공",
+    "성공",
+    "성공"
+   ],
+   "tube": [
+    0.5741,
+    0.2577
+   ],
+   "hole_raw": [
+    0.5728,
+    -0.0463
+   ],
+   "hole_plan": [
+    0.5728,
+    -0.0463
+   ],
+   "hole": [
+    0.5728,
+    -0.0463
+   ],
+   "ring_xy": [
+    0.5596808914000511,
+    -0.03491434184932796
+   ],
+   "src_ang": 89.7,
+   "dst_ang": 88.0,
+   "n_caps": 2,
+   "close_mean_err": [
+    -2.6,
+    -2.8
+   ],
+   "close_mean_err_mm": 3.9,
+   "close_spread_mm": 4.4,
+   "pull_to_train_mean": 0.01,
+   "tube_to_train_mean_mm": 225.7,
+   "nn_tube_mm": 7.6,
+   "n_tube_30": 6,
+   "nn_hole_mm": 7.6,
+   "n_hole_30": 9,
+   "nn_joint_mm": 11.6,
+   "nn_joint_ep": "episode_000059",
+   "n_joint_40": 5,
+   "nn_joint_vs_train": 0.35,
+   "nn_src_ang": 0.3,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.1,
+   "n_dst_ang_15": 67,
+   "ref_err_raw": [
+    -6.3,
+    2.5
+   ],
+   "ref_err_plan": [
+    -6.3,
+    2.5
+   ]
+  },
+  {
+   "layout": 3,
+   "n": 2,
+   "n_success": 0,
+   "results": [
+    "partial",
+    "partial"
+   ],
+   "causes": [
+    "칸 위에서 못 꽂음",
+    "칸 위에서 못 꽂음"
+   ],
+   "tube": [
+    0.5568,
+    -0.1853
+   ],
+   "hole_raw": [
+    0.5583499999999999,
+    0.0262
+   ],
+   "hole_plan": [
+    0.5583499999999999,
+    0.0262
+   ],
+   "hole": [
+    0.5583499999999999,
+    0.0262
+   ],
+   "ring_xy": [
+    0.547685057830164,
+    0.02538134092120986
+   ],
+   "src_ang": 32.6,
+   "dst_ang": 87.1,
+   "n_caps": 2,
+   "close_mean_err": [
+    -6.2,
+    -1.2
+   ],
+   "close_mean_err_mm": 6.3,
+   "close_spread_mm": 2.8,
+   "pull_to_train_mean": -0.01,
+   "tube_to_train_mean_mm": 218.1,
+   "pull_to_prev_layout": -0.0,
+   "nn_tube_mm": 3.7,
+   "n_tube_30": 10,
+   "nn_hole_mm": 14.0,
+   "n_hole_30": 6,
+   "nn_joint_mm": 62.0,
+   "nn_joint_ep": "episode_000088",
+   "n_joint_40": 0,
+   "nn_joint_vs_train": 1.87,
+   "nn_src_ang": 10.0,
+   "n_src_ang_15": 6,
+   "nn_dst_ang": 0.1,
+   "n_dst_ang_15": 67
+  },
+  {
+   "layout": 4,
+   "n": 3,
+   "n_success": 0,
+   "results": [
+    "fail",
+    "fail",
+    "fail"
+   ],
+   "causes": [
+    "헛잡음",
+    "헛잡음",
+    "헛잡음"
+   ],
+   "tube": [
+    0.6598,
+    -0.0514
+   ],
+   "hole_raw": [
+    0.5531,
+    -0.1345
+   ],
+   "hole_plan": [
+    0.5531,
+    -0.1351
+   ],
+   "hole": [
+    0.5531,
+    -0.1351
+   ],
+   "ring_xy": [
+    0.5433491893073865,
+    -0.10854295502790545
+   ],
+   "src_ang": 90.8,
+   "dst_ang": 176.7,
+   "n_caps": 2,
+   "close_mean_err": [
+    -29.2,
+    121.0
+   ],
+   "close_mean_err_mm": 124.5,
+   "close_spread_mm": 4.0,
+   "pull_to_train_mean": 0.73,
+   "tube_to_train_mean_mm": 134.3,
+   "pull_to_prev_layout": -0.46,
+   "nn_tube_mm": 42.6,
+   "n_tube_30": 0,
+   "nn_hole_mm": 3.7,
+   "n_hole_30": 12,
+   "nn_joint_mm": 113.9,
+   "nn_joint_ep": "episode_000093",
+   "n_joint_40": 0,
+   "nn_joint_vs_train": 3.43,
+   "nn_src_ang": 0.7,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.0,
+   "n_dst_ang_15": 31
+  },
+  {
+   "layout": 5,
+   "n": 3,
+   "n_success": 2,
+   "results": [
+    "partial",
+    "success",
+    "success"
+   ],
+   "causes": [
+    "못 들어 올림",
+    "성공",
+    "성공"
+   ],
+   "tube": [
+    0.5827,
+    -0.1735
+   ],
+   "hole_raw": [
+    0.606,
+    0.1411
+   ],
+   "hole_plan": [
+    0.606,
+    0.1411
+   ],
+   "hole": [
+    0.606,
+    0.1411
+   ],
+   "ring_xy": [
+    0.5873258437283816,
+    0.1210276634205206
+   ],
+   "src_ang": 85.7,
+   "dst_ang": 88.4,
+   "n_caps": 1,
+   "close_mean_err": [
+    -13.7,
+    -13.1
+   ],
+   "close_mean_err_mm": 19.0,
+   "close_spread_mm": 3.6,
+   "pull_to_train_mean": -0.05,
+   "tube_to_train_mean_mm": 208.1,
+   "pull_to_prev_layout": -0.13,
+   "nn_tube_mm": 32.1,
+   "n_tube_30": 0,
+   "nn_hole_mm": 6.5,
+   "n_hole_30": 2,
+   "nn_joint_mm": 45.1,
+   "nn_joint_ep": "episode_000034",
+   "n_joint_40": 1,
+   "nn_joint_vs_train": 1.36,
+   "nn_src_ang": 0.0,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.0,
+   "n_dst_ang_15": 67,
+   "ref_err_raw": [
+    -15.4,
+    -4.2
+   ],
+   "ref_err_plan": [
+    -15.4,
+    -4.2
+   ]
+  },
+  {
+   "layout": 6,
+   "n": 3,
+   "n_success": 1,
+   "results": [
+    "fail",
+    "fail",
+    "success"
+   ],
+   "causes": [
+    "헛잡음",
+    "헛잡음",
+    "성공"
+   ],
+   "tube": [
+    0.618,
+    -0.023
+   ],
+   "hole_raw": [
+    0.4894,
+    -0.01
+   ],
+   "hole_plan": [
+    0.4893,
+    -0.01
+   ],
+   "hole": [
+    0.4893,
+    -0.01
+   ],
+   "ring_xy": [
+    0.4903313673459154,
+    -0.004815719032166543
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 86.5,
+   "n_caps": 2,
+   "close_mean_err": [
+    5.5,
+    -0.7
+   ],
+   "close_mean_err_mm": 5.5,
+   "close_spread_mm": 5.1,
+   "pull_to_train_mean": -0.05,
+   "tube_to_train_mean_mm": 84.0,
+   "pull_to_prev_layout": -0.0,
+   "nn_tube_mm": 8.4,
+   "n_tube_30": 4,
+   "nn_hole_mm": 11.3,
+   "n_hole_30": 5,
+   "nn_joint_mm": 16.6,
+   "nn_joint_ep": "episode_000093",
+   "n_joint_40": 3,
+   "nn_joint_vs_train": 0.5,
+   "nn_src_ang": 0.0,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.0,
+   "n_dst_ang_15": 67,
+   "ref_err_raw": [
+    4.8,
+    -3.8
+   ]
+  },
+  {
+   "layout": 7,
+   "n": 3,
+   "n_success": 0,
+   "results": [
+    "partial",
+    "partial",
+    "partial"
+   ],
+   "causes": [
+    "못 들어 올림",
+    "칸까지 못 감",
+    "칸 위에서 못 꽂음"
+   ],
+   "tube": [
+    0.6291,
+    0.1619
+   ],
+   "hole_raw": [
+    0.5874,
+    -0.0835
+   ],
+   "hole_plan": [
+    0.5874,
+    -0.0835
+   ],
+   "hole": [
+    0.5874,
+    -0.0835
+   ],
+   "ring_xy": [
+    0.5718891827644645,
+    -0.06598607810944451
+   ],
+   "src_ang": 143.2,
+   "dst_ang": 24.1,
+   "n_caps": 2,
+   "close_mean_err": [
+    -12.6,
+    -14.8
+   ],
+   "close_mean_err_mm": 19.4,
+   "close_spread_mm": 4.0,
+   "pull_to_train_mean": 0.13,
+   "tube_to_train_mean_mm": 148.7,
+   "pull_to_prev_layout": 0.08,
+   "nn_tube_mm": 36.6,
+   "n_tube_30": 0,
+   "nn_hole_mm": 2.7,
+   "n_hole_30": 7,
+   "nn_joint_mm": 62.9,
+   "nn_joint_ep": "episode_000020",
+   "n_joint_40": 0,
+   "nn_joint_vs_train": 1.9,
+   "nn_src_ang": 8.1,
+   "n_src_ang_15": 4,
+   "nn_dst_ang": 0.7,
+   "n_dst_ang_15": 2
+  },
+  {
+   "layout": 8,
+   "n": 3,
+   "n_success": 0,
+   "results": [
+    "fail",
+    "fail",
+    "fail"
+   ],
+   "causes": [
+    "헛잡음",
+    "헛잡음",
+    "헛잡음"
+   ],
+   "tube": [
+    0.6196,
+    0.1372
+   ],
+   "hole_raw": [
+    0.5261,
+    0.0065
+   ],
+   "hole_plan": [
+    0.5261,
+    0.0065
+   ],
+   "hole": [
+    0.5261,
+    0.0065
+   ],
+   "ring_xy": [
+    0.5207958780729394,
+    0.00898374736964569
+   ],
+   "src_ang": 85.3,
+   "dst_ang": 174.2,
+   "n_caps": 2,
+   "close_mean_err": [
+    -42.0,
+    132.6
+   ],
+   "close_mean_err_mm": 139.1,
+   "close_spread_mm": 6.6,
+   "pull_to_train_mean": -0.74,
+   "tube_to_train_mean_mm": 122.6,
+   "pull_to_prev_layout": 4.11,
+   "nn_tube_mm": 17.8,
+   "n_tube_30": 4,
+   "nn_hole_mm": 12.0,
+   "n_hole_30": 3,
+   "nn_joint_mm": 74.6,
+   "nn_joint_ep": "episode_000076",
+   "n_joint_40": 0,
+   "nn_joint_vs_train": 2.25,
+   "nn_src_ang": 0.3,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.4,
+   "n_dst_ang_15": 31
+  },
+  {
+   "layout": 9,
+   "n": 3,
+   "n_success": 0,
+   "results": [
+    "partial",
+    "partial",
+    "fail"
+   ],
+   "causes": [
+    "칸 위에서 못 꽂음",
+    "칸까지 못 감",
+    "헛잡음"
+   ],
+   "tube": [
+    0.6381,
+    0.1372
+   ],
+   "hole_raw": [
+    0.4773,
+    -0.0506
+   ],
+   "hole_plan": [
+    0.4773,
+    -0.0506
+   ],
+   "hole": [
+    0.4773,
+    -0.0506
+   ],
+   "ring_xy": [
+    0.4801065376466792,
+    -0.03860838527694038
+   ],
+   "src_ang": 84.8,
+   "dst_ang": 85.9,
+   "n_caps": 2,
+   "close_mean_err": [
+    -7.1,
+    -8.6
+   ],
+   "close_mean_err_mm": 11.1,
+   "close_spread_mm": 5.1,
+   "pull_to_train_mean": 0.08,
+   "tube_to_train_mean_mm": 133.3,
+   "pull_to_prev_layout": 0.38,
+   "nn_tube_mm": 13.3,
+   "n_tube_30": 4,
+   "nn_hole_mm": 14.9,
+   "n_hole_30": 5,
+   "nn_joint_mm": 60.0,
+   "nn_joint_ep": "episode_000074",
+   "n_joint_40": 0,
+   "nn_joint_vs_train": 1.81,
+   "nn_src_ang": 0.8,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.1,
+   "n_dst_ang_15": 67
+  },
+  {
+   "layout": 10,
+   "n": 4,
+   "n_success": 2,
+   "results": [
+    "partial",
+    "success",
+    "partial",
+    "success"
+   ],
+   "causes": [
+    "칸 위에서 못 꽂음",
+    "성공",
+    "테두리에 얹힘",
+    "성공"
+   ],
+   "tube": [
+    0.5687500000000001,
+    0.24095
+   ],
+   "hole_raw": [
+    0.55785,
+    -0.044649999999999995
+   ],
+   "hole_plan": [
+    0.55785,
+    -0.044649999999999995
+   ],
+   "hole": [
+    0.55785,
+    -0.044649999999999995
+   ],
+   "ring_xy": [
+    0.5469445370290315,
+    -0.03355867783342942
+   ],
+   "src_ang": 88.3,
+   "dst_ang": 37.1,
+   "n_caps": 2,
+   "close_mean_err": [
+    -6.3,
+    -111.2
+   ],
+   "close_mean_err_mm": 111.4,
+   "close_spread_mm": 182.7,
+   "pull_to_train_mean": 0.53,
+   "tube_to_train_mean_mm": 208.6,
+   "pull_to_prev_layout": 0.71,
+   "nn_tube_mm": 13.2,
+   "n_tube_30": 17,
+   "nn_hole_mm": 4.4,
+   "n_hole_30": 9,
+   "nn_joint_mm": 15.8,
+   "nn_joint_ep": "episode_000000",
+   "n_joint_40": 5,
+   "nn_joint_vs_train": 0.48,
+   "nn_src_ang": 0.0,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 12.3,
+   "n_dst_ang_15": 1,
+   "ref_err_raw": [
+    0.1,
+    -2.8
+   ],
+   "ref_err_plan": [
+    0.1,
+    -2.8
+   ]
+  },
+  {
+   "layout": 11,
+   "n": 3,
+   "n_success": 3,
+   "results": [
+    "success",
+    "success",
+    "success"
+   ],
+   "causes": [
+    "성공",
+    "성공",
+    "성공"
+   ],
+   "tube": [
+    0.5684,
+    0.2438
+   ],
+   "hole_raw": [
+    0.5587,
+    -0.0539
+   ],
+   "hole_plan": [
+    0.5587,
+    -0.0539
+   ],
+   "hole": [
+    0.5587,
+    -0.0539
+   ],
+   "ring_xy": [
+    0.5479822328596552,
+    -0.041231128828094155
+   ],
+   "src_ang": 87.6,
+   "dst_ang": 86.9,
+   "n_caps": 2,
+   "close_mean_err": [
+    -8.2,
+    -3.6
+   ],
+   "close_mean_err_mm": 9.0,
+   "close_spread_mm": 0.5,
+   "pull_to_train_mean": 0.02,
+   "tube_to_train_mean_mm": 211.4,
+   "nn_tube_mm": 15.5,
+   "n_tube_30": 17,
+   "nn_hole_mm": 1.3,
+   "n_hole_30": 12,
+   "nn_joint_mm": 15.6,
+   "nn_joint_ep": "episode_000000",
+   "n_joint_40": 8,
+   "nn_joint_vs_train": 0.47,
+   "nn_src_ang": 0.1,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.0,
+   "n_dst_ang_15": 67,
+   "ref_err_raw": [
+    -7.0,
+    5.4
+   ],
+   "ref_err_plan": [
+    -7.0,
+    5.4
+   ]
+  },
+  {
+   "layout": 12,
+   "n": 3,
+   "n_success": 2,
+   "results": [
+    "partial",
+    "success",
+    "success"
+   ],
+   "causes": [
+    "칸 위에서 못 꽂음",
+    "성공",
+    "성공"
+   ],
+   "tube": [
+    0.6265000000000001,
+    -0.23725000000000002
+   ],
+   "hole_raw": [
+    0.5598,
+    -0.0135
+   ],
+   "hole_plan": [
+    0.5604,
+    -0.0138
+   ],
+   "hole": [
+    0.5604,
+    -0.0138
+   ],
+   "ring_xy": [
+    0.5489021328771457,
+    -0.007691625956555814
+   ],
+   "src_ang": 86.4,
+   "dst_ang": 88.4,
+   "n_caps": 2,
+   "close_mean_err": [
+    -3.6,
+    6.3
+   ],
+   "close_mean_err_mm": 7.2,
+   "close_spread_mm": 4.0,
+   "pull_to_train_mean": 0.02,
+   "tube_to_train_mean_mm": 279.3,
+   "pull_to_prev_layout": 0.01,
+   "nn_tube_mm": 34.4,
+   "n_tube_30": 0,
+   "nn_hole_mm": 20.7,
+   "n_hole_30": 4,
+   "nn_joint_mm": 40.1,
+   "nn_joint_ep": "episode_000087",
+   "n_joint_40": 2,
+   "nn_joint_vs_train": 1.21,
+   "nn_src_ang": 0.0,
+   "n_src_ang_15": 41,
+   "nn_dst_ang": 0.0,
+   "n_dst_ang_15": 67,
+   "ref_err_raw": [
+    -6.1,
+    3.4
+   ],
+   "ref_err_plan": [
+    -7.4,
+    4.1
+   ]
+  },
+  {
+   "layout": 13,
+   "n": 4,
+   "n_success": 1,
+   "results": [
+    "partial",
+    "partial",
+    "partial",
+    "success"
+   ],
+   "causes": [
+    "칸 위에서 못 꽂음",
+    "칸 옆에 놓음",
+    "칸 위에서 못 꽂음",
+    "성공"
+   ],
+   "tube": [
+    0.62175,
+    0.16465000000000002
+   ],
+   "hole_raw": [
+    0.4982,
+    0.0629
+   ],
+   "hole_plan": [
+    0.4982,
+    0.0629
+   ],
+   "hole": [
+    0.4982,
+    0.0629
+   ],
+   "ring_xy": [
+    0.49752595864994914,
+    0.055913873007989834
+   ],
+   "src_ang": 175.6,
+   "dst_ang": 87.2,
+   "n_caps": 2,
+   "close_mean_err": [
+    -16.8,
+    21.8
+   ],
+   "close_mean_err_mm": 27.5,
+   "close_spread_mm": 36.3,
+   "pull_to_train_mean": -0.08,
+   "tube_to_train_mean_mm": 147.7,
+   "pull_to_prev_layout": -0.05,
+   "nn_tube_mm": 28.7,
+   "n_tube_30": 1,
+   "nn_hole_mm": 13.0,
+   "n_hole_30": 6,
+   "nn_joint_mm": 45.4,
+   "nn_joint_ep": "episode_000077",
+   "n_joint_40": 1,
+   "nn_joint_vs_train": 1.37,
+   "nn_src_ang": 1.1,
+   "n_src_ang_15": 8,
+   "nn_dst_ang": 0.0,
+   "n_dst_ang_15": 67,
+   "ref_err_raw": [
+    2.8,
+    16.0
+   ],
+   "ref_err_plan": [
+    2.8,
+    16.0
+   ]
+  }
+ ],
+ "trials": [
+  {
+   "folder": "rollout_20261102_160336",
+   "note": "1-1",
+   "layout": 1,
+   "k": 1,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 36.3,
+   "latency_ms": 151.0,
+   "chunks": 32,
+   "started": "16:03",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.8mm · 잡을 자리와 8mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "147mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 14mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 116mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 14mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5741,
+    0.2573
+   ],
+   "tube_px": [
+    117.4,
+    140.8
+   ],
+   "ring_px": [
+    448.8,
+    154.6
+   ],
+   "hole_raw": [
+    0.5738,
+    -0.0067
+   ],
+   "hole_plan": [
+    0.5738,
+    -0.0067
+   ],
+   "post_tube_xy": [
+    0.5621,
+    -0.0019
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 87.9,
+   "dst_rack_xy": [
+    0.5556044745329939,
+    -0.0494623840009652
+   ],
+   "src_rack_xy": [
+    0.5614142620793313,
+    0.17430914266679523
+   ],
+   "n": 363,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 76,
+    "close3": 106,
+    "open": 316
+   },
+   "t_close": 7.6,
+   "close_xyz": [
+    0.5671,
+    0.2525,
+    0.1064
+   ],
+   "w3_mm": 32.8,
+   "grasp_ok": true,
+   "grasp_err": [
+    -7.0,
+    -4.8
+   ],
+   "grasp_err_mm": 8.5,
+   "close_dz_mm": -0.5,
+   "close_v_mm_s": 9.7,
+   "near_cap_red": true,
+   "near_cap_mm": 8.2,
+   "red_cap_mm": 8.2,
+   "t_open": 31.6,
+   "rel_xyz": [
+    0.5603,
+    -0.005,
+    0.1161
+   ],
+   "lift_mm": 146.6,
+   "lift_ok": true,
+   "near_raw_mm": 13.5,
+   "near_raw_vec": [
+    -13.5,
+    -0.1
+   ],
+   "near_raw_idx": 303,
+   "rel_err_raw": [
+    -13.5,
+    1.7
+   ],
+   "rel_err_raw_mm": 13.6,
+   "near_plan_mm": 13.5,
+   "near_plan_vec": [
+    -13.5,
+    -0.1
+   ],
+   "near_plan_idx": 303,
+   "rel_err_plan": [
+    -13.5,
+    1.7
+   ],
+   "rel_err_plan_mm": 13.6,
+   "attempts": 1,
+   "zmin_dz_mm": -0.9,
+   "block_mm": 19.7,
+   "near_along_mm": -0.6,
+   "near_across_mm": 13.5,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 20mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_01-1.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_160538",
+   "note": "1-2",
+   "layout": 1,
+   "k": 2,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.1,
+   "latency_ms": 153.0,
+   "chunks": 24,
+   "started": "16:05",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.9mm · 잡을 자리와 3mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "142mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 7mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 116mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 8mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5716,
+    0.2594
+   ],
+   "tube_px": [
+    114.8,
+    144.1
+   ],
+   "ring_px": [
+    448.1,
+    156.0
+   ],
+   "hole_raw": [
+    0.5725,
+    -0.006
+   ],
+   "hole_plan": [
+    0.5725,
+    -0.006
+   ],
+   "post_tube_xy": [
+    0.5644,
+    -0.0045
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.0,
+   "dst_rack_xy": [
+    0.5546714215122324,
+    -0.049423175682679565
+   ],
+   "src_rack_xy": [
+    0.5602081334329964,
+    0.17045375577901906
+   ],
+   "n": 281,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 78,
+    "close3": 108,
+    "open": 234
+   },
+   "t_close": 7.8,
+   "close_xyz": [
+    0.569,
+    0.2578,
+    0.1088
+   ],
+   "w3_mm": 32.9,
+   "grasp_ok": true,
+   "grasp_err": [
+    -2.6,
+    -1.6
+   ],
+   "grasp_err_mm": 3.0,
+   "close_dz_mm": 1.9,
+   "close_v_mm_s": 13.0,
+   "near_cap_red": true,
+   "near_cap_mm": 3.1,
+   "red_cap_mm": 3.1,
+   "t_open": 23.4,
+   "rel_xyz": [
+    0.5652,
+    -0.0035,
+    0.1163
+   ],
+   "lift_mm": 142.3,
+   "lift_ok": true,
+   "near_raw_mm": 7.5,
+   "near_raw_vec": [
+    -7.0,
+    2.5
+   ],
+   "near_raw_idx": 231,
+   "rel_err_raw": [
+    -7.3,
+    2.5
+   ],
+   "rel_err_raw_mm": 7.7,
+   "near_plan_mm": 7.5,
+   "near_plan_vec": [
+    -7.0,
+    2.5
+   ],
+   "near_plan_idx": 231,
+   "rel_err_plan": [
+    -7.3,
+    2.5
+   ],
+   "rel_err_plan_mm": 7.7,
+   "attempts": 1,
+   "zmin_dz_mm": -0.6,
+   "block_mm": 7.3,
+   "near_along_mm": 2.2,
+   "near_across_mm": 7.1,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 7mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_01-2.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_160635",
+   "note": "1-3",
+   "layout": 1,
+   "k": 3,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.7,
+   "latency_ms": 156.0,
+   "chunks": 24,
+   "started": "16:06",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.7mm · 잡을 자리와 3mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "134mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 6mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 119mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 6mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5738,
+    0.2572
+   ],
+   "tube_px": [
+    117.5,
+    141.2
+   ],
+   "ring_px": [
+    449.2,
+    154.3
+   ],
+   "hole_raw": [
+    0.574,
+    -0.0072
+   ],
+   "hole_plan": [
+    0.574,
+    -0.0072
+   ],
+   "post_tube_xy": [
+    0.5615,
+    -0.0056
+   ],
+   "src_ang": 88.7,
+   "dst_ang": 87.6,
+   "dst_rack_xy": [
+    0.5555696485186874,
+    -0.0502250637822258
+   ],
+   "src_rack_xy": [
+    0.5627628302302042,
+    0.17173807425175472
+   ],
+   "n": 287,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 82,
+    "close3": 113,
+    "open": 239
+   },
+   "t_close": 8.2,
+   "close_xyz": [
+    0.576,
+    0.2586,
+    0.1144
+   ],
+   "w3_mm": 31.7,
+   "grasp_ok": true,
+   "grasp_err": [
+    2.2,
+    1.4
+   ],
+   "grasp_err_mm": 2.6,
+   "close_dz_mm": 7.5,
+   "close_v_mm_s": 16.5,
+   "near_cap_red": true,
+   "near_cap_mm": 2.4,
+   "red_cap_mm": 2.4,
+   "t_open": 23.9,
+   "rel_xyz": [
+    0.5709,
+    -0.0015,
+    0.1195
+   ],
+   "lift_mm": 134.3,
+   "lift_ok": true,
+   "near_raw_mm": 6.4,
+   "near_raw_vec": [
+    -2.7,
+    5.8
+   ],
+   "near_raw_idx": 235,
+   "rel_err_raw": [
+    -3.1,
+    5.7
+   ],
+   "rel_err_raw_mm": 6.5,
+   "near_plan_mm": 6.4,
+   "near_plan_vec": [
+    -2.7,
+    5.8
+   ],
+   "near_plan_idx": 235,
+   "rel_err_plan": [
+    -3.1,
+    5.7
+   ],
+   "rel_err_plan_mm": 6.5,
+   "attempts": 1,
+   "zmin_dz_mm": 1.9,
+   "block_mm": 5.6,
+   "near_along_mm": 5.7,
+   "near_across_mm": 2.9,
+   "cause": "성공",
+   "detail": "한 번에 꽂음",
+   "set": "처음 30회",
+   "img": "images/trials/trial_01-3.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_162836",
+   "note": "2-1",
+   "layout": 2,
+   "k": 1,
+   "result": "success",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 29.8,
+   "latency_ms": 147.0,
+   "chunks": 25,
+   "started": "16:28",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "놓았지만 빨간 튜브가 제자리에 있음 (안 옮겨짐)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.3mm · 잡을 자리와 4mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "138mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 6mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 113mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 6mm에서 놓음"
+    },
+    "check": {
+     "ok": false,
+     "note": "빨간 튜브가 제자리에 있음 (안 옮겨짐)"
+    }
+   },
+   "post_where": "source",
+   "post_note": "빨간 튜브가 제자리에 있음 (안 옮겨짐)",
+   "tube_xy": [
+    0.5672,
+    0.2547
+   ],
+   "tube_px": [
+    121.1,
+    149.7
+   ],
+   "ring_px": [
+    490.0,
+    162.5
+   ],
+   "hole_raw": [
+    0.566,
+    -0.0451
+   ],
+   "hole_plan": [
+    0.566,
+    -0.0451
+   ],
+   "post_tube_xy": [
+    0.5742,
+    0.2597
+   ],
+   "src_ang": 89.7,
+   "dst_ang": 88.0,
+   "dst_rack_xy": [
+    0.5531544965018628,
+    -0.048828424969787065
+   ],
+   "src_rack_xy": [
+    0.5583671134273056,
+    0.17101257075093784
+   ],
+   "n": 298,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 87,
+    "close3": 117,
+    "open": 252
+   },
+   "t_close": 8.7,
+   "close_xyz": [
+    0.5671,
+    0.2511,
+    0.1059
+   ],
+   "w3_mm": 31.3,
+   "grasp_ok": true,
+   "grasp_err": [
+    -0.1,
+    -3.6
+   ],
+   "grasp_err_mm": 3.6,
+   "close_dz_mm": -1.0,
+   "close_v_mm_s": 14.7,
+   "near_cap_red": true,
+   "near_cap_mm": 4.7,
+   "red_cap_mm": 4.7,
+   "t_open": 25.2,
+   "rel_xyz": [
+    0.5598,
+    -0.0441,
+    0.1128
+   ],
+   "lift_mm": 138.3,
+   "lift_ok": true,
+   "near_raw_mm": 6.1,
+   "near_raw_vec": [
+    -6.0,
+    1.0
+   ],
+   "near_raw_idx": 248,
+   "rel_err_raw": [
+    -6.2,
+    1.0
+   ],
+   "rel_err_raw_mm": 6.3,
+   "near_plan_mm": 6.1,
+   "near_plan_vec": [
+    -6.0,
+    1.0
+   ],
+   "near_plan_idx": 248,
+   "rel_err_plan": [
+    -6.2,
+    1.0
+   ],
+   "rel_err_plan_mm": 6.3,
+   "attempts": 1,
+   "zmin_dz_mm": -4.1,
+   "block_mm": 7.2,
+   "near_along_mm": 0.8,
+   "near_across_mm": 6.0,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 7mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_02-1.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_163045",
+   "note": "2-2",
+   "layout": 2,
+   "k": 2,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 30.6,
+   "latency_ms": 147.0,
+   "chunks": 25,
+   "started": "16:30",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 33.1mm · 잡을 자리와 5mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "142mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 7mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 115mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 7mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5742,
+    0.2603
+   ],
+   "tube_px": [
+    113.5,
+    140.7
+   ],
+   "ring_px": [
+    490.7,
+    154.7
+   ],
+   "hole_raw": [
+    0.5732,
+    -0.0463
+   ],
+   "hole_plan": [
+    0.5732,
+    -0.0463
+   ],
+   "post_tube_xy": [
+    0.5666,
+    -0.0414
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.0,
+   "dst_rack_xy": [
+    0.5563602504173599,
+    -0.049034361151486516
+   ],
+   "src_rack_xy": [
+    0.5617663196896724,
+    0.17114960395564313
+   ],
+   "n": 306,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 84,
+    "close3": 115,
+    "open": 260
+   },
+   "t_close": 8.4,
+   "close_xyz": [
+    0.572,
+    0.2558,
+    0.1047
+   ],
+   "w3_mm": 33.1,
+   "grasp_ok": true,
+   "grasp_err": [
+    -2.2,
+    -4.5
+   ],
+   "grasp_err_mm": 5.0,
+   "close_dz_mm": -2.2,
+   "close_v_mm_s": 10.7,
+   "near_cap_red": true,
+   "near_cap_mm": 5.0,
+   "red_cap_mm": 5.0,
+   "t_open": 26.0,
+   "rel_xyz": [
+    0.5662,
+    -0.0454,
+    0.1145
+   ],
+   "lift_mm": 141.7,
+   "lift_ok": true,
+   "near_raw_mm": 7.1,
+   "near_raw_vec": [
+    -7.0,
+    0.9
+   ],
+   "near_raw_idx": 260,
+   "rel_err_raw": [
+    -7.0,
+    0.9
+   ],
+   "rel_err_raw_mm": 7.1,
+   "near_plan_mm": 7.1,
+   "near_plan_vec": [
+    -7.0,
+    0.9
+   ],
+   "near_plan_idx": 260,
+   "rel_err_plan": [
+    -7.0,
+    0.9
+   ],
+   "rel_err_plan_mm": 7.1,
+   "attempts": 1,
+   "zmin_dz_mm": -2.4,
+   "block_mm": 6.3,
+   "near_along_mm": 0.7,
+   "near_across_mm": 7.0,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 6mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_02-2.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_163219",
+   "note": "2-3",
+   "layout": 2,
+   "k": 3,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 29.5,
+   "latency_ms": 147.0,
+   "chunks": 25,
+   "started": "16:32",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.9mm · 잡을 자리와 1mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "130mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 8mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 118mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 8mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5741,
+    0.2577
+   ],
+   "tube_px": [
+    116.8,
+    140.9
+   ],
+   "ring_px": [
+    492.5,
+    155.2
+   ],
+   "hole_raw": [
+    0.5728,
+    -0.0479
+   ],
+   "hole_plan": [
+    0.5728,
+    -0.0479
+   ],
+   "post_tube_xy": [
+    0.5622,
+    -0.042
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.1,
+   "dst_rack_xy": [
+    0.5558528292351594,
+    -0.049871616840305
+   ],
+   "src_rack_xy": [
+    0.5613657473181972,
+    0.16999520119702108
+   ],
+   "n": 295,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 88,
+    "close3": 118,
+    "open": 248
+   },
+   "t_close": 8.8,
+   "close_xyz": [
+    0.5753,
+    0.2577,
+    0.109
+   ],
+   "w3_mm": 32.9,
+   "grasp_ok": true,
+   "grasp_err": [
+    1.2,
+    -0.0
+   ],
+   "grasp_err_mm": 1.2,
+   "close_dz_mm": 2.1,
+   "close_v_mm_s": 13.0,
+   "near_cap_red": true,
+   "near_cap_mm": 0.9,
+   "red_cap_mm": 0.9,
+   "t_open": 24.8,
+   "rel_xyz": [
+    0.5672,
+    -0.0424,
+    0.1181
+   ],
+   "lift_mm": 129.8,
+   "lift_ok": true,
+   "near_raw_mm": 7.8,
+   "near_raw_vec": [
+    -5.5,
+    5.6
+   ],
+   "near_raw_idx": 246,
+   "rel_err_raw": [
+    -5.6,
+    5.5
+   ],
+   "rel_err_raw_mm": 7.9,
+   "near_plan_mm": 7.8,
+   "near_plan_vec": [
+    -5.5,
+    5.6
+   ],
+   "near_plan_idx": 246,
+   "rel_err_plan": [
+    -5.6,
+    5.5
+   ],
+   "rel_err_plan_mm": 7.9,
+   "attempts": 1,
+   "zmin_dz_mm": 1.2,
+   "block_mm": 12.4,
+   "near_along_mm": 5.4,
+   "near_across_mm": 5.7,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 12mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_02-3.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_163440",
+   "note": "3-1 (메모가 10-3으로 잘못 적힘 — 시각·위치로 3-1)",
+   "layout": 3,
+   "k": 1,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 52.5,
+   "latency_ms": 146.0,
+   "chunks": 46,
+   "started": "16:34",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "끝 장면에선 빨간 칸에 있지만 손이 충분히 안 내려감 — 덜 꽂혔는지(얹힘) 확인",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.8mm · 잡을 자리와 5mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "164mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 8mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 132mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5546,
+    -0.1864
+   ],
+   "tube_px": [
+    684.0,
+    159.6
+   ],
+   "ring_px": [
+    415.9,
+    171.5
+   ],
+   "hole_raw": [
+    0.5584,
+    0.0251
+   ],
+   "hole_plan": [
+    0.5584,
+    0.0251
+   ],
+   "post_tube_xy": [
+    0.5645,
+    0.0155
+   ],
+   "src_ang": 32.4,
+   "dst_ang": 87.3,
+   "dst_rack_xy": [
+    0.5451832844717492,
+    0.009488960956951065
+   ],
+   "src_rack_xy": [
+    0.5884058088497175,
+    -0.12324771121015027
+   ],
+   "n": 525,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 104,
+    "close3": 134,
+    "open": 473
+   },
+   "t_close": 10.4,
+   "close_xyz": [
+    0.55,
+    -0.1864,
+    0.1052
+   ],
+   "w3_mm": 31.8,
+   "grasp_ok": true,
+   "grasp_err": [
+    -4.6,
+    -0.0
+   ],
+   "grasp_err_mm": 4.6,
+   "close_dz_mm": -1.7,
+   "close_v_mm_s": 6.7,
+   "near_cap_red": true,
+   "near_cap_mm": 8.1,
+   "red_cap_mm": 8.1,
+   "t_open": 47.3,
+   "rel_xyz": [
+    0.5672,
+    0.0259,
+    0.1318
+   ],
+   "lift_mm": 163.5,
+   "lift_ok": true,
+   "near_raw_mm": 7.8,
+   "near_raw_vec": [
+    6.2,
+    -4.6
+   ],
+   "near_raw_idx": 448,
+   "rel_err_raw": [
+    8.8,
+    0.8
+   ],
+   "rel_err_raw_mm": 8.8,
+   "near_plan_mm": 7.8,
+   "near_plan_vec": [
+    6.2,
+    -4.6
+   ],
+   "near_plan_idx": 448,
+   "rel_err_plan": [
+    8.8,
+    0.8
+   ],
+   "rel_err_plan_mm": 8.8,
+   "attempts": 1,
+   "zmin_dz_mm": 14.9,
+   "block_mm": 20.9,
+   "near_along_mm": -4.3,
+   "near_across_mm": -6.4,
+   "cause": "테두리에 얹힘",
+   "detail": "끝 장면은 구멍 위인데 덜 들어감 · 가장 낮게 학습 놓은 높이 +15mm · 테두리에 막힘 최대 21mm",
+   "set": "처음 30회",
+   "img": "images/trials/trial_03-1.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_163756",
+   "note": "3-2",
+   "layout": 3,
+   "k": 2,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 67.2,
+   "latency_ms": 147.0,
+   "chunks": 64,
+   "started": "16:37",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.8mm · 잡을 자리와 5mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "158mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 4mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 132mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.5552,
+    -0.1856
+   ],
+   "tube_px": [
+    683.0,
+    158.9
+   ],
+   "ring_px": [
+    414.6,
+    173.2
+   ],
+   "hole_raw": [
+    0.5568,
+    0.0264
+   ],
+   "hole_plan": [
+    0.5568,
+    0.0264
+   ],
+   "post_tube_xy": null,
+   "src_ang": 32.6,
+   "dst_ang": 87.1,
+   "dst_rack_xy": [
+    0.543339950470424,
+    0.009234292308389735
+   ],
+   "src_rack_xy": [
+    0.5868683105036228,
+    -0.1244540343626922
+   ],
+   "n": 672,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 111,
+    "close3": 142
+   },
+   "t_close": 11.1,
+   "close_xyz": [
+    0.5507,
+    -0.1837,
+    0.1045
+   ],
+   "w3_mm": 31.8,
+   "grasp_ok": true,
+   "grasp_err": [
+    -4.5,
+    1.9
+   ],
+   "grasp_err_mm": 4.9,
+   "close_dz_mm": -2.4,
+   "close_v_mm_s": 7.2,
+   "near_cap_red": true,
+   "near_cap_mm": 4.5,
+   "red_cap_mm": 4.5,
+   "lift_mm": 158.5,
+   "lift_ok": true,
+   "near_raw_mm": 4.3,
+   "near_raw_vec": [
+    3.5,
+    -2.5
+   ],
+   "near_raw_idx": 655,
+   "near_plan_mm": 4.3,
+   "near_plan_vec": [
+    3.5,
+    -2.5
+   ],
+   "near_plan_idx": 655,
+   "attempts": 9,
+   "zmin_dz_mm": 8.9,
+   "block_mm": 25.8,
+   "near_along_mm": -2.3,
+   "near_across_mm": -3.6,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 4.3mm · 랙 방향 -2mm, 수직 -4mm · 가장 낮게 학습 놓은 높이 +9mm · 테두리에 막힘 최대 26mm · 꽂기 시도 9번 · 끝: 멈춤",
+   "set": "처음 30회",
+   "img": "images/trials/trial_03-2.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_164031",
+   "note": "3-3",
+   "layout": 3,
+   "k": 3,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 28.9,
+   "latency_ms": 146.0,
+   "chunks": 26,
+   "started": "16:40",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 24.8mm · 잡을 자리와 9mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "154mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 20mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸에서 14mm 안으로 못 들어감"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.5584,
+    -0.185
+   ],
+   "tube_px": [
+    682.0,
+    154.7
+   ],
+   "ring_px": [
+    414.9,
+    169.9
+   ],
+   "hole_raw": [
+    0.5599,
+    0.026
+   ],
+   "hole_plan": [
+    0.5599,
+    0.026
+   ],
+   "post_tube_xy": null,
+   "src_ang": 34.0,
+   "dst_ang": 87.5,
+   "dst_rack_xy": [
+    0.5456835760391711,
+    0.009156134349536882
+   ],
+   "src_rack_xy": [
+    0.5889565721517129,
+    -0.12289015317366359
+   ],
+   "n": 289,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 93,
+    "close3": 124
+   },
+   "t_close": 9.3,
+   "close_xyz": [
+    0.5505,
+    -0.1892,
+    0.1062
+   ],
+   "w3_mm": 24.8,
+   "grasp_ok": true,
+   "grasp_err": [
+    -7.9,
+    -4.2
+   ],
+   "grasp_err_mm": 8.9,
+   "close_dz_mm": -0.7,
+   "close_v_mm_s": 6.8,
+   "near_cap_red": true,
+   "near_cap_mm": 9.3,
+   "red_cap_mm": 9.3,
+   "lift_mm": 154.3,
+   "lift_ok": true,
+   "near_raw_mm": 19.7,
+   "near_raw_vec": [
+    1.4,
+    -19.7
+   ],
+   "near_raw_idx": 288,
+   "near_plan_mm": 19.7,
+   "near_plan_vec": [
+    1.4,
+    -19.7
+   ],
+   "near_plan_idx": 288,
+   "attempts": 1,
+   "zmin_dz_mm": 16.5,
+   "block_mm": 15.5,
+   "near_along_mm": -19.6,
+   "near_across_mm": -2.2,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 19.7mm · 랙 방향으로 -20mm (옆 칸 쪽) · 가장 낮게 학습 놓은 높이 +16mm · 테두리에 막힘 최대 16mm · 꽂기 시도 1번 · 끝: 멈춤",
+   "set": "처음 30회",
+   "img": "images/trials/trial_03-3.jpg",
+   "category": "D 옆 구멍 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_164251",
+   "note": "4-1",
+   "layout": 4,
+   "k": 1,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 19.6,
+   "latency_ms": 146.0,
+   "chunks": 13,
+   "started": "16:42",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 잡을 자리와 121mm",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm · 잡을 자리와 121mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 못 찍음 — 위로 빼기 중단 (aborted)"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6598,
+    -0.0514
+   ],
+   "tube_px": [
+    504.4,
+    25.7
+   ],
+   "ring_px": [
+    586.2,
+    175.2
+   ],
+   "hole_raw": [
+    0.5531,
+    -0.1351
+   ],
+   "hole_plan": [
+    0.5531,
+    -0.1351
+   ],
+   "post_tube_xy": null,
+   "src_ang": 90.8,
+   "dst_ang": 176.7,
+   "dst_rack_xy": [
+    0.49479838298834006,
+    -0.09697823963639868
+   ],
+   "src_rack_xy": [
+    0.6331059021544005,
+    0.0039821253098769605
+   ],
+   "n": 196,
+   "n_close": 2,
+   "n_open": 1,
+   "idx": {
+    "close": 75,
+    "close3": 105,
+    "open": 129
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.6284,
+    0.0658,
+    0.0921
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "grasp_err": [
+    -31.4,
+    117.2
+   ],
+   "grasp_err_mm": 121.3,
+   "close_dz_mm": -14.8,
+   "close_v_mm_s": 6.6,
+   "near_cap_red": false,
+   "near_cap_mm": 30.1,
+   "red_cap_mm": 122.5,
+   "t_open": 12.9,
+   "rel_xyz": [
+    0.6315,
+    0.0618,
+    0.1285
+   ],
+   "lift_mm": 0.0,
+   "lift_ok": false,
+   "near_raw_mm": 213.1,
+   "near_raw_vec": [
+    74.8,
+    199.5
+   ],
+   "near_raw_idx": 81,
+   "rel_err_raw": [
+    78.4,
+    196.9
+   ],
+   "rel_err_raw_mm": 211.9,
+   "near_plan_mm": 213.1,
+   "near_plan_vec": [
+    74.8,
+    199.5
+   ],
+   "near_plan_idx": 81,
+   "rel_err_plan": [
+    78.4,
+    196.9
+   ],
+   "rel_err_plan_mm": 211.9,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -63.2,
+   "near_across_mm": -203.5,
+   "cause": "헛잡음",
+   "detail": "닫은 자리가 빨간 튜브 잡을 자리에서 121.3mm (앞뒤 -31, 좌우 +117) · 학습보다 -15mm 높이에서 닫음",
+   "set": "처음 30회",
+   "img": "images/trials/trial_04-1.jpg",
+   "category": "A 다른 튜브 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_164413",
+   "note": "4-2",
+   "layout": 4,
+   "k": 2,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 12.8,
+   "latency_ms": 148.0,
+   "chunks": 11,
+   "started": "16:44",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": null,
+   "tube_px": null,
+   "ring_px": [
+    585.4,
+    175.2
+   ],
+   "hole_raw": [
+    0.5532,
+    -0.1344
+   ],
+   "hole_plan": null,
+   "post_tube_xy": null,
+   "src_ang": null,
+   "dst_ang": 176.7,
+   "dst_rack_xy": [
+    0.4944198924561507,
+    -0.0961717028130013
+   ],
+   "src_rack_xy": null,
+   "n": 128,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 75,
+    "close3": 105
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.6288,
+    0.0707,
+    0.0978
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "close_dz_mm": -9.1,
+   "close_v_mm_s": 12.3,
+   "near_cap_red": false,
+   "near_cap_mm": 37.2,
+   "red_cap_mm": null,
+   "lift_mm": 0.2,
+   "lift_ok": false,
+   "near_raw_mm": 217.7,
+   "near_raw_vec": [
+    76.0,
+    204.0
+   ],
+   "near_raw_idx": 77,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -64.1,
+   "near_across_mm": -208.1,
+   "cause": "헛잡음",
+   "detail": "",
+   "set": "처음 30회",
+   "img": "images/trials/trial_04-2.jpg",
+   "category": "A 다른 튜브 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_164515",
+   "note": "4-3",
+   "layout": 4,
+   "k": 3,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 10.2,
+   "latency_ms": 144.0,
+   "chunks": 9,
+   "started": "16:45",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": null,
+   "tube_px": null,
+   "ring_px": [
+    585.7,
+    178.0
+   ],
+   "hole_raw": [
+    0.5505,
+    -0.1345
+   ],
+   "hole_plan": null,
+   "post_tube_xy": null,
+   "src_ang": null,
+   "dst_ang": 175.6,
+   "dst_rack_xy": [
+    0.4937002336302432,
+    -0.0966234181648693
+   ],
+   "src_rack_xy": null,
+   "n": 102,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 75,
+    "close3": 101
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.6347,
+    0.0724,
+    0.0959
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "close_dz_mm": -11.0,
+   "close_v_mm_s": 6.8,
+   "near_cap_red": false,
+   "near_cap_mm": 34.1,
+   "red_cap_mm": null,
+   "lift_mm": 0.0,
+   "lift_ok": false,
+   "near_raw_mm": 221.2,
+   "near_raw_vec": [
+    83.3,
+    204.9
+   ],
+   "near_raw_idx": 96,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -67.3,
+   "near_across_mm": -210.7,
+   "cause": "헛잡음",
+   "detail": " · 학습보다 -11mm 높이에서 닫음",
+   "set": "처음 30회",
+   "img": "images/trials/trial_04-3.jpg",
+   "category": "A 다른 튜브 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_164630",
+   "note": "5-1",
+   "layout": 5,
+   "k": 1,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "중단 — 그리퍼 닫기 실패 — 4초 안에 끝나지 않음",
+   "duration_s": 11.8,
+   "latency_ms": 144.0,
+   "chunks": 8,
+   "started": "16:46",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐었지만 못 들어 올림 · 끝: 중단 — 그리퍼 닫기 실패 — 4초 안에 끝나지 않음",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 27.4mm · 잡을 자리와 21mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "0mm만 올라감"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.5835,
+    -0.1733
+   ],
+   "tube_px": [
+    665.3,
+    122.4
+   ],
+   "ring_px": [
+    290.0,
+    121.5
+   ],
+   "hole_raw": [
+    0.6062,
+    0.1411
+   ],
+   "hole_plan": [
+    0.6062,
+    0.1411
+   ],
+   "post_tube_xy": null,
+   "src_ang": 85.7,
+   "dst_ang": 88.4,
+   "dst_rack_xy": [
+    0.5834218434119739,
+    0.16439009639159372
+   ],
+   "src_rack_xy": [
+    0.5776490872327796,
+    -0.09310413090078318
+   ],
+   "n": 118,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 78,
+    "close3": 109
+   },
+   "t_close": 7.8,
+   "close_xyz": [
+    0.5659,
+    -0.1851,
+    0.0972
+   ],
+   "w3_mm": 27.4,
+   "grasp_ok": true,
+   "grasp_err": [
+    -17.6,
+    -11.8
+   ],
+   "grasp_err_mm": 21.2,
+   "close_dz_mm": -9.7,
+   "close_v_mm_s": 15.9,
+   "near_cap_red": true,
+   "near_cap_mm": 20.9,
+   "red_cap_mm": 20.9,
+   "lift_mm": 0.4,
+   "lift_ok": false,
+   "near_raw_mm": 306.4,
+   "near_raw_vec": [
+    -31.5,
+    -304.8
+   ],
+   "near_raw_idx": 99,
+   "near_plan_mm": 306.4,
+   "near_plan_vec": [
+    -31.5,
+    -304.8
+   ],
+   "near_plan_idx": 99,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -305.6,
+   "near_across_mm": 23.0,
+   "cause": "못 들어 올림",
+   "detail": "쥔 폭 27.4mm, 최대 0.4mm 올라감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_05-1.jpg",
+   "category": "C 쥔 채 스테이션 제한 시간 중단",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_164743",
+   "note": "5-2",
+   "layout": 5,
+   "k": 2,
+   "result": "success",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 27.4,
+   "latency_ms": 146.0,
+   "chunks": 22,
+   "started": "16:47",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "끝 장면에선 빨간 칸에 있지만 손이 충분히 안 내려감 — 덜 꽂혔는지(얹힘) 확인",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.0mm · 잡을 자리와 17mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "150mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 17mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸에서 14mm 안으로 못 들어감"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5827,
+    -0.1735
+   ],
+   "tube_px": [
+    665.6,
+    123.4
+   ],
+   "ring_px": [
+    291.1,
+    122.4
+   ],
+   "hole_raw": [
+    0.6054,
+    0.14
+   ],
+   "hole_plan": [
+    0.6054,
+    0.14
+   ],
+   "post_tube_xy": [
+    0.5966,
+    0.1307
+   ],
+   "src_ang": 86.4,
+   "dst_ang": 88.6,
+   "dst_rack_xy": [
+    0.582565979418893,
+    0.1628765843848148
+   ],
+   "src_rack_xy": [
+    0.5750580419977105,
+    -0.0939973189158424
+   ],
+   "n": 274,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 75,
+    "close3": 106,
+    "open": 227
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.5695,
+    -0.1841,
+    0.1047
+   ],
+   "w3_mm": 32.0,
+   "grasp_ok": true,
+   "grasp_err": [
+    -13.2,
+    -10.6
+   ],
+   "grasp_err_mm": 17.0,
+   "close_dz_mm": -2.2,
+   "close_v_mm_s": 7.3,
+   "near_cap_red": true,
+   "near_cap_mm": 16.9,
+   "red_cap_mm": 16.9,
+   "t_open": 22.7,
+   "rel_xyz": [
+    0.5886,
+    0.1367,
+    0.1129
+   ],
+   "lift_mm": 150.0,
+   "lift_ok": true,
+   "near_raw_mm": 17.1,
+   "near_raw_vec": [
+    -16.8,
+    -3.3
+   ],
+   "near_raw_idx": 227,
+   "rel_err_raw": [
+    -16.8,
+    -3.3
+   ],
+   "rel_err_raw_mm": 17.1,
+   "near_plan_mm": 17.1,
+   "near_plan_vec": [
+    -16.8,
+    -3.3
+   ],
+   "near_plan_idx": 227,
+   "rel_err_plan": [
+    -16.8,
+    -3.3
+   ],
+   "rel_err_plan_mm": 17.1,
+   "attempts": 1,
+   "zmin_dz_mm": -4.0,
+   "block_mm": 15.1,
+   "near_along_mm": -3.7,
+   "near_across_mm": 16.7,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 15mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_05-2.jpg",
+   "category": "성공",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_165037",
+   "note": "5-3",
+   "layout": 5,
+   "k": 3,
+   "result": "success",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 26.9,
+   "latency_ms": 147.0,
+   "chunks": 22,
+   "started": "16:50",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "끝 장면에선 빨간 칸에 있지만 손이 충분히 안 내려감 — 덜 꽂혔는지(얹힘) 확인",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 24.9mm · 잡을 자리와 18mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "142mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 15mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸에서 14mm 안으로 못 들어감"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5819,
+    -0.1753
+   ],
+   "tube_px": [
+    668.0,
+    124.5
+   ],
+   "ring_px": [
+    289.4,
+    121.8
+   ],
+   "hole_raw": [
+    0.606,
+    0.1416
+   ],
+   "hole_plan": [
+    0.606,
+    0.1416
+   ],
+   "post_tube_xy": [
+    0.6019,
+    0.132
+   ],
+   "src_ang": 86.0,
+   "dst_ang": 88.5,
+   "dst_rack_xy": [
+    0.5828678710211568,
+    0.16523093594031205
+   ],
+   "src_rack_xy": [
+    0.5757965270061653,
+    -0.09241561473272575
+   ],
+   "n": 269,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 79,
+    "close3": 110,
+    "open": 223
+   },
+   "t_close": 7.9,
+   "close_xyz": [
+    0.5715,
+    -0.1905,
+    0.1035
+   ],
+   "w3_mm": 24.9,
+   "grasp_ok": true,
+   "grasp_err": [
+    -10.4,
+    -15.2
+   ],
+   "grasp_err_mm": 18.4,
+   "close_dz_mm": -3.4,
+   "close_v_mm_s": 12.6,
+   "near_cap_red": true,
+   "near_cap_mm": 20.3,
+   "red_cap_mm": 20.3,
+   "t_open": 22.3,
+   "rel_xyz": [
+    0.5921,
+    0.1366,
+    0.1091
+   ],
+   "lift_mm": 142.0,
+   "lift_ok": true,
+   "near_raw_mm": 14.8,
+   "near_raw_vec": [
+    -13.9,
+    -5.0
+   ],
+   "near_raw_idx": 223,
+   "rel_err_raw": [
+    -13.9,
+    -5.0
+   ],
+   "rel_err_raw_mm": 14.8,
+   "near_plan_mm": 14.8,
+   "near_plan_vec": [
+    -13.9,
+    -5.0
+   ],
+   "near_plan_idx": 223,
+   "rel_err_plan": [
+    -13.9,
+    -5.0
+   ],
+   "rel_err_plan_mm": 14.8,
+   "attempts": 1,
+   "zmin_dz_mm": -7.8,
+   "block_mm": 12.3,
+   "near_along_mm": -5.4,
+   "near_across_mm": 13.8,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 12mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_05-3.jpg",
+   "category": "성공",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_165652",
+   "note": "6-1",
+   "layout": 6,
+   "k": 1,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 13.3,
+   "latency_ms": 147.0,
+   "chunks": 11,
+   "started": "16:56",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 잡을 자리와 9mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm · 잡을 자리와 9mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.618,
+    -0.023
+   ],
+   "tube_px": [
+    471.3,
+    80.1
+   ],
+   "ring_px": [
+    457.4,
+    245.2
+   ],
+   "hole_raw": [
+    0.4893,
+    -0.01
+   ],
+   "hole_plan": [
+    0.4893,
+    -0.01
+   ],
+   "post_tube_xy": null,
+   "src_ang": 89.4,
+   "dst_ang": 86.5,
+   "dst_rack_xy": [
+    0.4933239385269219,
+    0.045616078667375604
+   ],
+   "src_rack_xy": [
+    0.6063287013411276,
+    0.03242976618585236
+   ],
+   "n": 133,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 73,
+    "close3": 103
+   },
+   "t_close": 7.3,
+   "close_xyz": [
+    0.6266,
+    -0.0261,
+    0.1141
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "grasp_err": [
+    8.6,
+    -3.1
+   ],
+   "grasp_err_mm": 9.1,
+   "close_dz_mm": 7.2,
+   "close_v_mm_s": 4.2,
+   "near_cap_red": true,
+   "near_cap_mm": 9.0,
+   "red_cap_mm": 9.0,
+   "lift_mm": 0.7,
+   "lift_ok": false,
+   "near_raw_mm": 138.2,
+   "near_raw_vec": [
+    137.3,
+    -16.1
+   ],
+   "near_raw_idx": 73,
+   "near_plan_mm": 138.2,
+   "near_plan_vec": [
+    137.3,
+    -16.1
+   ],
+   "near_plan_idx": 73,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -7.7,
+   "near_across_mm": -138.0,
+   "cause": "헛잡음",
+   "detail": "닫은 자리가 빨간 튜브 잡을 자리에서 9.1mm (앞뒤 +9, 좌우 -3)",
+   "set": "처음 30회",
+   "img": "images/trials/trial_06-1.jpg",
+   "category": "B 빨간 튜브 옆에서 헛잡음",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_165811",
+   "note": "6-2",
+   "layout": 6,
+   "k": 2,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "중단 — 1번째 행동: 0.1초에 5.6cm 움직임 (한도 5cm)",
+   "duration_s": 13.1,
+   "latency_ms": 144.0,
+   "chunks": 11,
+   "started": "16:58",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 끝: 중단 — 1번째 행동: 0.1초에 5.6cm 움직임 (한도 5cm)",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": null,
+   "tube_px": null,
+   "ring_px": [
+    457.0,
+    245.1
+   ],
+   "hole_raw": [
+    0.4894,
+    -0.0097
+   ],
+   "hole_plan": null,
+   "post_tube_xy": null,
+   "src_ang": null,
+   "dst_ang": 87.0,
+   "dst_rack_xy": [
+    0.49284990488453306,
+    0.04568491413558767
+   ],
+   "src_rack_xy": null,
+   "n": 131,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 75,
+    "close3": 106
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.6229,
+    -0.0277,
+    0.1138
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "close_dz_mm": 6.9,
+   "close_v_mm_s": 2.8,
+   "near_cap_red": false,
+   "near_cap_mm": 121.4,
+   "red_cap_mm": null,
+   "lift_mm": 1.8,
+   "lift_ok": false,
+   "near_raw_mm": 134.7,
+   "near_raw_vec": [
+    133.5,
+    -18.0
+   ],
+   "near_raw_idx": 75,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -11.0,
+   "near_across_mm": -134.3,
+   "cause": "헛잡음",
+   "detail": " · 끝: 중단 — 1번째 행동: 0.1초에 5.6cm 움직임 (한도 5cm)",
+   "set": "처음 30회",
+   "img": "images/trials/trial_06-2.jpg",
+   "category": "B 빨간 튜브 옆에서 헛잡음",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_165908",
+   "note": "6-3",
+   "layout": 6,
+   "k": 3,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.3,
+   "latency_ms": 146.0,
+   "chunks": 23,
+   "started": "16:59",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.8mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "140mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 6mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 116mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 6mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": null,
+   "tube_px": null,
+   "ring_px": [
+    457.4,
+    243.8
+   ],
+   "hole_raw": [
+    0.4907,
+    -0.0101
+   ],
+   "hole_plan": null,
+   "post_tube_xy": [
+    0.4931,
+    -0.0078
+   ],
+   "src_ang": null,
+   "dst_ang": 86.9,
+   "dst_rack_xy": [
+    0.493481067819051,
+    0.045524896557812666
+   ],
+   "src_rack_xy": null,
+   "n": 283,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 70,
+    "close3": 101,
+    "open": 236
+   },
+   "t_close": 7.0,
+   "close_xyz": [
+    0.6209,
+    -0.0174,
+    0.1115
+   ],
+   "w3_mm": 32.8,
+   "grasp_ok": true,
+   "close_dz_mm": 4.6,
+   "close_v_mm_s": 11.2,
+   "near_cap_red": false,
+   "near_cap_mm": 112.0,
+   "red_cap_mm": null,
+   "t_open": 23.6,
+   "rel_xyz": [
+    0.4955,
+    -0.0139,
+    0.1152
+   ],
+   "lift_mm": 139.9,
+   "lift_ok": true,
+   "near_raw_mm": 6.1,
+   "near_raw_vec": [
+    4.7,
+    -3.8
+   ],
+   "near_raw_idx": 232,
+   "rel_err_raw": [
+    4.8,
+    -3.8
+   ],
+   "rel_err_raw_mm": 6.1,
+   "attempts": 1,
+   "zmin_dz_mm": -1.7,
+   "block_mm": 9.1,
+   "near_along_mm": -3.6,
+   "near_across_mm": -4.9,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 9mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_06-3.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_170030",
+   "note": "6-3",
+   "layout": 6,
+   "k": 3,
+   "result": "void",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 17.1,
+   "latency_ms": 147.0,
+   "chunks": 14,
+   "started": "17:00",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐었지만 못 들어 올림 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 27.0mm · 잡을 자리와 20mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "23mm만 올라감"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6451,
+    0.1632
+   ],
+   "tube_px": [
+    232.0,
+    47.9
+   ],
+   "ring_px": [
+    531.7,
+    141.5
+   ],
+   "hole_raw": [
+    0.585,
+    -0.0855
+   ],
+   "hole_plan": [
+    0.585,
+    -0.0855
+   ],
+   "post_tube_xy": null,
+   "src_ang": 143.6,
+   "dst_ang": 24.4,
+   "dst_rack_xy": [
+    0.5234224628905811,
+    -0.08045762072368212
+   ],
+   "src_rack_xy": [
+    0.5766553596154509,
+    0.16688767544082458
+   ],
+   "n": 171,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 86,
+    "close3": 116
+   },
+   "t_close": 8.6,
+   "close_xyz": [
+    0.6277,
+    0.1524,
+    0.0863
+   ],
+   "w3_mm": 27.0,
+   "grasp_ok": true,
+   "grasp_err": [
+    -17.4,
+    -10.8
+   ],
+   "grasp_err_mm": 20.5,
+   "close_dz_mm": -20.6,
+   "close_v_mm_s": 11.4,
+   "near_cap_red": true,
+   "near_cap_mm": 17.8,
+   "red_cap_mm": 17.8,
+   "lift_mm": 22.5,
+   "lift_ok": false,
+   "near_raw_mm": 241.4,
+   "near_raw_vec": [
+    42.3,
+    237.7
+   ],
+   "near_raw_idx": 92,
+   "near_plan_mm": 241.4,
+   "near_plan_vec": [
+    42.3,
+    237.7
+   ],
+   "near_plan_idx": 92,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": 136.7,
+   "near_across_mm": 199.0,
+   "cause": "무효",
+   "detail": "6-3",
+   "set": "",
+   "img": "images/trials/void_1700.jpg",
+   "category": "무효",
+   "split": ""
+  },
+  {
+   "folder": "rollout_20261102_170149",
+   "note": "7-1",
+   "layout": 7,
+   "k": 1,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "중단 — 그리퍼 닫기 실패 — 4초 안에 끝나지 않음",
+   "duration_s": 11.9,
+   "latency_ms": 146.0,
+   "chunks": 8,
+   "started": "17:01",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐었지만 못 들어 올림 · 끝: 중단 — 그리퍼 닫기 실패 — 4초 안에 끝나지 않음",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 27.2mm · 잡을 자리와 22mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "1mm만 올라감"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6291,
+    0.1619
+   ],
+   "tube_px": [
+    234.9,
+    68.5
+   ],
+   "ring_px": [
+    526.5,
+    138.5
+   ],
+   "hole_raw": [
+    0.5879,
+    -0.0808
+   ],
+   "hole_plan": [
+    0.5879,
+    -0.0808
+   ],
+   "post_tube_xy": null,
+   "src_ang": 143.2,
+   "dst_ang": 24.1,
+   "dst_rack_xy": [
+    0.5243096140489898,
+    -0.07833672355038435
+   ],
+   "src_rack_xy": [
+    0.5682667595596707,
+    0.16855652060460352
+   ],
+   "n": 119,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 79,
+    "close3": 110
+   },
+   "t_close": 7.9,
+   "close_xyz": [
+    0.6148,
+    0.1456,
+    0.0927
+   ],
+   "w3_mm": 27.2,
+   "grasp_ok": true,
+   "grasp_err": [
+    -14.3,
+    -16.3
+   ],
+   "grasp_err_mm": 21.7,
+   "close_dz_mm": -14.2,
+   "close_v_mm_s": 15.3,
+   "near_cap_red": true,
+   "near_cap_mm": 19.9,
+   "red_cap_mm": 19.9,
+   "lift_mm": 0.7,
+   "lift_ok": false,
+   "near_raw_mm": 228.0,
+   "near_raw_vec": [
+    26.9,
+    226.4
+   ],
+   "near_raw_idx": 79,
+   "near_plan_mm": 228.0,
+   "near_plan_vec": [
+    26.9,
+    226.4
+   ],
+   "near_plan_idx": 79,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": 117.0,
+   "near_across_mm": 195.7,
+   "cause": "못 들어 올림",
+   "detail": "쥔 폭 27.2mm, 최대 0.7mm 올라감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_07-1.jpg",
+   "category": "C 쥔 채 스테이션 제한 시간 중단",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_170245",
+   "note": "7-2",
+   "layout": 7,
+   "k": 2,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 28.7,
+   "latency_ms": 146.0,
+   "chunks": 25,
+   "started": "17:02",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 27.1mm · 잡을 자리와 20mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "164mm 들어 올림"
+    },
+    "above": {
+     "ok": false,
+     "note": "빨간 칸에서 가장 가까이 26mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6297,
+    0.1628
+   ],
+   "tube_px": [
+    233.7,
+    67.7
+   ],
+   "ring_px": [
+    529.4,
+    139.0
+   ],
+   "hole_raw": [
+    0.5874,
+    -0.0835
+   ],
+   "hole_plan": [
+    0.5874,
+    -0.0835
+   ],
+   "post_tube_xy": null,
+   "src_ang": 143.2,
+   "dst_ang": 24.6,
+   "dst_rack_xy": [
+    0.5270201668191072,
+    -0.07763743003652501
+   ],
+   "src_rack_xy": [
+    0.5682729446531353,
+    0.16992444107955806
+   ],
+   "n": 287,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 86,
+    "close3": 117
+   },
+   "t_close": 8.6,
+   "close_xyz": [
+    0.6207,
+    0.1448,
+    0.0973
+   ],
+   "w3_mm": 27.1,
+   "grasp_ok": true,
+   "grasp_err": [
+    -9.0,
+    -18.0
+   ],
+   "grasp_err_mm": 20.1,
+   "close_dz_mm": -9.6,
+   "close_v_mm_s": 13.8,
+   "near_cap_red": true,
+   "near_cap_mm": 21.6,
+   "red_cap_mm": 21.6,
+   "lift_mm": 164.4,
+   "lift_ok": true,
+   "near_raw_mm": 25.7,
+   "near_raw_vec": [
+    -16.3,
+    -19.8
+   ],
+   "near_raw_idx": 242,
+   "near_plan_mm": 25.7,
+   "near_plan_vec": [
+    -16.3,
+    -19.8
+   ],
+   "near_plan_idx": 242,
+   "attempts": 1,
+   "zmin_dz_mm": 7.0,
+   "block_mm": 14.1,
+   "near_along_mm": -23.1,
+   "near_across_mm": -11.2,
+   "cause": "칸까지 못 감",
+   "detail": "쥔 채 칸에 가장 가까이 26mm · 랙 방향으로 -23mm (옆 칸 쪽)",
+   "set": "처음 30회",
+   "img": "images/trials/trial_07-2.jpg",
+   "category": "D 옆 구멍 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_170409",
+   "note": "7-3",
+   "layout": 7,
+   "k": 3,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 26.6,
+   "latency_ms": 145.0,
+   "chunks": 23,
+   "started": "17:04",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 27.8mm · 잡을 자리와 16mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "166mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 13mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 151mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6275,
+    0.1597
+   ],
+   "tube_px": [
+    237.8,
+    70.5
+   ],
+   "ring_px": [
+    530.6,
+    140.5
+   ],
+   "hole_raw": [
+    0.586,
+    -0.0846
+   ],
+   "hole_plan": [
+    0.586,
+    -0.0846
+   ],
+   "post_tube_xy": null,
+   "src_ang": 143.4,
+   "dst_ang": 24.1,
+   "dst_rack_xy": [
+    0.5246704949924083,
+    -0.08071188110103372
+   ],
+   "src_rack_xy": [
+    0.5673099194780244,
+    0.16582705535869544
+   ],
+   "n": 266,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 84,
+    "close3": 114
+   },
+   "t_close": 8.4,
+   "close_xyz": [
+    0.6141,
+    0.1508,
+    0.0941
+   ],
+   "w3_mm": 27.8,
+   "grasp_ok": true,
+   "grasp_err": [
+    -13.4,
+    -8.9
+   ],
+   "grasp_err_mm": 16.1,
+   "close_dz_mm": -12.8,
+   "close_v_mm_s": 6.9,
+   "near_cap_red": true,
+   "near_cap_mm": 15.1,
+   "red_cap_mm": 15.1,
+   "lift_mm": 166.3,
+   "lift_ok": true,
+   "near_raw_mm": 13.0,
+   "near_raw_vec": [
+    -8.4,
+    -9.9
+   ],
+   "near_raw_idx": 256,
+   "near_plan_mm": 13.0,
+   "near_plan_vec": [
+    -8.4,
+    -9.9
+   ],
+   "near_plan_idx": 256,
+   "attempts": 1,
+   "zmin_dz_mm": 1.8,
+   "block_mm": 27.7,
+   "near_along_mm": -11.7,
+   "near_across_mm": -5.6,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 13.0mm · 랙 방향 -12mm, 수직 -6mm · 가장 낮게 학습 놓은 높이 +2mm · 테두리에 막힘 최대 28mm · 꽂기 시도 1번 · 끝: 멈춤",
+   "set": "처음 30회",
+   "img": "images/trials/trial_07-3.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_170550",
+   "note": "8-1",
+   "layout": 8,
+   "k": 1,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 16.5,
+   "latency_ms": 148.0,
+   "chunks": 15,
+   "started": "17:05",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 잡을 자리와 140mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm · 잡을 자리와 140mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6199,
+    0.1361
+   ],
+   "tube_px": [
+    268.5,
+    80.1
+   ],
+   "ring_px": [
+    439.5,
+    206.0
+   ],
+   "hole_raw": [
+    0.526,
+    0.0047
+   ],
+   "hole_plan": [
+    0.526,
+    0.0047
+   ],
+   "post_tube_xy": null,
+   "src_ang": 85.3,
+   "dst_ang": 174.2,
+   "dst_rack_xy": [
+    0.5374188711966429,
+    0.006254647628883614
+   ],
+   "src_rack_xy": [
+    0.6041128712284214,
+    0.16562941717073074
+   ],
+   "n": 165,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 77,
+    "close3": 107
+   },
+   "t_close": 7.7,
+   "close_xyz": [
+    0.5723,
+    0.2674,
+    0.0875
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "grasp_err": [
+    -47.6,
+    131.3
+   ],
+   "grasp_err_mm": 139.6,
+   "close_dz_mm": -19.4,
+   "close_v_mm_s": 5.6,
+   "near_cap_red": false,
+   "near_cap_mm": 58.5,
+   "red_cap_mm": 139.6,
+   "lift_mm": 0.0,
+   "lift_ok": false,
+   "near_raw_mm": 266.7,
+   "near_raw_vec": [
+    47.0,
+    262.5
+   ],
+   "near_raw_idx": 92,
+   "near_plan_mm": 266.7,
+   "near_plan_vec": [
+    47.0,
+    262.5
+   ],
+   "near_plan_idx": 92,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -20.3,
+   "near_across_mm": -265.9,
+   "cause": "헛잡음",
+   "detail": "닫은 자리가 빨간 튜브 잡을 자리에서 139.6mm (앞뒤 -48, 좌우 +131) · 학습보다 -19mm 높이에서 닫음",
+   "set": "처음 30회",
+   "img": "images/trials/trial_08-1.jpg",
+   "category": "A 다른 튜브 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_170755",
+   "note": "8-2",
+   "layout": 8,
+   "k": 2,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 16.2,
+   "latency_ms": 149.0,
+   "chunks": 12,
+   "started": "17:07",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 잡을 자리와 135mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm · 잡을 자리와 135mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6196,
+    0.1387
+   ],
+   "tube_px": [
+    265.2,
+    80.5
+   ],
+   "ring_px": [
+    436.5,
+    206.0
+   ],
+   "hole_raw": [
+    0.5261,
+    0.0076
+   ],
+   "hole_plan": [
+    0.5261,
+    0.0076
+   ],
+   "post_tube_xy": null,
+   "src_ang": 85.3,
+   "dst_ang": 174.6,
+   "dst_rack_xy": [
+    0.5371587238254232,
+    0.008473534308328756
+   ],
+   "src_rack_xy": [
+    0.6036164178111588,
+    0.16856209337430408
+   ],
+   "n": 162,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 86,
+    "close3": 116,
+    "open": 138
+   },
+   "t_close": 8.6,
+   "close_xyz": [
+    0.5864,
+    0.2696,
+    0.0942
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "grasp_err": [
+    -33.2,
+    130.9
+   ],
+   "grasp_err_mm": 135.1,
+   "close_dz_mm": -12.7,
+   "close_v_mm_s": 4.8,
+   "near_cap_red": false,
+   "near_cap_mm": 42.5,
+   "red_cap_mm": 136.6,
+   "t_open": 13.8,
+   "rel_xyz": [
+    0.5918,
+    0.2765,
+    0.1368
+   ],
+   "lift_mm": 0.1,
+   "lift_ok": false,
+   "near_raw_mm": 268.8,
+   "near_raw_vec": [
+    60.7,
+    261.8
+   ],
+   "near_raw_idx": 105,
+   "rel_err_raw": [
+    65.7,
+    268.9
+   ],
+   "rel_err_raw_mm": 276.8,
+   "near_plan_mm": 268.8,
+   "near_plan_vec": [
+    60.7,
+    261.8
+   ],
+   "near_plan_idx": 105,
+   "rel_err_plan": [
+    65.7,
+    268.9
+   ],
+   "rel_err_plan_mm": 276.8,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -35.8,
+   "near_across_mm": -266.4,
+   "cause": "헛잡음",
+   "detail": "닫은 자리가 빨간 튜브 잡을 자리에서 135.1mm (앞뒤 -33, 좌우 +131) · 학습보다 -13mm 높이에서 닫음",
+   "set": "처음 30회",
+   "img": "images/trials/trial_08-2.jpg",
+   "category": "A 다른 튜브 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_170848",
+   "note": "8-3",
+   "layout": 8,
+   "k": 3,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 12.8,
+   "latency_ms": 147.0,
+   "chunks": 11,
+   "started": "17:08",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 잡을 자리와 142mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm · 잡을 자리와 142mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6196,
+    0.1372
+   ],
+   "tube_px": [
+    267.1,
+    80.4
+   ],
+   "ring_px": [
+    437.6,
+    205.0
+   ],
+   "hole_raw": [
+    0.527,
+    0.0065
+   ],
+   "hole_plan": [
+    0.527,
+    0.0065
+   ],
+   "post_tube_xy": null,
+   "src_ang": 85.4,
+   "dst_ang": 174.4,
+   "dst_rack_xy": [
+    0.5371895631420072,
+    0.007663102358711038
+   ],
+   "src_rack_xy": [
+    0.6035088379127858,
+    0.16606717761741324
+   ],
+   "n": 128,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 75,
+    "close3": 106
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.5742,
+    0.2723,
+    0.0893
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "grasp_err": [
+    -45.4,
+    135.1
+   ],
+   "grasp_err_mm": 142.5,
+   "close_dz_mm": -17.6,
+   "close_v_mm_s": 10.9,
+   "near_cap_red": false,
+   "near_cap_mm": 59.8,
+   "red_cap_mm": 141.2,
+   "lift_mm": 1.0,
+   "lift_ok": false,
+   "near_raw_mm": 269.9,
+   "near_raw_vec": [
+    47.2,
+    265.8
+   ],
+   "near_raw_idx": 75,
+   "near_plan_mm": 269.9,
+   "near_plan_vec": [
+    47.2,
+    265.8
+   ],
+   "near_plan_idx": 75,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -21.0,
+   "near_across_mm": -269.1,
+   "cause": "헛잡음",
+   "detail": "닫은 자리가 빨간 튜브 잡을 자리에서 142.5mm (앞뒤 -45, 좌우 +135) · 학습보다 -18mm 높이에서 닫음",
+   "set": "처음 30회",
+   "img": "images/trials/trial_08-3.jpg",
+   "category": "A 다른 튜브 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_171029",
+   "note": "",
+   "layout": 0,
+   "k": 0,
+   "result": "void",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 18.6,
+   "latency_ms": 148.0,
+   "chunks": 14,
+   "started": "17:10",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 잡을 자리와 52mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm · 잡을 자리와 52mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6136,
+    0.2835
+   ],
+   "tube_px": [
+    81.1,
+    90.3
+   ],
+   "ring_px": [
+    404.9,
+    183.0
+   ],
+   "hole_raw": [
+    0.5478,
+    0.0361
+   ],
+   "hole_plan": [
+    0.5478,
+    0.0361
+   ],
+   "post_tube_xy": null,
+   "src_ang": 87.3,
+   "dst_ang": 175.5,
+   "dst_rack_xy": [
+    0.554273880212721,
+    0.031653939733852
+   ],
+   "src_rack_xy": [
+    0.5913719769107066,
+    0.19068083714493061
+   ],
+   "n": 186,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 85,
+    "close3": 115,
+    "open": 153
+   },
+   "t_close": 8.5,
+   "close_xyz": [
+    0.5637,
+    0.299,
+    0.0848
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "grasp_err": [
+    -49.9,
+    15.5
+   ],
+   "grasp_err_mm": 52.2,
+   "close_dz_mm": -22.1,
+   "close_v_mm_s": 5.7,
+   "near_cap_red": true,
+   "near_cap_mm": 52.2,
+   "red_cap_mm": 52.2,
+   "t_open": 15.3,
+   "rel_xyz": [
+    0.5701,
+    0.2966,
+    0.0841
+   ],
+   "lift_mm": 0.0,
+   "lift_ok": false,
+   "near_raw_mm": 262.9,
+   "near_raw_vec": [
+    16.5,
+    262.4
+   ],
+   "near_raw_idx": 87,
+   "rel_err_raw": [
+    22.3,
+    260.5
+   ],
+   "rel_err_raw_mm": 261.5,
+   "near_plan_mm": 262.9,
+   "near_plan_vec": [
+    16.5,
+    262.4
+   ],
+   "near_plan_idx": 87,
+   "rel_err_plan": [
+    22.3,
+    260.5
+   ],
+   "rel_err_plan_mm": 261.5,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": 4.1,
+   "near_across_mm": -262.9,
+   "cause": "무효",
+   "detail": "멈춤",
+   "set": "",
+   "img": "images/trials/void_1710.jpg",
+   "category": "무효",
+   "split": ""
+  },
+  {
+   "folder": "rollout_20261102_171218",
+   "note": "9-1",
+   "layout": 9,
+   "k": 1,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 23.8,
+   "latency_ms": 145.0,
+   "chunks": 20,
+   "started": "17:12",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.7mm · 잡을 자리와 8mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "141mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 11mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 160mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6374,
+    0.1398
+   ],
+   "tube_px": [
+    262.5,
+    57.5
+   ],
+   "ring_px": [
+    500.1,
+    257.8
+   ],
+   "hole_raw": [
+    0.4773,
+    -0.0496
+   ],
+   "hole_plan": [
+    0.4773,
+    -0.0496
+   ],
+   "post_tube_xy": null,
+   "src_ang": 84.8,
+   "dst_ang": 85.9,
+   "dst_rack_xy": [
+    0.47806132486744024,
+    -0.08205947894659171
+   ],
+   "src_rack_xy": [
+    0.6143810194716397,
+    0.0738318244976024
+   ],
+   "n": 238,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 73,
+    "close3": 104
+   },
+   "t_close": 7.3,
+   "close_xyz": [
+    0.6306,
+    0.1353,
+    0.1083
+   ],
+   "w3_mm": 32.7,
+   "grasp_ok": true,
+   "grasp_err": [
+    -6.8,
+    -4.5
+   ],
+   "grasp_err_mm": 8.2,
+   "close_dz_mm": 1.4,
+   "close_v_mm_s": 13.0,
+   "near_cap_red": true,
+   "near_cap_mm": 8.5,
+   "red_cap_mm": 8.5,
+   "lift_mm": 141.4,
+   "lift_ok": true,
+   "near_raw_mm": 10.8,
+   "near_raw_vec": [
+    7.8,
+    7.4
+   ],
+   "near_raw_idx": 199,
+   "near_plan_mm": 10.8,
+   "near_plan_vec": [
+    7.8,
+    7.4
+   ],
+   "near_plan_idx": 199,
+   "attempts": 1,
+   "zmin_dz_mm": 15.6,
+   "block_mm": 12.5,
+   "near_along_mm": 8.0,
+   "near_across_mm": -7.3,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 10.8mm · 랙 방향 +8mm, 수직 -7mm · 가장 낮게 학습 놓은 높이 +16mm · 테두리에 막힘 최대 12mm · 꽂기 시도 1번 · 끝: 멈춤",
+   "set": "처음 30회",
+   "img": "images/trials/trial_09-1.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_171340",
+   "note": "9-2",
+   "layout": 9,
+   "k": 2,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 27.3,
+   "latency_ms": 145.0,
+   "chunks": 25,
+   "started": "17:13",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.1mm · 잡을 자리와 15mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "147mm 들어 올림"
+    },
+    "above": {
+     "ok": false,
+     "note": "빨간 칸에서 가장 가까이 31mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6409,
+    0.1339
+   ],
+   "tube_px": [
+    269.7,
+    52.9
+   ],
+   "ring_px": [
+    503.1,
+    257.5
+   ],
+   "hole_raw": [
+    0.4774,
+    -0.0524
+   ],
+   "hole_plan": [
+    0.4774,
+    -0.0524
+   ],
+   "post_tube_xy": null,
+   "src_ang": 84.6,
+   "dst_ang": 85.7,
+   "dst_rack_xy": [
+    0.47715572262961564,
+    -0.08456724950151401
+   ],
+   "src_rack_xy": [
+    0.6144678483606316,
+    0.07048626793906909
+   ],
+   "n": 273,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 65,
+    "close3": 96
+   },
+   "t_close": 6.5,
+   "close_xyz": [
+    0.6294,
+    0.1239,
+    0.1007
+   ],
+   "w3_mm": 32.1,
+   "grasp_ok": true,
+   "grasp_err": [
+    -11.5,
+    -10.0
+   ],
+   "grasp_err_mm": 15.2,
+   "close_dz_mm": -6.2,
+   "close_v_mm_s": 5.0,
+   "near_cap_red": true,
+   "near_cap_mm": 15.0,
+   "red_cap_mm": 15.0,
+   "lift_mm": 146.6,
+   "lift_ok": true,
+   "near_raw_mm": 30.8,
+   "near_raw_vec": [
+    1.2,
+    30.8
+   ],
+   "near_raw_idx": 232,
+   "near_plan_mm": 30.8,
+   "near_plan_vec": [
+    1.2,
+    30.8
+   ],
+   "near_plan_idx": 232,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": 30.8,
+   "near_across_mm": 1.1,
+   "cause": "칸까지 못 감",
+   "detail": "쥔 채 칸에 가장 가까이 31mm · 랙 방향으로 +31mm (옆 칸 쪽)",
+   "set": "처음 30회",
+   "img": "images/trials/trial_09-2.jpg",
+   "category": "D 옆 구멍 쪽으로 감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_171510",
+   "note": "9-3",
+   "layout": 9,
+   "k": 3,
+   "result": "fail",
+   "result_auto": "fail",
+   "reason": "멈춤",
+   "duration_s": 12.4,
+   "latency_ms": 147.0,
+   "chunks": 10,
+   "started": "17:15",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "헛잡음 — 폭 0.0mm · 잡을 자리와 12mm · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": false,
+     "note": "헛잡음 — 폭 0.0mm · 잡을 자리와 12mm"
+    },
+    "lift": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "above": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6381,
+    0.1372
+   ],
+   "tube_px": [
+    265.7,
+    56.5
+   ],
+   "ring_px": [
+    501.2,
+    258.9
+   ],
+   "hole_raw": [
+    0.4762,
+    -0.0506
+   ],
+   "hole_plan": [
+    0.4762,
+    -0.0506
+   ],
+   "post_tube_xy": null,
+   "src_ang": 85.4,
+   "dst_ang": 86.2,
+   "dst_rack_xy": [
+    0.4782543803565836,
+    -0.08229542035972326
+   ],
+   "src_rack_xy": [
+    0.6122726936885752,
+    0.07460724284684844
+   ],
+   "n": 124,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 74,
+    "close3": 105
+   },
+   "t_close": 7.4,
+   "close_xyz": [
+    0.633,
+    0.1267,
+    0.1215
+   ],
+   "w3_mm": 0.0,
+   "grasp_ok": false,
+   "grasp_err": [
+    -5.1,
+    -10.5
+   ],
+   "grasp_err_mm": 11.7,
+   "close_dz_mm": 14.6,
+   "close_v_mm_s": 1.3,
+   "near_cap_red": true,
+   "near_cap_mm": 13.6,
+   "red_cap_mm": 13.6,
+   "lift_mm": 3.9,
+   "lift_ok": false,
+   "near_raw_mm": 236.7,
+   "near_raw_vec": [
+    156.8,
+    177.3
+   ],
+   "near_raw_idx": 74,
+   "near_plan_mm": 236.7,
+   "near_plan_vec": [
+    156.8,
+    177.3
+   ],
+   "near_plan_idx": 74,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": 187.3,
+   "near_across_mm": -144.7,
+   "cause": "헛잡음",
+   "detail": "닫은 자리가 빨간 튜브 잡을 자리에서 11.7mm (앞뒤 -5, 좌우 -10) · 학습보다 +15mm 높이에서 닫음",
+   "set": "처음 30회",
+   "img": "images/trials/trial_09-3.jpg",
+   "category": "B 빨간 튜브 옆에서 헛잡음",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_171656",
+   "note": "10-1",
+   "layout": 10,
+   "k": 1,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 29.7,
+   "latency_ms": 146.0,
+   "chunks": 27,
+   "started": "17:16",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 33.1mm · 잡을 자리와 10mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "155mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 10mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 222mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.5703,
+    0.2421
+   ],
+   "tube_px": [
+    137.0,
+    145.6
+   ],
+   "ring_px": [
+    490.3,
+    171.8
+   ],
+   "hole_raw": [
+    0.5573,
+    -0.045
+   ],
+   "hole_plan": [
+    0.5573,
+    -0.045
+   ],
+   "post_tube_xy": null,
+   "src_ang": 88.3,
+   "dst_ang": 37.1,
+   "dst_rack_xy": [
+    0.5063630880614653,
+    -0.05800251074847346
+   ],
+   "src_rack_xy": [
+    0.5567261815161134,
+    0.15945081638341393
+   ],
+   "n": 297,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 75,
+    "close3": 106
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.5658,
+    0.2335,
+    0.1048
+   ],
+   "w3_mm": 33.1,
+   "grasp_ok": true,
+   "grasp_err": [
+    -4.5,
+    -8.6
+   ],
+   "grasp_err_mm": 9.7,
+   "close_dz_mm": -2.1,
+   "close_v_mm_s": 5.0,
+   "near_cap_red": true,
+   "near_cap_mm": 9.1,
+   "red_cap_mm": 9.1,
+   "lift_mm": 154.9,
+   "lift_ok": true,
+   "near_raw_mm": 9.8,
+   "near_raw_vec": [
+    -9.8,
+    -0.8
+   ],
+   "near_raw_idx": 237,
+   "near_plan_mm": 9.8,
+   "near_plan_vec": [
+    -9.8,
+    -0.8
+   ],
+   "near_plan_idx": 237,
+   "attempts": 1,
+   "zmin_dz_mm": 9.4,
+   "block_mm": 18.3,
+   "near_along_mm": -8.3,
+   "near_across_mm": 5.2,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 9.8mm · 랙 방향 -8mm, 수직 +5mm · 가장 낮게 학습 놓은 높이 +9mm · 테두리에 막힘 최대 18mm · 꽂기 시도 1번 · 끝: 멈춤",
+   "set": "처음 30회",
+   "img": "images/trials/trial_10-1.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_171810",
+   "note": "10-2",
+   "layout": 10,
+   "k": 2,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 37.2,
+   "latency_ms": 147.0,
+   "chunks": 32,
+   "started": "17:18",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 33.0mm · 잡을 자리와 6mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "153mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 1mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 121mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 7mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5715,
+    0.2408
+   ],
+   "tube_px": [
+    138.5,
+    144.0
+   ],
+   "ring_px": [
+    492.2,
+    171.9
+   ],
+   "hole_raw": [
+    0.5572,
+    -0.0467
+   ],
+   "hole_plan": [
+    0.5572,
+    -0.0467
+   ],
+   "post_tube_xy": [
+    0.5519,
+    -0.0364
+   ],
+   "src_ang": 87.6,
+   "dst_ang": 37.0,
+   "dst_rack_xy": [
+    0.5069891790833372,
+    -0.05915914756085616
+   ],
+   "src_rack_xy": [
+    0.5580039466897094,
+    0.16019732294399225
+   ],
+   "n": 372,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 75,
+    "close3": 106,
+    "open": 325
+   },
+   "t_close": 7.5,
+   "close_xyz": [
+    0.5657,
+    0.238,
+    0.1032
+   ],
+   "w3_mm": 33.0,
+   "grasp_ok": true,
+   "grasp_err": [
+    -5.8,
+    -2.8
+   ],
+   "grasp_err_mm": 6.4,
+   "close_dz_mm": -3.7,
+   "close_v_mm_s": 13.0,
+   "near_cap_red": true,
+   "near_cap_mm": 5.8,
+   "red_cap_mm": 5.8,
+   "t_open": 32.5,
+   "rel_xyz": [
+    0.5537,
+    -0.0409,
+    0.1207
+   ],
+   "lift_mm": 153.4,
+   "lift_ok": true,
+   "near_raw_mm": 1.4,
+   "near_raw_vec": [
+    1.3,
+    -0.5
+   ],
+   "near_raw_idx": 299,
+   "rel_err_raw": [
+    -3.5,
+    5.8
+   ],
+   "rel_err_raw_mm": 6.8,
+   "near_plan_mm": 1.4,
+   "near_plan_vec": [
+    1.3,
+    -0.5
+   ],
+   "near_plan_idx": 299,
+   "rel_err_plan": [
+    -3.5,
+    5.8
+   ],
+   "rel_err_plan_mm": 6.8,
+   "attempts": 1,
+   "zmin_dz_mm": 3.8,
+   "block_mm": 18.3,
+   "near_along_mm": 0.7,
+   "near_across_mm": -1.1,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 18mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_10-2.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_171914",
+   "note": "10-3",
+   "layout": 10,
+   "k": 3,
+   "result": "success",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 34.4,
+   "latency_ms": 146.0,
+   "chunks": 28,
+   "started": "17:19",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "끝 장면에선 빨간 칸에 있지만 손이 충분히 안 내려감 — 덜 꽂혔는지(얹힘) 확인",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 33.0mm · 잡을 자리와 8mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "152mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 7mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 136mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5672,
+    0.2411
+   ],
+   "tube_px": [
+    138.5,
+    149.5
+   ],
+   "ring_px": [
+    489.5,
+    169.5
+   ],
+   "hole_raw": [
+    0.5595,
+    -0.0443
+   ],
+   "hole_plan": [
+    0.5595,
+    -0.0443
+   ],
+   "post_tube_xy": [
+    0.5501,
+    -0.0367
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 37.9,
+   "dst_rack_xy": [
+    0.5088826158208513,
+    -0.05776478027851761
+   ],
+   "src_rack_xy": [
+    0.5562156564038424,
+    0.16008628728976299
+   ],
+   "n": 344,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 76,
+    "close3": 107,
+    "open": 292
+   },
+   "t_close": 7.6,
+   "close_xyz": [
+    0.5685,
+    0.2338,
+    0.1064
+   ],
+   "w3_mm": 33.0,
+   "grasp_ok": true,
+   "grasp_err": [
+    1.3,
+    -7.3
+   ],
+   "grasp_err_mm": 7.5,
+   "close_dz_mm": -0.5,
+   "close_v_mm_s": 13.9,
+   "near_cap_red": true,
+   "near_cap_mm": 7.4,
+   "red_cap_mm": 7.4,
+   "t_open": 29.2,
+   "rel_xyz": [
+    0.5633,
+    -0.0556,
+    0.136
+   ],
+   "lift_mm": 151.7,
+   "lift_ok": true,
+   "near_raw_mm": 6.6,
+   "near_raw_vec": [
+    -5.8,
+    3.1
+   ],
+   "near_raw_idx": 238,
+   "rel_err_raw": [
+    3.8,
+    -11.3
+   ],
+   "rel_err_raw_mm": 11.9,
+   "near_plan_mm": 6.6,
+   "near_plan_vec": [
+    -5.8,
+    3.1
+   ],
+   "near_plan_idx": 238,
+   "rel_err_plan": [
+    3.8,
+    -11.3
+   ],
+   "rel_err_plan_mm": 11.9,
+   "attempts": 1,
+   "zmin_dz_mm": 19.1,
+   "block_mm": 25.9,
+   "near_along_mm": -2.7,
+   "near_across_mm": 6.0,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 26mm → 미끄러져 들어감",
+   "set": "처음 30회",
+   "img": "images/trials/trial_10-3.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_184010",
+   "note": "11-1",
+   "layout": 11,
+   "k": 1,
+   "result": "success",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.2,
+   "latency_ms": 147.0,
+   "chunks": 24,
+   "started": "18:40",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "놓았지만 빨간 튜브가 안 보임",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 33.4mm · 잡을 자리와 11mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "147mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 12mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 115mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 12mm에서 놓음"
+    },
+    "check": {
+     "ok": false,
+     "note": "빨간 튜브가 안 보임"
+    }
+   },
+   "post_where": "none",
+   "post_note": "빨간 튜브가 안 보임",
+   "tube_xy": [
+    0.5711,
+    0.2405
+   ],
+   "tube_px": [
+    139.0,
+    144.5
+   ],
+   "ring_px": [
+    501.1,
+    173.0
+   ],
+   "hole_raw": [
+    0.5561,
+    -0.055
+   ],
+   "hole_plan": [
+    0.5561,
+    -0.055
+   ],
+   "post_tube_xy": null,
+   "src_ang": 87.6,
+   "dst_ang": 86.9,
+   "dst_rack_xy": [
+    0.5445527068849676,
+    -0.02306088616098606
+   ],
+   "src_rack_xy": [
+    0.5577405901666626,
+    0.15769354804442837
+   ],
+   "n": 282,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 65,
+    "close3": 95,
+    "open": 237
+   },
+   "t_close": 6.5,
+   "close_xyz": [
+    0.5597,
+    0.2396,
+    0.1067
+   ],
+   "w3_mm": 33.4,
+   "grasp_ok": true,
+   "grasp_err": [
+    -11.4,
+    -0.9
+   ],
+   "grasp_err_mm": 11.4,
+   "close_dz_mm": -0.2,
+   "close_v_mm_s": 6.9,
+   "near_cap_red": true,
+   "near_cap_mm": 11.6,
+   "red_cap_mm": 11.6,
+   "t_open": 23.7,
+   "rel_xyz": [
+    0.5471,
+    -0.0469,
+    0.1154
+   ],
+   "lift_mm": 147.5,
+   "lift_ok": true,
+   "near_raw_mm": 11.5,
+   "near_raw_vec": [
+    -8.8,
+    7.5
+   ],
+   "near_raw_idx": 212,
+   "rel_err_raw": [
+    -9.0,
+    8.1
+   ],
+   "rel_err_raw_mm": 12.1,
+   "near_plan_mm": 11.5,
+   "near_plan_vec": [
+    -8.8,
+    7.5
+   ],
+   "near_plan_idx": 212,
+   "rel_err_plan": [
+    -9.0,
+    8.1
+   ],
+   "rel_err_plan_mm": 12.1,
+   "attempts": 1,
+   "zmin_dz_mm": -1.5,
+   "block_mm": 6.1,
+   "near_along_mm": 7.0,
+   "near_across_mm": 9.2,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 6mm → 미끄러져 들어감",
+   "set": "추가 10회",
+   "img": "images/trials/trial_11-1.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_184126",
+   "note": "11-2",
+   "layout": 11,
+   "k": 2,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.3,
+   "latency_ms": 148.0,
+   "chunks": 24,
+   "started": "18:41",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.7mm · 잡을 자리와 9mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "157mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 4mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 120mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 8mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5684,
+    0.2438
+   ],
+   "tube_px": [
+    135.0,
+    148.0
+   ],
+   "ring_px": [
+    499.6,
+    170.2
+   ],
+   "hole_raw": [
+    0.5587,
+    -0.0538
+   ],
+   "hole_plan": [
+    0.5587,
+    -0.0538
+   ],
+   "post_tube_xy": [
+    0.5515,
+    -0.0559
+   ],
+   "src_ang": 88.2,
+   "dst_ang": 87.7,
+   "dst_rack_xy": [
+    0.5460553257883669,
+    -0.022309168229059817
+   ],
+   "src_rack_xy": [
+    0.5575325397702118,
+    0.1601600323892339
+   ],
+   "n": 283,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 67,
+    "close3": 98,
+    "open": 239
+   },
+   "t_close": 6.7,
+   "close_xyz": [
+    0.5603,
+    0.2403,
+    0.1067
+   ],
+   "w3_mm": 31.7,
+   "grasp_ok": true,
+   "grasp_err": [
+    -8.1,
+    -3.5
+   ],
+   "grasp_err_mm": 8.8,
+   "close_dz_mm": -0.2,
+   "close_v_mm_s": 12.1,
+   "near_cap_red": true,
+   "near_cap_mm": 8.8,
+   "red_cap_mm": 8.8,
+   "t_open": 23.9,
+   "rel_xyz": [
+    0.5521,
+    -0.0496,
+    0.1192
+   ],
+   "lift_mm": 157.2,
+   "lift_ok": true,
+   "near_raw_mm": 3.5,
+   "near_raw_vec": [
+    -3.1,
+    1.6
+   ],
+   "near_raw_idx": 213,
+   "rel_err_raw": [
+    -6.6,
+    4.2
+   ],
+   "rel_err_raw_mm": 7.8,
+   "near_plan_mm": 3.5,
+   "near_plan_vec": [
+    -3.1,
+    1.6
+   ],
+   "near_plan_idx": 213,
+   "rel_err_plan": [
+    -6.6,
+    4.2
+   ],
+   "rel_err_plan_mm": 7.8,
+   "attempts": 1,
+   "zmin_dz_mm": 2.3,
+   "block_mm": 14.9,
+   "near_along_mm": 1.5,
+   "near_across_mm": 3.2,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 15mm → 미끄러져 들어감",
+   "set": "추가 10회",
+   "img": "images/trials/trial_11-2.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_184218",
+   "note": "11-3",
+   "layout": 11,
+   "k": 3,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.9,
+   "latency_ms": 148.0,
+   "chunks": 24,
+   "started": "18:42",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.5mm · 잡을 자리와 7mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "162mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 3mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 122mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 7mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5665,
+    0.2439
+   ],
+   "tube_px": [
+    135.0,
+    150.5
+   ],
+   "ring_px": [
+    499.6,
+    168.1
+   ],
+   "hole_raw": [
+    0.5606,
+    -0.0539
+   ],
+   "hole_plan": [
+    0.5606,
+    -0.0539
+   ],
+   "post_tube_xy": [
+    0.5504,
+    -0.0454
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.1,
+   "dst_rack_xy": [
+    0.5469528243837034,
+    -0.022035974006453685
+   ],
+   "src_rack_xy": [
+    0.5565897474939918,
+    0.15888759511569062
+   ],
+   "n": 289,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 69,
+    "close3": 100,
+    "open": 245
+   },
+   "t_close": 6.9,
+   "close_xyz": [
+    0.5605,
+    0.2406,
+    0.1037
+   ],
+   "w3_mm": 31.5,
+   "grasp_ok": true,
+   "grasp_err": [
+    -6.0,
+    -3.3
+   ],
+   "grasp_err_mm": 6.8,
+   "close_dz_mm": -3.2,
+   "close_v_mm_s": 11.6,
+   "near_cap_red": true,
+   "near_cap_mm": 9.0,
+   "red_cap_mm": 9.0,
+   "t_open": 24.5,
+   "rel_xyz": [
+    0.5552,
+    -0.0499,
+    0.1217
+   ],
+   "lift_mm": 162.2,
+   "lift_ok": true,
+   "near_raw_mm": 2.5,
+   "near_raw_vec": [
+    -2.1,
+    1.4
+   ],
+   "near_raw_idx": 216,
+   "rel_err_raw": [
+    -5.4,
+    4.0
+   ],
+   "rel_err_raw_mm": 6.7,
+   "near_plan_mm": 2.5,
+   "near_plan_vec": [
+    -2.1,
+    1.4
+   ],
+   "near_plan_idx": 216,
+   "rel_err_plan": [
+    -5.4,
+    4.0
+   ],
+   "rel_err_plan_mm": 6.7,
+   "attempts": 1,
+   "zmin_dz_mm": 4.8,
+   "block_mm": 12.5,
+   "near_along_mm": 1.3,
+   "near_across_mm": 2.1,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 12mm → 미끄러져 들어감",
+   "set": "추가 10회",
+   "img": "images/trials/trial_11-3.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  },
+  {
+   "folder": "rollout_20261102_184415",
+   "note": "12-1",
+   "layout": 12,
+   "k": 1,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 31.5,
+   "latency_ms": 148.0,
+   "chunks": 28,
+   "started": "18:44",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 25.5mm · 잡을 자리와 11mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "192mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 5mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 142mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6259,
+    -0.2374
+   ],
+   "tube_px": [
+    743.9,
+    66.8
+   ],
+   "ring_px": [
+    457.4,
+    168.2
+   ],
+   "hole_raw": [
+    0.561,
+    -0.0141
+   ],
+   "hole_plan": [
+    0.561,
+    -0.0141
+   ],
+   "post_tube_xy": null,
+   "src_ang": 86.4,
+   "dst_ang": 88.4,
+   "dst_rack_xy": [
+    0.5462999361632155,
+    -0.021877780877169795
+   ],
+   "src_rack_xy": [
+    0.6128556118969566,
+    -0.14565254732141514
+   ],
+   "n": 315,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 104,
+    "close3": 135
+   },
+   "t_close": 10.4,
+   "close_xyz": [
+    0.6213,
+    -0.2277,
+    0.1003
+   ],
+   "w3_mm": 25.5,
+   "grasp_ok": true,
+   "grasp_err": [
+    -4.6,
+    9.7
+   ],
+   "grasp_err_mm": 10.7,
+   "close_dz_mm": -6.6,
+   "close_v_mm_s": 8.8,
+   "near_cap_red": true,
+   "near_cap_mm": 8.8,
+   "red_cap_mm": 8.8,
+   "lift_mm": 192.2,
+   "lift_ok": true,
+   "near_raw_mm": 4.8,
+   "near_raw_vec": [
+    -0.3,
+    -4.8
+   ],
+   "near_raw_idx": 285,
+   "near_plan_mm": 4.8,
+   "near_plan_vec": [
+    -0.3,
+    -4.8
+   ],
+   "near_plan_idx": 285,
+   "attempts": 1,
+   "zmin_dz_mm": 10.6,
+   "block_mm": 23.2,
+   "near_along_mm": -4.8,
+   "near_across_mm": 0.1,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 4.8mm · 랙 방향 -5mm, 수직 +0mm · 가장 낮게 학습 놓은 높이 +11mm · 테두리에 막힘 최대 23mm · 꽂기 시도 1번 · 끝: 멈춤",
+   "set": "추가 10회",
+   "img": "images/trials/trial_12-1.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_184628",
+   "note": "랙 들림",
+   "layout": 0,
+   "k": 0,
+   "result": "void",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 42.4,
+   "latency_ms": 148.0,
+   "chunks": 39,
+   "started": "18:46",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 25.2mm · 잡을 자리와 8mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "49mm 들어 올림"
+    },
+    "above": {
+     "ok": false,
+     "note": "빨간 칸에서 가장 가까이 216mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6268,
+    -0.2367
+   ],
+   "tube_px": [
+    742.9,
+    65.7
+   ],
+   "ring_px": [
+    456.2,
+    169.1
+   ],
+   "hole_raw": [
+    0.5602,
+    -0.0129
+   ],
+   "hole_plan": [
+    0.5602,
+    -0.0129
+   ],
+   "post_tube_xy": null,
+   "src_ang": 86.2,
+   "dst_ang": 87.9,
+   "dst_rack_xy": [
+    0.5458640319773184,
+    -0.02279778175093422
+   ],
+   "src_rack_xy": [
+    0.6139018097907456,
+    -0.14714212346967143
+   ],
+   "n": 424,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 101,
+    "close3": 132
+   },
+   "t_close": 10.1,
+   "close_xyz": [
+    0.6211,
+    -0.2312,
+    0.097
+   ],
+   "w3_mm": 25.2,
+   "grasp_ok": true,
+   "grasp_err": [
+    -5.7,
+    5.5
+   ],
+   "grasp_err_mm": 7.9,
+   "close_dz_mm": -9.9,
+   "close_v_mm_s": 14.2,
+   "near_cap_red": true,
+   "near_cap_mm": 7.8,
+   "red_cap_mm": 7.8,
+   "lift_mm": 48.7,
+   "lift_ok": true,
+   "near_raw_mm": 215.6,
+   "near_raw_vec": [
+    55.6,
+    -208.3
+   ],
+   "near_raw_idx": 406,
+   "near_plan_mm": 215.6,
+   "near_plan_vec": [
+    55.6,
+    -208.3
+   ],
+   "near_plan_idx": 406,
+   "attempts": 0,
+   "zmin_dz_mm": null,
+   "block_mm": null,
+   "near_along_mm": -206.1,
+   "near_across_mm": -63.2,
+   "cause": "무효",
+   "detail": "랙 들림",
+   "set": "",
+   "img": "images/trials/void_1846.jpg",
+   "category": "무효",
+   "split": ""
+  },
+  {
+   "folder": "rollout_20261102_184753",
+   "note": "12-2",
+   "layout": 12,
+   "k": 2,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 38.2,
+   "latency_ms": 147.0,
+   "chunks": 33,
+   "started": "18:47",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 25.4mm · 잡을 자리와 9mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "197mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 6mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 112mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 8mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.6271,
+    -0.2371
+   ],
+   "tube_px": [
+    743.4,
+    65.3
+   ],
+   "ring_px": [
+    456.8,
+    169.5
+   ],
+   "hole_raw": [
+    0.5598,
+    -0.0135
+   ],
+   "hole_plan": [
+    0.5598,
+    -0.0135
+   ],
+   "post_tube_xy": [
+    0.5506,
+    -0.0119
+   ],
+   "src_ang": 86.4,
+   "dst_ang": 87.7,
+   "dst_rack_xy": [
+    0.5456333367764923,
+    -0.022874347873260037
+   ],
+   "src_rack_xy": [
+    0.6109830499549982,
+    -0.14678894603835252
+   ],
+   "n": 382,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 114,
+    "close3": 144,
+    "open": 335
+   },
+   "t_close": 11.4,
+   "close_xyz": [
+    0.6242,
+    -0.2289,
+    0.1033
+   ],
+   "w3_mm": 25.4,
+   "grasp_ok": true,
+   "grasp_err": [
+    -2.9,
+    8.2
+   ],
+   "grasp_err_mm": 8.7,
+   "close_dz_mm": -3.6,
+   "close_v_mm_s": 12.0,
+   "near_cap_red": true,
+   "near_cap_mm": 8.5,
+   "red_cap_mm": 8.5,
+   "t_open": 33.5,
+   "rel_xyz": [
+    0.5524,
+    -0.0094,
+    0.1124
+   ],
+   "lift_mm": 197.4,
+   "lift_ok": true,
+   "near_raw_mm": 6.5,
+   "near_raw_vec": [
+    -3.6,
+    5.4
+   ],
+   "near_raw_idx": 298,
+   "rel_err_raw": [
+    -7.4,
+    4.1
+   ],
+   "rel_err_raw_mm": 8.5,
+   "near_plan_mm": 6.5,
+   "near_plan_vec": [
+    -3.6,
+    5.4
+   ],
+   "near_plan_idx": 298,
+   "rel_err_plan": [
+    -7.4,
+    4.1
+   ],
+   "rel_err_plan_mm": 8.5,
+   "attempts": 1,
+   "zmin_dz_mm": -4.5,
+   "block_mm": 10.7,
+   "near_along_mm": 5.3,
+   "near_across_mm": 3.8,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 11mm → 미끄러져 들어감",
+   "set": "추가 10회",
+   "img": "images/trials/trial_12-2.jpg",
+   "category": "성공",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_184916",
+   "note": "12-3",
+   "layout": 12,
+   "k": 3,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 35.1,
+   "latency_ms": 149.0,
+   "chunks": 30,
+   "started": "18:49",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 25.1mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "183mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 3mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 113mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 5mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": null,
+   "tube_px": null,
+   "ring_px": [
+    456.0,
+    169.7
+   ],
+   "hole_raw": [
+    0.5597,
+    -0.0127
+   ],
+   "hole_plan": null,
+   "post_tube_xy": [
+    0.5528,
+    -0.0077
+   ],
+   "src_ang": null,
+   "dst_ang": 86.7,
+   "dst_rack_xy": [
+    0.5426621655106956,
+    -0.024017000223291007
+   ],
+   "src_rack_xy": null,
+   "n": 351,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 102,
+    "close3": 133,
+    "open": 306
+   },
+   "t_close": 10.2,
+   "close_xyz": [
+    0.6232,
+    -0.2364,
+    0.1023
+   ],
+   "w3_mm": 25.1,
+   "grasp_ok": true,
+   "close_dz_mm": -4.6,
+   "close_v_mm_s": 12.5,
+   "near_cap_red": false,
+   "near_cap_mm": 108.8,
+   "red_cap_mm": null,
+   "t_open": 30.6,
+   "rel_xyz": [
+    0.555,
+    -0.0101,
+    0.1134
+   ],
+   "lift_mm": 183.3,
+   "lift_ok": true,
+   "near_raw_mm": 3.4,
+   "near_raw_vec": [
+    -2.9,
+    -1.8
+   ],
+   "near_raw_idx": 228,
+   "rel_err_raw": [
+    -4.7,
+    2.6
+   ],
+   "rel_err_raw_mm": 5.3,
+   "attempts": 1,
+   "zmin_dz_mm": -3.5,
+   "block_mm": 8.2,
+   "near_along_mm": -1.9,
+   "near_across_mm": 2.7,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 8mm → 미끄러져 들어감",
+   "set": "추가 10회",
+   "img": "images/trials/trial_12-3.jpg",
+   "category": "성공",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_185115",
+   "note": "13-1",
+   "layout": 13,
+   "k": 1,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "중단 — 1번째 행동: 0.1초에 6.2cm 움직임 (한도 5cm)",
+   "duration_s": 26.1,
+   "latency_ms": 146.0,
+   "chunks": 24,
+   "started": "18:51",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 중단 — 1번째 행동: 0.1초에 6.2cm 움직임 (한도 5cm)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.9mm · 잡을 자리와 10mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "135mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 1mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 165mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6243,
+    0.1656
+   ],
+   "tube_px": [
+    230.5,
+    74.7
+   ],
+   "ring_px": [
+    378.5,
+    236.7
+   ],
+   "hole_raw": [
+    0.4982,
+    0.0638
+   ],
+   "hole_plan": [
+    0.4982,
+    0.0638
+   ],
+   "post_tube_xy": null,
+   "src_ang": 175.6,
+   "dst_ang": 87.2,
+   "dst_rack_xy": [
+    0.49424494269213337,
+    0.0071718777493838815
+   ],
+   "src_rack_xy": [
+    0.5554301183817512,
+    0.14449107208061174
+   ],
+   "n": 261,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 85,
+    "close3": 116
+   },
+   "t_close": 8.5,
+   "close_xyz": [
+    0.6232,
+    0.1758,
+    0.1144
+   ],
+   "w3_mm": 32.9,
+   "grasp_ok": true,
+   "grasp_err": [
+    -1.1,
+    10.2
+   ],
+   "grasp_err_mm": 10.2,
+   "close_dz_mm": 7.5,
+   "close_v_mm_s": 3.7,
+   "near_cap_red": true,
+   "near_cap_mm": 11.8,
+   "red_cap_mm": 11.8,
+   "lift_mm": 134.7,
+   "lift_ok": true,
+   "near_raw_mm": 1.4,
+   "near_raw_vec": [
+    1.2,
+    -0.6
+   ],
+   "near_raw_idx": 229,
+   "near_plan_mm": 1.4,
+   "near_plan_vec": [
+    1.2,
+    -0.6
+   ],
+   "near_plan_idx": 229,
+   "attempts": 0,
+   "zmin_dz_mm": 47.4,
+   "block_mm": 33.5,
+   "near_along_mm": -0.5,
+   "near_across_mm": -1.3,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 1.4mm · 랙 방향 -0mm, 수직 -1mm · 가장 낮게 학습 놓은 높이 +47mm · 테두리에 막힘 최대 34mm · 끝: 중단 — 1번째 행동: 0.1초에 6.2cm 움직임 (한도 5cm)",
+   "set": "추가 10회",
+   "img": "images/trials/trial_13-1.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_185221",
+   "note": "13-2",
+   "layout": 13,
+   "k": 2,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 29.3,
+   "latency_ms": 147.0,
+   "chunks": 24,
+   "started": "18:52",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸이 아닌 곳에 놓음 (38mm)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 33.0mm · 잡을 자리와 8mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "131mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 12mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 237mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 못 찍음 — 홈에서만 장면을 찾을 수 있습니다 — H(홈 복귀) 후 다시"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6198,
+    0.1604
+   ],
+   "tube_px": [
+    237.5,
+    80.5
+   ],
+   "ring_px": [
+    380.5,
+    237.3
+   ],
+   "hole_raw": [
+    0.4975,
+    0.062
+   ],
+   "hole_plan": [
+    0.4975,
+    0.062
+   ],
+   "post_tube_xy": null,
+   "src_ang": 172.9,
+   "dst_ang": 87.3,
+   "dst_rack_xy": [
+    0.4946078018561564,
+    0.006346904806996179
+   ],
+   "src_rack_xy": [
+    0.5557176082759587,
+    0.14229598824804549
+   ],
+   "n": 293,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 81,
+    "close3": 112,
+    "open": 249
+   },
+   "t_close": 8.1,
+   "close_xyz": [
+    0.6143,
+    0.1665,
+    0.1096
+   ],
+   "w3_mm": 33.0,
+   "grasp_ok": true,
+   "grasp_err": [
+    -5.5,
+    6.1
+   ],
+   "grasp_err_mm": 8.2,
+   "close_dz_mm": 2.7,
+   "close_v_mm_s": 8.3,
+   "near_cap_red": true,
+   "near_cap_mm": 6.8,
+   "red_cap_mm": 6.8,
+   "t_open": 24.9,
+   "rel_xyz": [
+    0.492,
+    0.0249,
+    0.1112
+   ],
+   "lift_mm": 130.7,
+   "lift_ok": true,
+   "near_raw_mm": 12.1,
+   "near_raw_vec": [
+    7.7,
+    -9.3
+   ],
+   "near_raw_idx": 190,
+   "rel_err_raw": [
+    -5.5,
+    -37.1
+   ],
+   "rel_err_raw_mm": 37.5,
+   "near_plan_mm": 12.1,
+   "near_plan_vec": [
+    7.7,
+    -9.3
+   ],
+   "near_plan_idx": 190,
+   "rel_err_plan": [
+    -5.5,
+    -37.1
+   ],
+   "rel_err_plan_mm": 37.5,
+   "attempts": 0,
+   "zmin_dz_mm": 65.0,
+   "block_mm": 3.9,
+   "near_along_mm": -8.9,
+   "near_across_mm": -8.1,
+   "cause": "칸 옆에 놓음",
+   "detail": "놓은 자리 구멍에서 37.5mm · 랙 방향 -9mm, 수직 -8mm · 가장 낮게 학습 놓은 높이 +65mm",
+   "set": "추가 10회",
+   "img": "images/trials/trial_13-2.jpg",
+   "category": "F 구멍 옆 높은 곳에서 놓음",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_185411",
+   "note": "13-3",
+   "layout": 13,
+   "k": 3,
+   "result": "partial",
+   "result_auto": "partial",
+   "reason": "멈춤",
+   "duration_s": 24.6,
+   "latency_ms": 147.0,
+   "chunks": 22,
+   "started": "18:54",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "쥐고 들었지만 칸에 못 꽂음 · 끝: 멈춤",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 30.8mm · 잡을 자리와 11mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "134mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 11mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸 위 최저 높이 140mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": false,
+     "note": "앞 단계에서 멈춤"
+    },
+    "check": {
+     "ok": null,
+     "note": "끝 장면 확인 안 함"
+    }
+   },
+   "post_where": null,
+   "post_note": null,
+   "tube_xy": [
+    0.6237,
+    0.1637
+   ],
+   "tube_px": [
+    233.0,
+    75.5
+   ],
+   "ring_px": [
+    378.0,
+    236.7
+   ],
+   "hole_raw": [
+    0.4982,
+    0.0643
+   ],
+   "hole_plan": [
+    0.4982,
+    0.0643
+   ],
+   "post_tube_xy": null,
+   "src_ang": 176.7,
+   "dst_ang": 86.7,
+   "dst_rack_xy": [
+    0.49478382797456966,
+    0.007279480067290012
+   ],
+   "src_rack_xy": [
+    0.5560303599737781,
+    0.14361476232831144
+   ],
+   "n": 246,
+   "n_close": 1,
+   "n_open": 0,
+   "idx": {
+    "close": 79,
+    "close3": 109
+   },
+   "t_close": 7.9,
+   "close_xyz": [
+    0.6229,
+    0.1745,
+    0.1107
+   ],
+   "w3_mm": 30.8,
+   "grasp_ok": true,
+   "grasp_err": [
+    -0.8,
+    10.8
+   ],
+   "grasp_err_mm": 10.8,
+   "close_dz_mm": 3.8,
+   "close_v_mm_s": 11.3,
+   "near_cap_red": true,
+   "near_cap_mm": 10.5,
+   "red_cap_mm": 10.5,
+   "lift_mm": 133.8,
+   "lift_ok": true,
+   "near_raw_mm": 11.2,
+   "near_raw_vec": [
+    5.7,
+    -9.6
+   ],
+   "near_raw_idx": 214,
+   "near_plan_mm": 11.2,
+   "near_plan_vec": [
+    5.7,
+    -9.6
+   ],
+   "near_plan_idx": 214,
+   "attempts": 1,
+   "zmin_dz_mm": 23.0,
+   "block_mm": 25.8,
+   "near_along_mm": -9.3,
+   "near_across_mm": -6.2,
+   "cause": "칸 위에서 못 꽂음",
+   "detail": "쥔 채 가장 가까이 11.2mm · 랙 방향 -9mm, 수직 -6mm · 가장 낮게 학습 놓은 높이 +23mm · 테두리에 막힘 최대 26mm · 꽂기 시도 1번 · 끝: 멈춤",
+   "set": "추가 10회",
+   "img": "images/trials/trial_13-3.jpg",
+   "category": "E 구멍 위까지 갔지만 못 들어감",
+   "split": "분포 밖"
+  },
+  {
+   "folder": "rollout_20261102_190717",
+   "note": "14-1 (메모가 13-3으로 적힘 — 튜브·구멍 위치가 배치 13과 9·14 cm 달라 별도 배치)",
+   "layout": 14,
+   "k": 1,
+   "result": "success",
+   "result_auto": "partial",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.9,
+   "latency_ms": 148.0,
+   "chunks": 25,
+   "started": "19:07",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "끝 장면에선 빨간 칸에 있지만 손이 충분히 안 내려감 — 덜 꽂혔는지(얹힘) 확인",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.7mm · 잡을 자리와 5mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "136mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 16mm"
+    },
+    "insert": {
+     "ok": false,
+     "note": "칸에서 14mm 안으로 못 들어감"
+    },
+    "release": {
+     "ok": false,
+     "note": "튜브 없이 그리퍼만 엶"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5573,
+    0.224
+   ],
+   "tube_px": [
+    160.9,
+    162.1
+   ],
+   "ring_px": [
+    515.6,
+    188.3
+   ],
+   "hole_raw": [
+    0.5417,
+    -0.0678
+   ],
+   "hole_plan": [
+    0.5417,
+    -0.0678
+   ],
+   "post_tube_xy": [
+    0.5373,
+    -0.0605
+   ],
+   "src_ang": 87.0,
+   "dst_ang": 88.6,
+   "dst_rack_xy": [
+    0.53066552778491,
+    -0.0971364881900319
+   ],
+   "src_rack_xy": [
+    0.5491510985485893,
+    0.14115748589008634
+   ],
+   "n": 289,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 79,
+    "close3": 109,
+    "open": 245
+   },
+   "t_close": 7.9,
+   "close_xyz": [
+    0.5593,
+    0.2289,
+    0.105
+   ],
+   "w3_mm": 31.7,
+   "grasp_ok": true,
+   "grasp_err": [
+    2.0,
+    4.9
+   ],
+   "grasp_err_mm": 5.3,
+   "close_dz_mm": -1.9,
+   "close_v_mm_s": 21.7,
+   "near_cap_red": true,
+   "near_cap_mm": 5.3,
+   "red_cap_mm": 5.3,
+   "t_open": 24.5,
+   "rel_xyz": [
+    0.5445,
+    -0.0518,
+    0.1168
+   ],
+   "lift_mm": 136.5,
+   "lift_ok": true,
+   "near_raw_mm": 16.2,
+   "near_raw_vec": [
+    2.8,
+    16.0
+   ],
+   "near_raw_idx": 245,
+   "rel_err_raw": [
+    2.8,
+    16.0
+   ],
+   "rel_err_raw_mm": 16.2,
+   "near_plan_mm": 16.2,
+   "near_plan_vec": [
+    2.8,
+    16.0
+   ],
+   "near_plan_idx": 245,
+   "rel_err_plan": [
+    2.8,
+    16.0
+   ],
+   "rel_err_plan_mm": 16.2,
+   "attempts": 1,
+   "zmin_dz_mm": -0.1,
+   "block_mm": 5.6,
+   "near_along_mm": 16.0,
+   "near_across_mm": -2.4,
+   "cause": "성공",
+   "detail": "한 번에 꽂음",
+   "set": "추가 10회",
+   "img": "images/trials/trial_14-1.jpg",
+   "category": "성공",
+   "split": "분포 안"
+  }
+ ],
+ "fixed_extra": [
+  {
+   "folder": "rollout_20261102_160733",
+   "note": "",
+   "layout": 0,
+   "k": 0,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.6,
+   "latency_ms": 152.0,
+   "chunks": 24,
+   "started": "16:07",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.7mm · 잡을 자리와 6mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "142mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 14mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 122mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 14mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5737,
+    0.2574
+   ],
+   "tube_px": [
+    117.2,
+    141.4
+   ],
+   "ring_px": [
+    450.1,
+    155.0
+   ],
+   "hole_raw": [
+    0.5734,
+    -0.0079
+   ],
+   "hole_plan": [
+    0.5734,
+    -0.0079
+   ],
+   "post_tube_xy": [
+    0.5646,
+    -0.0035
+   ],
+   "src_ang": 88.7,
+   "dst_ang": 87.8,
+   "dst_rack_xy": [
+    0.5536913650033899,
+    -0.04990640666694279
+   ],
+   "src_rack_xy": [
+    0.5603836478599008,
+    0.16953329650687327
+   ],
+   "n": 286,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 81,
+    "close3": 111,
+    "open": 239
+   },
+   "t_close": 8.1,
+   "close_xyz": [
+    0.5744,
+    0.263,
+    0.1108
+   ],
+   "w3_mm": 31.7,
+   "grasp_ok": true,
+   "grasp_err": [
+    0.7,
+    5.6
+   ],
+   "grasp_err_mm": 5.6,
+   "close_dz_mm": 3.9,
+   "close_v_mm_s": 17.1,
+   "near_cap_red": true,
+   "near_cap_mm": 6.3,
+   "red_cap_mm": 6.3,
+   "t_open": 23.9,
+   "rel_xyz": [
+    0.5647,
+    0.0025,
+    0.1224
+   ],
+   "lift_mm": 142.5,
+   "lift_ok": true,
+   "near_raw_mm": 13.6,
+   "near_raw_vec": [
+    -8.7,
+    10.4
+   ],
+   "near_raw_idx": 239,
+   "rel_err_raw": [
+    -8.7,
+    10.4
+   ],
+   "rel_err_raw_mm": 13.6,
+   "near_plan_mm": 13.6,
+   "near_plan_vec": [
+    -8.7,
+    10.4
+   ],
+   "near_plan_idx": 239,
+   "rel_err_plan": [
+    -8.7,
+    10.4
+   ],
+   "rel_err_plan_mm": 13.6,
+   "attempts": 1,
+   "zmin_dz_mm": 5.5,
+   "block_mm": 13.0,
+   "near_along_mm": 10.1,
+   "near_across_mm": 9.1,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 13mm → 미끄러져 들어감",
+   "set": "fixed_extra"
+  },
+  {
+   "folder": "rollout_20261102_160849",
+   "note": "",
+   "layout": 0,
+   "k": 0,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 27.3,
+   "latency_ms": 149.0,
+   "chunks": 23,
+   "started": "16:08",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.1mm · 잡을 자리와 5mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "148mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 12mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 121mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 12mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5703,
+    0.2592
+   ],
+   "tube_px": [
+    115.2,
+    145.7
+   ],
+   "ring_px": [
+    446.3,
+    152.2
+   ],
+   "hole_raw": [
+    0.576,
+    -0.0045
+   ],
+   "hole_plan": [
+    0.576,
+    -0.0045
+   ],
+   "post_tube_xy": [
+    0.566,
+    -0.0055
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.2,
+   "dst_rack_xy": [
+    0.5576401726701796,
+    -0.04912026433304667
+   ],
+   "src_rack_xy": [
+    0.5617707312215818,
+    0.17154178256755306
+   ],
+   "n": 273,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 70,
+    "close3": 101,
+    "open": 225
+   },
+   "t_close": 7.0,
+   "close_xyz": [
+    0.5721,
+    0.2544,
+    0.1097
+   ],
+   "w3_mm": 31.1,
+   "grasp_ok": true,
+   "grasp_err": [
+    1.8,
+    -4.8
+   ],
+   "grasp_err_mm": 5.1,
+   "close_dz_mm": 2.8,
+   "close_v_mm_s": 9.9,
+   "near_cap_red": true,
+   "near_cap_mm": 4.0,
+   "red_cap_mm": 4.0,
+   "t_open": 22.5,
+   "rel_xyz": [
+    0.565,
+    -0.0103,
+    0.1209
+   ],
+   "lift_mm": 148.2,
+   "lift_ok": true,
+   "near_raw_mm": 12.5,
+   "near_raw_vec": [
+    -11.0,
+    -5.8
+   ],
+   "near_raw_idx": 225,
+   "rel_err_raw": [
+    -11.0,
+    -5.8
+   ],
+   "rel_err_raw_mm": 12.5,
+   "near_plan_mm": 12.5,
+   "near_plan_vec": [
+    -11.0,
+    -5.8
+   ],
+   "near_plan_idx": 225,
+   "rel_err_plan": [
+    -11.0,
+    -5.8
+   ],
+   "rel_err_plan_mm": 12.5,
+   "attempts": 1,
+   "zmin_dz_mm": 4.0,
+   "block_mm": 9.9,
+   "near_along_mm": -6.1,
+   "near_across_mm": 10.9,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 10mm → 미끄러져 들어감",
+   "set": "fixed_extra"
+  },
+  {
+   "folder": "rollout_20261102_161025",
+   "note": "",
+   "layout": 0,
+   "k": 0,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 27.5,
+   "latency_ms": 147.0,
+   "chunks": 23,
+   "started": "16:10",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 33.0mm · 잡을 자리와 4mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "129mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 12mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 118mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 12mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5734,
+    0.2597
+   ],
+   "tube_px": [
+    114.3,
+    141.8
+   ],
+   "ring_px": [
+    446.5,
+    154.5
+   ],
+   "hole_raw": [
+    0.5739,
+    -0.0046
+   ],
+   "hole_plan": [
+    0.5739,
+    -0.0046
+   ],
+   "post_tube_xy": [
+    0.5662,
+    -0.0015
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.6,
+   "dst_rack_xy": [
+    0.5557017730251503,
+    -0.048247921215190726
+   ],
+   "src_rack_xy": [
+    0.5594466924772307,
+    0.17167455776896418
+   ],
+   "n": 275,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 82,
+    "close3": 112,
+    "open": 230
+   },
+   "t_close": 8.2,
+   "close_xyz": [
+    0.5698,
+    0.2593,
+    0.1069
+   ],
+   "w3_mm": 33.0,
+   "grasp_ok": true,
+   "grasp_err": [
+    -3.6,
+    -0.4
+   ],
+   "grasp_err_mm": 3.6,
+   "close_dz_mm": -0.0,
+   "close_v_mm_s": 14.9,
+   "near_cap_red": true,
+   "near_cap_mm": 3.4,
+   "red_cap_mm": 3.4,
+   "t_open": 23.0,
+   "rel_xyz": [
+    0.562,
+    -0.0009,
+    0.1179
+   ],
+   "lift_mm": 128.7,
+   "lift_ok": true,
+   "near_raw_mm": 12.4,
+   "near_raw_vec": [
+    -12.1,
+    2.8
+   ],
+   "near_raw_idx": 214,
+   "rel_err_raw": [
+    -11.9,
+    3.7
+   ],
+   "rel_err_raw_mm": 12.5,
+   "near_plan_mm": 12.4,
+   "near_plan_vec": [
+    -12.1,
+    2.8
+   ],
+   "near_plan_idx": 214,
+   "rel_err_plan": [
+    -11.9,
+    3.7
+   ],
+   "rel_err_plan_mm": 12.5,
+   "attempts": 1,
+   "zmin_dz_mm": 1.0,
+   "block_mm": 19.2,
+   "near_along_mm": 2.5,
+   "near_across_mm": 12.2,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 19mm → 미끄러져 들어감",
+   "set": "fixed_extra"
+  },
+  {
+   "folder": "rollout_20261102_161204",
+   "note": "",
+   "layout": 0,
+   "k": 0,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 30.9,
+   "latency_ms": 146.0,
+   "chunks": 25,
+   "started": "16:12",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 32.9mm · 잡을 자리와 2mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "144mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 8mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 115mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 9mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5715,
+    0.256
+   ],
+   "tube_px": [
+    119.2,
+    144.1
+   ],
+   "ring_px": [
+    448.8,
+    155.4
+   ],
+   "hole_raw": [
+    0.573,
+    -0.0067
+   ],
+   "hole_plan": [
+    0.573,
+    -0.0067
+   ],
+   "post_tube_xy": [
+    0.5649,
+    0.0018
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.1,
+   "dst_rack_xy": [
+    0.5550859778717444,
+    -0.049435678455502785
+   ],
+   "src_rack_xy": [
+    0.5605998827406528,
+    0.1708238013138213
+   ],
+   "n": 309,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 84,
+    "close3": 114,
+    "open": 263
+   },
+   "t_close": 8.4,
+   "close_xyz": [
+    0.5696,
+    0.2551,
+    0.1071
+   ],
+   "w3_mm": 32.9,
+   "grasp_ok": true,
+   "grasp_err": [
+    -1.9,
+    -0.9
+   ],
+   "grasp_err_mm": 2.1,
+   "close_dz_mm": 0.2,
+   "close_v_mm_s": 13.3,
+   "near_cap_red": true,
+   "near_cap_mm": 2.1,
+   "red_cap_mm": 2.1,
+   "t_open": 26.3,
+   "rel_xyz": [
+    0.5644,
+    -0.0055,
+    0.1152
+   ],
+   "lift_mm": 144.0,
+   "lift_ok": true,
+   "near_raw_mm": 7.6,
+   "near_raw_vec": [
+    -7.4,
+    -1.6
+   ],
+   "near_raw_idx": 238,
+   "rel_err_raw": [
+    -8.6,
+    1.2
+   ],
+   "rel_err_raw_mm": 8.7,
+   "near_plan_mm": 7.6,
+   "near_plan_vec": [
+    -7.4,
+    -1.6
+   ],
+   "near_plan_idx": 238,
+   "rel_err_plan": [
+    -8.6,
+    1.2
+   ],
+   "rel_err_plan_mm": 8.7,
+   "attempts": 1,
+   "zmin_dz_mm": -1.7,
+   "block_mm": 13.8,
+   "near_along_mm": -1.9,
+   "near_across_mm": 7.3,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 14mm → 미끄러져 들어감",
+   "set": "fixed_extra"
+  },
+  {
+   "folder": "rollout_20261102_162115",
+   "note": "",
+   "layout": 0,
+   "k": 0,
+   "result": "success",
+   "result_auto": "success",
+   "reason": "놓은 뒤 끝냄",
+   "duration_s": 28.6,
+   "latency_ms": 146.0,
+   "chunks": 23,
+   "started": "16:21",
+   "mode": "async",
+   "exec_steps": 8,
+   "ckpt": "020000",
+   "judge_reason": "빨간 칸에 꽂고 놓음 (끝 장면 확인)",
+   "stages": {
+    "grasp": {
+     "ok": true,
+     "note": "쥔 폭 31.0mm · 잡을 자리와 3mm"
+    },
+    "lift": {
+     "ok": true,
+     "note": "141mm 들어 올림"
+    },
+    "above": {
+     "ok": true,
+     "note": "빨간 칸에서 가장 가까이 9mm"
+    },
+    "insert": {
+     "ok": true,
+     "note": "칸 위 최저 높이 117mm (학습 때 놓은 높이 117mm)"
+    },
+    "release": {
+     "ok": true,
+     "note": "빨간 칸에서 9mm에서 놓음"
+    },
+    "check": {
+     "ok": true,
+     "note": "빨간 튜브가 빨간 칸에 있음"
+    }
+   },
+   "post_where": "hole",
+   "post_note": "빨간 튜브가 빨간 칸에 있음",
+   "tube_xy": [
+    0.5729,
+    0.2552
+   ],
+   "tube_px": [
+    120.1,
+    142.4
+   ],
+   "ring_px": [
+    447.8,
+    154.6
+   ],
+   "hole_raw": [
+    0.5737,
+    -0.0058
+   ],
+   "hole_plan": [
+    0.5737,
+    -0.0058
+   ],
+   "post_tube_xy": [
+    0.5647,
+    -0.0048
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.0,
+   "dst_rack_xy": [
+    0.5558646969606287,
+    -0.049127840733044215
+   ],
+   "src_rack_xy": [
+    0.5613789698240561,
+    0.17117171377151585
+   ],
+   "n": 286,
+   "n_close": 1,
+   "n_open": 1,
+   "idx": {
+    "close": 83,
+    "close3": 113,
+    "open": 240
+   },
+   "t_close": 8.3,
+   "close_xyz": [
+    0.5702,
+    0.2544,
+    0.1106
+   ],
+   "w3_mm": 31.0,
+   "grasp_ok": true,
+   "grasp_err": [
+    -2.7,
+    -0.8
+   ],
+   "grasp_err_mm": 2.8,
+   "close_dz_mm": 3.7,
+   "close_v_mm_s": 11.6,
+   "near_cap_red": true,
+   "near_cap_mm": 2.8,
+   "red_cap_mm": 2.8,
+   "t_open": 24.0,
+   "rel_xyz": [
+    0.5646,
+    -0.0058,
+    0.1174
+   ],
+   "lift_mm": 141.3,
+   "lift_ok": true,
+   "near_raw_mm": 9.0,
+   "near_raw_vec": [
+    -9.0,
+    0.0
+   ],
+   "near_raw_idx": 236,
+   "rel_err_raw": [
+    -9.1,
+    0.0
+   ],
+   "rel_err_raw_mm": 9.1,
+   "near_plan_mm": 9.0,
+   "near_plan_vec": [
+    -9.0,
+    0.0
+   ],
+   "near_plan_idx": 236,
+   "rel_err_plan": [
+    -9.1,
+    0.0
+   ],
+   "rel_err_plan_mm": 9.1,
+   "attempts": 1,
+   "zmin_dz_mm": 0.5,
+   "block_mm": 14.9,
+   "near_along_mm": -0.3,
+   "near_across_mm": 9.0,
+   "cause": "성공",
+   "detail": "테두리에 막힘 최대 15mm → 미끄러져 들어감",
+   "set": "fixed_extra"
+  }
+ ],
+ "train": [
+  {
+   "name": "episode_000000",
+   "tube": [
+    0.5613,
+    0.23
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5579,
+    -0.0524,
+    0.1119
+   ],
+   "ring_px": [
+    500.5,
+    168.9
+   ],
+   "ring": [
+    0.5489813703191604,
+    -0.04199459633001196
+   ],
+   "src_ang": 88.6,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000001",
+   "tube": [
+    0.5582,
+    0.2247
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5566,
+    -0.092,
+    0.1119
+   ],
+   "ring_px": [
+    544.0,
+    169.8
+   ],
+   "ring": [
+    0.5479003590466978,
+    -0.07607429602738114
+   ],
+   "src_ang": 88.3,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000002",
+   "tube": [
+    0.5578,
+    0.2224
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.555,
+    -0.1332,
+    0.1119
+   ],
+   "ring_px": [
+    589.2,
+    171.1
+   ],
+   "ring": [
+    0.5464944783451458,
+    -0.11146969654355787
+   ],
+   "src_ang": 88.7,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000003",
+   "tube": [
+    0.5578,
+    0.2213
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.553,
+    -0.1727,
+    0.1119
+   ],
+   "ring_px": [
+    632.6,
+    172.9
+   ],
+   "ring": [
+    0.5447171413827205,
+    -0.1454311209797512
+   ],
+   "src_ang": 88.5,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000004",
+   "tube": [
+    0.5532,
+    0.1089
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5566,
+    -0.0546,
+    0.1119
+   ],
+   "ring_px": [
+    503.0,
+    170.3
+   ],
+   "ring": [
+    0.5478747668875219,
+    -0.043893516773660046
+   ],
+   "src_ang": null,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000005",
+   "tube": [
+    0.5616,
+    0.2254
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.557,
+    -0.0539,
+    0.1119
+   ],
+   "ring_px": [
+    502.3,
+    169.9
+   ],
+   "ring": [
+    0.5481908132527926,
+    -0.0433621731786723
+   ],
+   "src_ang": 88.4,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000006",
+   "tube": [
+    0.5589,
+    0.2237
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5561,
+    -0.0943,
+    0.1119
+   ],
+   "ring_px": [
+    546.5,
+    170.4
+   ],
+   "ring": [
+    0.5474134960562544,
+    -0.07800862939440151
+   ],
+   "src_ang": 88.6,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000007",
+   "tube": [
+    0.5571,
+    0.2252
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.556,
+    -0.1333,
+    0.1119
+   ],
+   "ring_px": [
+    589.3,
+    170.0
+   ],
+   "ring": [
+    0.5473457391454072,
+    -0.11159682503557666
+   ],
+   "src_ang": 88.5,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000008",
+   "tube": [
+    0.5616,
+    0.2201
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5524,
+    -0.1739,
+    0.1119
+   ],
+   "ring_px": [
+    633.9,
+    173.4
+   ],
+   "ring": [
+    0.5443183336240092,
+    -0.14642865229360924
+   ],
+   "src_ang": 88.3,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000009",
+   "tube": [
+    0.5574,
+    0.2226
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.497,
+    -0.1315,
+    0.1119
+   ],
+   "ring_px": [
+    591.0,
+    235.4
+   ],
+   "ring": [
+    0.4966669588692139,
+    -0.11003522583038594
+   ],
+   "src_ang": 88.4,
+   "dst_ang": 176.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000010",
+   "tube": [
+    0.5583,
+    0.2216
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5354,
+    -0.1349,
+    0.1119
+   ],
+   "ring_px": [
+    592.3,
+    192.7
+   ],
+   "ring": [
+    0.5297341349350392,
+    -0.11294505500634755
+   ],
+   "src_ang": 88.3,
+   "dst_ang": 176.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000011",
+   "tube": [
+    0.5579,
+    0.2233
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5745,
+    -0.1374,
+    0.1119
+   ],
+   "ring_px": [
+    592.6,
+    149.4
+   ],
+   "ring": [
+    0.5632749393955795,
+    -0.11509708665101859
+   ],
+   "src_ang": 88.6,
+   "dst_ang": 176.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000012",
+   "tube": [
+    0.5578,
+    0.2211
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.6129,
+    -0.1391,
+    0.1119
+   ],
+   "ring_px": [
+    592.1,
+    106.8
+   ],
+   "ring": [
+    0.5962805294211292,
+    -0.11659064620868292
+   ],
+   "src_ang": 88.6,
+   "dst_ang": 176.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000013",
+   "tube": [
+    0.6097,
+    0.0314
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.4962,
+    0.0422,
+    0.1119
+   ],
+   "ring_px": [
+    400.9,
+    238.5
+   ],
+   "ring": [
+    0.4959427290915377,
+    0.039208307495832984
+   ],
+   "src_ang": null,
+   "dst_ang": 85.2,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000014",
+   "tube": [
+    0.6088,
+    0.0319
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.4932,
+    0.0036,
+    0.1119
+   ],
+   "ring_px": [
+    443.3,
+    241.3
+   ],
+   "ring": [
+    0.4933995396414374,
+    0.006075506437674738
+   ],
+   "src_ang": null,
+   "dst_ang": 85.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000015",
+   "tube": [
+    0.6075,
+    0.0288
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.489,
+    -0.0352,
+    0.1119
+   ],
+   "ring_px": [
+    486.0,
+    245.5
+   ],
+   "ring": [
+    0.4897691575001001,
+    -0.02723062917172775
+   ],
+   "src_ang": null,
+   "dst_ang": 85.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000016",
+   "tube": [
+    0.6058,
+    0.0332
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.4848,
+    -0.0757,
+    0.1119
+   ],
+   "ring_px": [
+    530.6,
+    249.7
+   ],
+   "ring": [
+    0.48612201153750695,
+    -0.0620270435063881
+   ],
+   "src_ang": null,
+   "dst_ang": 85.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000017",
+   "tube": [
+    0.6326,
+    0.1251
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.4856,
+    -0.177,
+    0.1119
+   ],
+   "ring_px": [
+    641.5,
+    247.5
+   ],
+   "ring": [
+    0.4868478199732881,
+    -0.14910964516728198
+   ],
+   "src_ang": 135.0,
+   "dst_ang": 17.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000018",
+   "tube": [
+    0.6313,
+    0.1227
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5059,
+    -0.1481,
+    0.1119
+   ],
+   "ring_px": [
+    608.6,
+    225.4
+   ],
+   "ring": [
+    0.5042584284609419,
+    -0.12428257451176872
+   ],
+   "src_ang": 135.1,
+   "dst_ang": 8.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000019",
+   "tube": [
+    0.6323,
+    0.1206
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.543,
+    -0.1439,
+    0.1119
+   ],
+   "ring_px": [
+    601.7,
+    184.2
+   ],
+   "ring": [
+    0.5362359403228405,
+    -0.12069427522108461
+   ],
+   "src_ang": 134.4,
+   "dst_ang": 8.1,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000020",
+   "tube": [
+    0.6307,
+    0.1232
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5795,
+    -0.1377,
+    0.1119
+   ],
+   "ring_px": [
+    592.6,
+    143.8
+   ],
+   "ring": [
+    0.5676131224839454,
+    -0.1153449771146246
+   ],
+   "src_ang": 134.8,
+   "dst_ang": 8.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000021",
+   "tube": [
+    0.5467,
+    -0.2115
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5652,
+    0.1286,
+    0.1119
+   ],
+   "ring_px": [
+    301.9,
+    163.0
+   ],
+   "ring": [
+    0.555304216547389,
+    0.11351757801073736
+   ],
+   "src_ang": 87.7,
+   "dst_ang": 86.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000022",
+   "tube": [
+    0.5473,
+    -0.2067
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5648,
+    0.1729,
+    0.1119
+   ],
+   "ring_px": [
+    253.5,
+    164.0
+   ],
+   "ring": [
+    0.5549565772847254,
+    0.15152473379783288
+   ],
+   "src_ang": 87.4,
+   "dst_ang": 86.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000023",
+   "tube": [
+    0.5478,
+    -0.2078
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.568,
+    0.2129,
+    0.1119
+   ],
+   "ring_px": [
+    209.5,
+    161.0
+   ],
+   "ring": [
+    0.5576688187472345,
+    0.1859036531832597
+   ],
+   "src_ang": 87.8,
+   "dst_ang": 86.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000024",
+   "tube": [
+    0.5751,
+    -0.1114
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.6058,
+    0.1441,
+    0.1119
+   ],
+   "ring_px": [
+    282.4,
+    118.2
+   ],
+   "ring": [
+    0.5901817309987826,
+    0.1268294201663761
+   ],
+   "src_ang": 56.2,
+   "dst_ang": 173.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000025",
+   "tube": [
+    0.5145,
+    -0.2045
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5668,
+    0.1481,
+    0.1119
+   ],
+   "ring_px": [
+    280.5,
+    161.5
+   ],
+   "ring": [
+    0.5566550434403523,
+    0.1302364233691588
+   ],
+   "src_ang": 56.2,
+   "dst_ang": 173.4,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000026",
+   "tube": [
+    0.5132,
+    -0.2032
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5265,
+    0.153,
+    0.1119
+   ],
+   "ring_px": [
+    277.6,
+    206.2
+   ],
+   "ring": [
+    0.5220526331736495,
+    0.13448975641166291
+   ],
+   "src_ang": 56.2,
+   "dst_ang": 173.4,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000027",
+   "tube": [
+    0.4627,
+    -0.0481
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.6135,
+    -0.0595,
+    0.1119
+   ],
+   "ring_px": [
+    504.9,
+    107.2
+   ],
+   "ring": [
+    0.5967400303655314,
+    -0.04817698982990687
+   ],
+   "src_ang": null,
+   "dst_ang": 86.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000028",
+   "tube": [
+    0.4943,
+    -0.1866
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5903,
+    0.1865,
+    0.1119
+   ],
+   "ring_px": [
+    237.4,
+    136.2
+   ],
+   "ring": [
+    0.5766346089437386,
+    0.1629222860141453
+   ],
+   "src_ang": 22.5,
+   "dst_ang": 24.8,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000029",
+   "tube": [
+    0.4967,
+    -0.1868
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.594,
+    0.039,
+    0.1119
+   ],
+   "ring_px": [
+    398.4,
+    130.3
+   ],
+   "ring": [
+    0.579784681422725,
+    0.0363796026692807
+   ],
+   "src_ang": 22.3,
+   "dst_ang": 173.6,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000030",
+   "tube": [
+    0.4938,
+    -0.1859
+   ],
+   "grasp_z": 0.1019,
+   "rel": [
+    0.5538,
+    0.0429,
+    0.1119
+   ],
+   "ring_px": [
+    396.6,
+    174.8
+   ],
+   "ring": [
+    0.5453275008961201,
+    0.03976128953473984
+   ],
+   "src_ang": 22.6,
+   "dst_ang": 173.8,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000031",
+   "tube": [
+    0.495,
+    -0.1841
+   ],
+   "grasp_z": 0.1039,
+   "rel": [
+    0.5158,
+    0.0475,
+    0.1139
+   ],
+   "ring_px": [
+    394.0,
+    217.0
+   ],
+   "ring": [
+    0.5126591325890063,
+    0.04366865002455961
+   ],
+   "src_ang": 22.6,
+   "dst_ang": 173.7,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000032",
+   "tube": [
+    0.4925,
+    -0.1868
+   ],
+   "grasp_z": 0.1039,
+   "rel": [
+    0.5541,
+    0.0422,
+    0.1139
+   ],
+   "ring_px": [
+    397.4,
+    174.8
+   ],
+   "ring": [
+    0.5453204424450651,
+    0.03913380375568404
+   ],
+   "src_ang": 22.3,
+   "dst_ang": 173.7,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000033",
+   "tube": [
+    0.4925,
+    -0.1875
+   ],
+   "grasp_z": 0.1039,
+   "rel": [
+    0.5931,
+    0.0379,
+    0.1139
+   ],
+   "ring_px": [
+    399.7,
+    131.8
+   ],
+   "ring": [
+    0.5786111981125197,
+    0.03542633750963792
+   ],
+   "src_ang": 22.4,
+   "dst_ang": 173.4,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000034",
+   "tube": [
+    0.5517,
+    -0.19
+   ],
+   "grasp_z": 0.1039,
+   "rel": [
+    0.5706,
+    0.1434,
+    0.1139
+   ],
+   "ring_px": [
+    286.4,
+    157.9
+   ],
+   "ring": [
+    0.5593918193491995,
+    0.1254493575934465
+   ],
+   "src_ang": 87.2,
+   "dst_ang": 88.1,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000035",
+   "tube": [
+    0.5525,
+    -0.1902
+   ],
+   "grasp_z": 0.1039,
+   "rel": [
+    0.4333,
+    0.1377,
+    0.1139
+   ],
+   "ring_px": [
+    301.1,
+    308.9
+   ],
+   "ring": [
+    0.4422861120354837,
+    0.12060349568981407
+   ],
+   "src_ang": 87.4,
+   "dst_ang": 85.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000036",
+   "tube": [
+    0.5539,
+    -0.1876
+   ],
+   "grasp_z": 0.1049,
+   "rel": [
+    0.4367,
+    0.1787,
+    0.1149
+   ],
+   "ring_px": [
+    256.4,
+    305.7
+   ],
+   "ring": [
+    0.44515946475296475,
+    0.15552261190107172
+   ],
+   "src_ang": 87.8,
+   "dst_ang": 85.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000037",
+   "tube": [
+    0.5524,
+    -0.1902
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4394,
+    0.2147,
+    0.1169
+   ],
+   "ring_px": [
+    217.1,
+    303.1
+   ],
+   "ring": [
+    0.44752036759492786,
+    0.18623275879623144
+   ],
+   "src_ang": 87.3,
+   "dst_ang": 85.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000038",
+   "tube": [
+    0.5843,
+    0.0856
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5906,
+    -0.0831,
+    0.1169
+   ],
+   "ring_px": [
+    528.8,
+    135.6
+   ],
+   "ring": [
+    0.5745283734778351,
+    -0.06566596869948482
+   ],
+   "src_ang": null,
+   "dst_ang": 176.1,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000039",
+   "tube": [
+    0.5844,
+    0.0831
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5505,
+    -0.0823,
+    0.1169
+   ],
+   "ring_px": [
+    530.4,
+    178.7
+   ],
+   "ring": [
+    0.5411257403063379,
+    -0.06501306901091458
+   ],
+   "src_ang": null,
+   "dst_ang": 175.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000040",
+   "tube": [
+    0.5855,
+    0.0826
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5109,
+    -0.0796,
+    0.1169
+   ],
+   "ring_px": [
+    529.9,
+    221.3
+   ],
+   "ring": [
+    0.5081289733446069,
+    -0.06273515222943038
+   ],
+   "src_ang": null,
+   "dst_ang": 175.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000041",
+   "tube": [
+    0.5866,
+    0.0855
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4697,
+    -0.0764,
+    0.1169
+   ],
+   "ring_px": [
+    529.0,
+    265.5
+   ],
+   "ring": [
+    0.4738962547260134,
+    -0.06007266671167366
+   ],
+   "src_ang": null,
+   "dst_ang": 175.8,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000042",
+   "tube": [
+    0.4624,
+    0.0761
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.6629,
+    0.0426,
+    0.1169
+   ],
+   "ring_px": [
+    391.0,
+    59.5
+   ],
+   "ring": [
+    0.6346970011407524,
+    0.03904980240710004
+   ],
+   "src_ang": null,
+   "dst_ang": 85.0,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000043",
+   "tube": [
+    0.4548,
+    -0.035
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5984,
+    0.0196,
+    0.1169
+   ],
+   "ring_px": [
+    419.4,
+    128.4
+   ],
+   "ring": [
+    0.5810712806303685,
+    0.019823995276054884
+   ],
+   "src_ang": null,
+   "dst_ang": 85.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000044",
+   "tube": [
+    0.4727,
+    0.0603
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5955,
+    -0.0199,
+    0.1169
+   ],
+   "ring_px": [
+    461.4,
+    131.1
+   ],
+   "ring": [
+    0.5786090879609451,
+    -0.012999489507996842
+   ],
+   "src_ang": null,
+   "dst_ang": 85.2,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000045",
+   "tube": [
+    0.4693,
+    -0.1972
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.6015,
+    0.0597,
+    0.1169
+   ],
+   "ring_px": [
+    376.6,
+    125.6
+   ],
+   "ring": [
+    0.5836179993059962,
+    0.053270539223740976
+   ],
+   "src_ang": 90.1,
+   "dst_ang": 85.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000046",
+   "tube": [
+    0.4744,
+    0.1988
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5906,
+    -0.0617,
+    0.1169
+   ],
+   "ring_px": [
+    506.1,
+    135.8
+   ],
+   "ring": [
+    0.5745737219162232,
+    -0.047852206487931426
+   ],
+   "src_ang": 85.7,
+   "dst_ang": 85.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000047",
+   "tube": [
+    0.4734,
+    0.202
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5347,
+    -0.0693,
+    0.1169
+   ],
+   "ring_px": [
+    517.5,
+    195.8
+   ],
+   "ring": [
+    0.5279926058990546,
+    -0.05413790958655601
+   ],
+   "src_ang": 85.9,
+   "dst_ang": 87.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000048",
+   "tube": [
+    0.4734,
+    0.2052
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.558,
+    0.0469,
+    0.1169
+   ],
+   "ring_px": [
+    392.9,
+    172.2
+   ],
+   "ring": [
+    0.547374302666134,
+    0.04254831926191338
+   ],
+   "src_ang": 86.1,
+   "dst_ang": 87.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000049",
+   "tube": [
+    0.4709,
+    0.1989
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5596,
+    0.0891,
+    0.1169
+   ],
+   "ring_px": [
+    348.0,
+    171.0
+   ],
+   "ring": [
+    0.548700068893391,
+    0.07771283922636568
+   ],
+   "src_ang": null,
+   "dst_ang": 87.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000050",
+   "tube": [
+    0.4732,
+    0.2033
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5628,
+    0.1313,
+    0.1169
+   ],
+   "ring_px": [
+    303.0,
+    168.0
+   ],
+   "ring": [
+    0.5514211334197189,
+    0.1128761158356123
+   ],
+   "src_ang": 85.6,
+   "dst_ang": 87.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000051",
+   "tube": [
+    0.5393,
+    0.088
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5624,
+    -0.1406,
+    0.1169
+   ],
+   "ring_px": [
+    591.5,
+    165.2
+   ],
+   "ring": [
+    0.5510447710521765,
+    -0.11353488846821408
+   ],
+   "src_ang": null,
+   "dst_ang": 175.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000052",
+   "tube": [
+    0.5372,
+    0.0898
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5207,
+    -0.1401,
+    0.1169
+   ],
+   "ring_px": [
+    593.5,
+    210.0
+   ],
+   "ring": [
+    0.516321660217612,
+    -0.11312047920700569
+   ],
+   "src_ang": null,
+   "dst_ang": 175.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000053",
+   "tube": [
+    0.5386,
+    0.0897
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4821,
+    -0.1361,
+    0.1169
+   ],
+   "ring_px": [
+    591.6,
+    251.5
+   ],
+   "ring": [
+    0.4841893886518708,
+    -0.10979315508181064
+   ],
+   "src_ang": null,
+   "dst_ang": 175.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000054",
+   "tube": [
+    0.5376,
+    0.0901
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4414,
+    -0.1317,
+    0.1169
+   ],
+   "ring_px": [
+    589.4,
+    295.3
+   ],
+   "ring": [
+    0.4502780102368392,
+    -0.10612871163477422
+   ],
+   "src_ang": null,
+   "dst_ang": 174.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000055",
+   "tube": [
+    0.653,
+    0.0808
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5635,
+    -0.0403,
+    0.1169
+   ],
+   "ring_px": [
+    485.0,
+    165.2
+   ],
+   "ring": [
+    0.5519844273488792,
+    -0.030000844131401305
+   ],
+   "src_ang": null,
+   "dst_ang": 87.0,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000056",
+   "tube": [
+    0.6116,
+    0.0836
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5604,
+    -0.0801,
+    0.1169
+   ],
+   "ring_px": [
+    527.5,
+    168.0
+   ],
+   "ring": [
+    0.5494403555923971,
+    -0.06321208091194142
+   ],
+   "src_ang": null,
+   "dst_ang": 86.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000057",
+   "tube": [
+    0.6168,
+    0.0827
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5591,
+    -0.121,
+    0.1169
+   ],
+   "ring_px": [
+    571.0,
+    169.0
+   ],
+   "ring": [
+    0.5482818767647852,
+    -0.09728735399388905
+   ],
+   "src_ang": null,
+   "dst_ang": 86.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000058",
+   "tube": [
+    0.6166,
+    0.0829
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.555,
+    -0.1634,
+    0.1169
+   ],
+   "ring_px": [
+    616.2,
+    172.9
+   ],
+   "ring": [
+    0.544861839629349,
+    -0.13256766250910584
+   ],
+   "src_ang": null,
+   "dst_ang": 86.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000059",
+   "tube": [
+    0.571,
+    0.2651
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5627,
+    -0.0453,
+    0.1169
+   ],
+   "ring_px": [
+    490.4,
+    166.0
+   ],
+   "ring": [
+    0.5513170423630626,
+    -0.03420096021665614
+   ],
+   "src_ang": 88.3,
+   "dst_ang": 87.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000060",
+   "tube": [
+    0.5719,
+    0.265
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5613,
+    -0.0868,
+    0.1169
+   ],
+   "ring_px": [
+    534.5,
+    167.0
+   ],
+   "ring": [
+    0.5501532696971594,
+    -0.06874684763289562
+   ],
+   "src_ang": 88.3,
+   "dst_ang": 87.0,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000061",
+   "tube": [
+    0.5698,
+    0.2645
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5584,
+    -0.1274,
+    0.1169
+   ],
+   "ring_px": [
+    577.7,
+    169.6
+   ],
+   "ring": [
+    0.5477579569063029,
+    -0.10251598770095277
+   ],
+   "src_ang": 88.1,
+   "dst_ang": 86.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000062",
+   "tube": [
+    0.4947,
+    -0.0534
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5649,
+    0.069,
+    0.1169
+   ],
+   "ring_px": [
+    369.0,
+    165.0
+   ],
+   "ring": [
+    0.5531628378621595,
+    0.06097574060085692
+   ],
+   "src_ang": null,
+   "dst_ang": 85.8,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000063",
+   "tube": [
+    0.4974,
+    -0.05
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5691,
+    0.1118,
+    0.1169
+   ],
+   "ring_px": [
+    323.3,
+    161.1
+   ],
+   "ring": [
+    0.5565872865295051,
+    0.09664822772798357
+   ],
+   "src_ang": null,
+   "dst_ang": 85.8,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000064",
+   "tube": [
+    0.4972,
+    -0.0497
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5707,
+    0.1521,
+    0.1169
+   ],
+   "ring_px": [
+    280.5,
+    159.8
+   ],
+   "ring": [
+    0.5579719918778919,
+    0.1301611709069927
+   ],
+   "src_ang": null,
+   "dst_ang": 85.7,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000065",
+   "tube": [
+    0.4983,
+    -0.0488
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5741,
+    0.1947,
+    0.1169
+   ],
+   "ring_px": [
+    235.1,
+    156.7
+   ],
+   "ring": [
+    0.5607740531848968,
+    0.16563376379034578
+   ],
+   "src_ang": null,
+   "dst_ang": 85.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000066",
+   "tube": [
+    0.4823,
+    0.1802
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5869,
+    0.0491,
+    0.1169
+   ],
+   "ring_px": [
+    388.8,
+    141.2
+   ],
+   "ring": [
+    0.571425419324102,
+    0.04439193309889855
+   ],
+   "src_ang": 176.7,
+   "dst_ang": 179.0,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000067",
+   "tube": [
+    0.4806,
+    0.1763
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5448,
+    0.0509,
+    0.1169
+   ],
+   "ring_px": [
+    389.4,
+    186.4
+   ],
+   "ring": [
+    0.5364047905582863,
+    0.045922148935140905
+   ],
+   "src_ang": 178.0,
+   "dst_ang": 179.8,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000068",
+   "tube": [
+    0.4811,
+    0.1744
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.505,
+    0.049,
+    0.1169
+   ],
+   "ring_px": [
+    393.9,
+    229.1
+   ],
+   "ring": [
+    0.503286440722312,
+    0.04428270621294744
+   ],
+   "src_ang": 177.6,
+   "dst_ang": 179.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000069",
+   "tube": [
+    0.4832,
+    0.1775
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4653,
+    0.0494,
+    0.1169
+   ],
+   "ring_px": [
+    395.8,
+    271.8
+   ],
+   "ring": [
+    0.4701910308522666,
+    0.04468259227268556
+   ],
+   "src_ang": 177.6,
+   "dst_ang": 179.1,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000070",
+   "tube": [
+    0.5777,
+    0.0442
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.6013,
+    0.1822,
+    0.1169
+   ],
+   "ring_px": [
+    246.6,
+    127.3
+   ],
+   "ring": [
+    0.5834480491649013,
+    0.15531223078248607
+   ],
+   "src_ang": null,
+   "dst_ang": 178.2,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000071",
+   "tube": [
+    0.5807,
+    0.0448
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5625,
+    0.1868,
+    0.1169
+   ],
+   "ring_px": [
+    244.1,
+    169.0
+   ],
+   "ring": [
+    0.5511661363271525,
+    0.15911902247281612
+   ],
+   "src_ang": null,
+   "dst_ang": 177.8,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000072",
+   "tube": [
+    0.5779,
+    0.0452
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5204,
+    0.1865,
+    0.1169
+   ],
+   "ring_px": [
+    247.0,
+    214.3
+   ],
+   "ring": [
+    0.5160477469594043,
+    0.15884964330969437
+   ],
+   "src_ang": null,
+   "dst_ang": 177.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000073",
+   "tube": [
+    0.578,
+    0.0489
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.483,
+    0.1904,
+    0.1169
+   ],
+   "ring_px": [
+    245.2,
+    254.5
+   ],
+   "ring": [
+    0.4849216713042232,
+    0.16204098571202752
+   ],
+   "src_ang": null,
+   "dst_ang": 178.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000074",
+   "tube": [
+    0.5955,
+    0.1763
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4593,
+    -0.0569,
+    0.1169
+   ],
+   "ring_px": [
+    509.0,
+    277.0
+   ],
+   "ring": [
+    0.4651639471602096,
+    -0.04387646146180024
+   ],
+   "src_ang": 178.2,
+   "dst_ang": 90.3,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000075",
+   "tube": [
+    0.5904,
+    0.1711
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4562,
+    -0.0193,
+    0.1169
+   ],
+   "ring_px": [
+    469.3,
+    280.7
+   ],
+   "ring": [
+    0.46264792325328874,
+    -0.012573694905555877
+   ],
+   "src_ang": 177.9,
+   "dst_ang": 90.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000076",
+   "tube": [
+    0.5921,
+    0.1761
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.459,
+    0.0227,
+    0.1169
+   ],
+   "ring_px": [
+    424.5,
+    278.2
+   ],
+   "ring": [
+    0.4649798853911059,
+    0.02245484333603448
+   ],
+   "src_ang": 177.3,
+   "dst_ang": 90.2,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000077",
+   "tube": [
+    0.5924,
+    0.1725
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4577,
+    0.0623,
+    0.1169
+   ],
+   "ring_px": [
+    382.6,
+    280.2
+   ],
+   "ring": [
+    0.4638002206621261,
+    0.05540794332251642
+   ],
+   "src_ang": 177.6,
+   "dst_ang": 90.2,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000078",
+   "tube": [
+    0.5819,
+    -0.0062
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4638,
+    0.1328,
+    0.1169
+   ],
+   "ring_px": [
+    307.4,
+    274.4
+   ],
+   "ring": [
+    0.46895683325996484,
+    0.11413486285931923
+   ],
+   "src_ang": null,
+   "dst_ang": 88.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000079",
+   "tube": [
+    0.5793,
+    -0.0079
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.461,
+    0.0919,
+    0.1169
+   ],
+   "ring_px": [
+    350.9,
+    276.9
+   ],
+   "ring": [
+    0.4666363411051121,
+    0.08012598900869466
+   ],
+   "src_ang": null,
+   "dst_ang": 87.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000080",
+   "tube": [
+    0.5811,
+    -0.0065
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4617,
+    0.0518,
+    0.1169
+   ],
+   "ring_px": [
+    393.5,
+    275.7
+   ],
+   "ring": [
+    0.4671900892482237,
+    0.046659251888911124
+   ],
+   "src_ang": null,
+   "dst_ang": 88.1,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000081",
+   "tube": [
+    0.5832,
+    -0.0067
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4593,
+    0.0111,
+    0.1169
+   ],
+   "ring_px": [
+    436.9,
+    277.8
+   ],
+   "ring": [
+    0.4651803496203503,
+    0.012711107298982394
+   ],
+   "src_ang": null,
+   "dst_ang": 87.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000082",
+   "tube": [
+    0.5739,
+    -0.1254
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4545,
+    0.1403,
+    0.1169
+   ],
+   "ring_px": [
+    300.0,
+    284.5
+   ],
+   "ring": [
+    0.4611979008621356,
+    0.12038619447316115
+   ],
+   "src_ang": 86.4,
+   "dst_ang": 88.6,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000083",
+   "tube": [
+    0.5787,
+    -0.1288
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4325,
+    -0.0063,
+    0.1169
+   ],
+   "ring_px": [
+    456.8,
+    306.3
+   ],
+   "ring": [
+    0.44292651743277983,
+    -0.0016360160598947182
+   ],
+   "src_ang": 86.4,
+   "dst_ang": 85.2,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000084",
+   "tube": [
+    0.5732,
+    -0.125
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.435,
+    0.0335,
+    0.1169
+   ],
+   "ring_px": [
+    414.5,
+    304.2
+   ],
+   "ring": [
+    0.44492655169045253,
+    0.03144933558383223
+   ],
+   "src_ang": 86.1,
+   "dst_ang": 84.8,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000085",
+   "tube": [
+    0.5747,
+    -0.1231
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.441,
+    0.0764,
+    0.1169
+   ],
+   "ring_px": [
+    368.7,
+    298.2
+   ],
+   "ring": [
+    0.4499787013223172,
+    0.06710729950948863
+   ],
+   "src_ang": 86.7,
+   "dst_ang": 85.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000086",
+   "tube": [
+    0.6124,
+    -0.2053
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5376,
+    -0.0416,
+    0.1169
+   ],
+   "ring_px": [
+    488.0,
+    193.0
+   ],
+   "ring": [
+    0.5304219778258923,
+    -0.03112331671567381
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 89.4,
+   "n_caps": 1
+  },
+  {
+   "name": "episode_000087",
+   "tube": [
+    0.6113,
+    -0.2064
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.538,
+    -0.0016,
+    0.1169
+   ],
+   "ring_px": [
+    445.5,
+    193.1
+   ],
+   "ring": [
+    0.5307194904830421,
+    0.0022162919120908287
+   ],
+   "src_ang": 88.1,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000088",
+   "tube": [
+    0.6121,
+    -0.2039
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5367,
+    0.0389,
+    0.1169
+   ],
+   "ring_px": [
+    402.6,
+    195.0
+   ],
+   "ring": [
+    0.5296261163730305,
+    0.035949322506971026
+   ],
+   "src_ang": 89.4,
+   "dst_ang": 88.9,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000089",
+   "tube": [
+    0.6092,
+    -0.2063
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.539,
+    0.0818,
+    0.1169
+   ],
+   "ring_px": [
+    357.0,
+    193.0
+   ],
+   "ring": [
+    0.5315777991861558,
+    0.07162747960472499
+   ],
+   "src_ang": 88.4,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000090",
+   "tube": [
+    0.5361,
+    -0.2011
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5554,
+    0.0986,
+    0.1169
+   ],
+   "ring_px": [
+    338.1,
+    175.6
+   ],
+   "ring": [
+    0.5452239096883251,
+    0.08568160005157271
+   ],
+   "src_ang": 87.5,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000091",
+   "tube": [
+    0.5391,
+    -0.2036
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5551,
+    0.1403,
+    0.1169
+   ],
+   "ring_px": [
+    293.9,
+    176.4
+   ],
+   "ring": [
+    0.5449941486679212,
+    0.12038560226778186
+   ],
+   "src_ang": 87.5,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000092",
+   "tube": [
+    0.5376,
+    -0.2029
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5569,
+    0.1805,
+    0.1169
+   ],
+   "ring_px": [
+    251.1,
+    175.0
+   ],
+   "ring": [
+    0.5464563215714575,
+    0.15389411883136941
+   ],
+   "src_ang": 87.8,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000093",
+   "tube": [
+    0.6231,
+    -0.0297
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4862,
+    -0.0269,
+    0.1169
+   ],
+   "ring_px": [
+    475.5,
+    248.5
+   ],
+   "ring": [
+    0.48753777301571577,
+    -0.01886207985897337
+   ],
+   "src_ang": null,
+   "dst_ang": 89.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000094",
+   "tube": [
+    0.623,
+    0.0015
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4862,
+    0.0113,
+    0.1169
+   ],
+   "ring_px": [
+    435.0,
+    248.8
+   ],
+   "ring": [
+    0.4876627044349292,
+    0.012917667551994638
+   ],
+   "src_ang": null,
+   "dst_ang": 88.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000095",
+   "tube": [
+    0.6212,
+    0.0014
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4867,
+    0.0513,
+    0.1169
+   ],
+   "ring_px": [
+    392.5,
+    248.8
+   ],
+   "ring": [
+    0.4880376846472284,
+    0.046252849564337783
+   ],
+   "src_ang": null,
+   "dst_ang": 88.4,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000096",
+   "tube": [
+    0.6226,
+    0.0009
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.4894,
+    0.094,
+    0.1169
+   ],
+   "ring_px": [
+    347.0,
+    246.4
+   ],
+   "ring": [
+    0.49029835537456945,
+    0.08183486447802352
+   ],
+   "src_ang": null,
+   "dst_ang": 88.8,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000097",
+   "tube": [
+    0.5753,
+    0.2744
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5654,
+    -0.0516,
+    0.1169
+   ],
+   "ring_px": [
+    496.9,
+    163.0
+   ],
+   "ring": [
+    0.5535837191027221,
+    -0.03943208063413117
+   ],
+   "src_ang": 88.4,
+   "dst_ang": 87.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000098",
+   "tube": [
+    0.5733,
+    0.2694
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5574,
+    -0.0963,
+    0.1169
+   ],
+   "ring_px": [
+    544.8,
+    171.1
+   ],
+   "ring": [
+    0.5468862223787007,
+    -0.07664423580595697
+   ],
+   "src_ang": 88.8,
+   "dst_ang": 87.5,
+   "n_caps": 2
+  },
+  {
+   "name": "episode_000099",
+   "tube": [
+    0.5738,
+    0.2675
+   ],
+   "grasp_z": 0.1069,
+   "rel": [
+    0.5568,
+    -0.1371,
+    0.1169
+   ],
+   "ring_px": [
+    588.2,
+    171.3
+   ],
+   "ring": [
+    0.5463483662986658,
+    -0.11067648608889497
+   ],
+   "src_ang": 88.3,
+   "dst_ang": 87.2,
+   "n_caps": 2
+  }
+ ],
+ "layouts_corrected": [
+  {
+   "L": 1,
+   "n": 3,
+   "ns": 3,
+   "res": "s·s·s",
+   "tube": [
+    0.574,
+    0.257
+   ],
+   "ring": [
+    0.561,
+    -0.002
+   ],
+   "nn_tube": 7.930952023559383,
+   "nn_hole": 21.135219058313336,
+   "nn_joint": 34.427911506715134,
+   "nn_ep": "059",
+   "n40": 2,
+   "n_tube30": 6,
+   "me": 3.2572994949804586,
+   "mevec": [
+    -3.0,
+    -1.0
+   ],
+   "sp": 4.6875722216658255,
+   "train_near_close25": 6,
+   "src": 89.4,
+   "dst": 87.9,
+   "inside": true
+  },
+  {
+   "L": 2,
+   "n": 3,
+   "ns": 3,
+   "res": "s·s·s",
+   "tube": [
+    0.574,
+    0.258
+   ],
+   "ring": [
+    0.56,
+    -0.035
+   ],
+   "nn_tube": 7.6243032468548115,
+   "nn_hole": 7.588509323380493,
+   "nn_joint": 11.611756286943317,
+   "nn_ep": "059",
+   "n40": 5,
+   "n_tube30": 6,
+   "me": 3.8681031814343534,
+   "mevec": [
+    -3.0,
+    -3.0
+   ],
+   "sp": 4.363994093080831,
+   "train_near_close25": 6,
+   "src": 89.7,
+   "dst": 88.0,
+   "inside": true
+  },
+  {
+   "L": 3,
+   "n": 3,
+   "ns": 0,
+   "res": "p·p·p",
+   "tube": [
+    0.555,
+    -0.186
+   ],
+   "ring": [
+    0.548,
+    0.025
+   ],
+   "nn_tube": 2.385372088375357,
+   "nn_hole": 14.078752057568893,
+   "nn_joint": 63.13501815800804,
+   "nn_ep": "030",
+   "n40": 0,
+   "n_tube30": 10,
+   "me": 4.87180094466561,
+   "mevec": [
+    -5.0,
+    -1.0
+   ],
+   "sp": 2.264705033528402,
+   "train_near_close25": 9,
+   "src": 32.4,
+   "dst": 87.3,
+   "inside": false
+  },
+  {
+   "L": 4,
+   "n": 3,
+   "ns": 0,
+   "res": "f·f·f",
+   "tube": [
+    0.66,
+    -0.051
+   ],
+   "ring": [
+    0.543,
+    -0.109
+   ],
+   "nn_tube": 42.63543127493851,
+   "nn_hole": 3.680627312460088,
+   "nn_joint": 113.90940944253782,
+   "nn_ep": "093",
+   "n40": 0,
+   "n_tube30": 0,
+   "me": 124.49804103768952,
+   "mevec": [
+    -29.0,
+    121.0
+   ],
+   "sp": 4.015525425700179,
+   "train_near_close25": 4,
+   "src": 90.8,
+   "dst": 176.7,
+   "inside": false
+  },
+  {
+   "L": 5,
+   "n": 3,
+   "ns": 2,
+   "res": "p·s·s",
+   "tube": [
+    0.583,
+    -0.174
+   ],
+   "ring": [
+    0.587,
+    0.121
+   ],
+   "nn_tube": 32.06633748964797,
+   "nn_hole": 6.466565814968301,
+   "nn_joint": 45.090033237686015,
+   "nn_ep": "034",
+   "n40": 1,
+   "n_tube30": 0,
+   "me": 18.95632406935006,
+   "mevec": [
+    -14.0,
+    -13.0
+   ],
+   "sp": 3.642953624617147,
+   "train_near_close25": 4,
+   "src": 85.7,
+   "dst": 88.4,
+   "inside": false
+  },
+  {
+   "L": 6,
+   "n": 3,
+   "ns": 1,
+   "res": "f·f·s",
+   "tube": [
+    0.618,
+    -0.023
+   ],
+   "ring": [
+    0.49,
+    -0.005
+   ],
+   "nn_tube": 8.42021377400835,
+   "nn_hole": 11.31514354614771,
+   "nn_joint": 16.613380804597757,
+   "nn_ep": "093",
+   "n40": 3,
+   "n_tube30": 4,
+   "me": 5.515634344499545,
+   "mevec": [
+    5.0,
+    -1.0
+   ],
+   "sp": 5.104681946779629,
+   "train_near_close25": 2,
+   "src": 89.4,
+   "dst": 86.5,
+   "inside": true
+  },
+  {
+   "L": 7,
+   "n": 3,
+   "ns": 0,
+   "res": "p·p·p",
+   "tube": [
+    0.629,
+    0.162
+   ],
+   "ring": [
+    0.572,
+    -0.066
+   ],
+   "nn_tube": 36.555710908146736,
+   "nn_hole": 2.6585329894297423,
+   "nn_joint": 62.887483671444656,
+   "nn_ep": "020",
+   "n40": 0,
+   "n_tube30": 0,
+   "me": 19.4409076148437,
+   "mevec": [
+    -13.0,
+    -15.0
+   ],
+   "sp": 3.9796705614633265,
+   "train_near_close25": 0,
+   "src": 143.2,
+   "dst": 24.1,
+   "inside": false
+  },
+  {
+   "L": 8,
+   "n": 3,
+   "ns": 0,
+   "res": "f·f·f",
+   "tube": [
+    0.62,
+    0.137
+   ],
+   "ring": [
+    0.521,
+    0.009
+   ],
+   "nn_tube": 17.759786034747158,
+   "nn_hole": 12.011516833270369,
+   "nn_joint": 74.60801207373197,
+   "nn_ep": "076",
+   "n40": 0,
+   "n_tube30": 4,
+   "me": 139.05079008125853,
+   "mevec": [
+    -42.0,
+    133.0
+   ],
+   "sp": 6.560826506199074,
+   "train_near_close25": 6,
+   "src": 85.3,
+   "dst": 174.2,
+   "inside": false
+  },
+  {
+   "L": 9,
+   "n": 3,
+   "ns": 0,
+   "res": "p·p·f",
+   "tube": [
+    0.638,
+    0.137
+   ],
+   "ring": [
+    0.48,
+    -0.039
+   ],
+   "nn_tube": 13.291350570954009,
+   "nn_hole": 14.927141602511501,
+   "nn_joint": 59.95501344454701,
+   "nn_ep": "074",
+   "n40": 0,
+   "n_tube30": 4,
+   "me": 11.126444974823595,
+   "mevec": [
+    -7.0,
+    -9.0
+   ],
+   "sp": 5.076306618880399,
+   "train_near_close25": 4,
+   "src": 84.8,
+   "dst": 85.9,
+   "inside": false
+  },
+  {
+   "L": 10,
+   "n": 3,
+   "ns": 2,
+   "res": "p·s·s",
+   "tube": [
+    0.57,
+    0.241
+   ],
+   "ring": [
+    0.547,
+    -0.034
+   ],
+   "nn_tube": 14.290206436577469,
+   "nn_hole": 4.504722916382513,
+   "nn_joint": 16.58126682602847,
+   "nn_ep": "000",
+   "n40": 5,
+   "n_tube30": 17,
+   "me": 7.01435036985689,
+   "mevec": [
+    -4.0,
+    -6.0
+   ],
+   "sp": 2.4294489544384787,
+   "train_near_close25": 12,
+   "src": 88.3,
+   "dst": 37.1,
+   "inside": true
+  },
+  {
+   "L": 11,
+   "n": 3,
+   "ns": 3,
+   "res": "s·s·s",
+   "tube": [
+    0.568,
+    0.244
+   ],
+   "ring": [
+    0.548,
+    -0.041
+   ],
+   "nn_tube": 15.51934276958916,
+   "nn_hole": 1.2574411673996906,
+   "nn_joint": 15.570200971389895,
+   "nn_ep": "000",
+   "n40": 8,
+   "n_tube30": 17,
+   "me": 8.99938269487905,
+   "mevec": [
+    -8.0,
+    -4.0
+   ],
+   "sp": 0.539547135207964,
+   "train_near_close25": 12,
+   "src": 87.6,
+   "dst": 86.9,
+   "inside": true
+  },
+  {
+   "L": 12,
+   "n": 3,
+   "ns": 2,
+   "res": "p·s·s",
+   "tube": [
+    0.626,
+    -0.237
+   ],
+   "ring": [
+    0.549,
+    -0.008
+   ],
+   "nn_tube": 34.39131431044769,
+   "nn_hole": 20.706890662861458,
+   "nn_joint": 40.143963692237755,
+   "nn_ep": "087",
+   "n40": 2,
+   "n_tube30": 0,
+   "me": 7.212662476506246,
+   "mevec": [
+    -4.0,
+    6.0
+   ],
+   "sp": 4.033195589934445,
+   "train_near_close25": 0,
+   "src": 86.4,
+   "dst": 88.4,
+   "inside": false
+  },
+  {
+   "L": 13,
+   "n": 3,
+   "ns": 0,
+   "res": "p·p·p",
+   "tube": [
+    0.624,
+    0.164
+   ],
+   "ring": [
+    0.498,
+    0.057
+   ],
+   "nn_tube": 30.886890422961002,
+   "nn_hole": 13.683085105834637,
+   "nn_joint": 46.87019788367902,
+   "nn_ep": "077",
+   "n40": 1,
+   "n_tube30": 0,
+   "me": 9.279487533742865,
+   "mevec": [
+    -4.0,
+    9.0
+   ],
+   "sp": 5.825613939987604,
+   "train_near_close25": 1,
+   "src": 175.6,
+   "dst": 87.2,
+   "inside": false
+  },
+  {
+   "L": 14,
+   "n": 1,
+   "ns": 1,
+   "res": "s",
+   "tube": [
+    0.557,
+    0.224
+   ],
+   "ring": [
+    0.534,
+    -0.053
+   ],
+   "nn_tube": 0.9219544457292503,
+   "nn_hole": 5.940839308448225,
+   "nn_joint": 17.874056401522584,
+   "nn_ep": "005",
+   "n40": 4,
+   "n_tube30": 12,
+   "me": 5.2924474489596856,
+   "mevec": [
+    2.0,
+    5.0
+   ],
+   "sp": null,
+   "train_near_close25": 12,
+   "src": 87.0,
+   "dst": 88.6,
+   "inside": true
+  }
+ ],
+ "note": "163440은 3-1(메모 10-3), 190717은 배치 14(메모 13-3)로 고침. layouts 항목은 고치기 전 값 — 고친 배치 요약은 layouts_corrected / layouts.csv"
+}
