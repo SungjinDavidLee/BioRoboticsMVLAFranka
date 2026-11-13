@@ -1,0 +1,266 @@
+{
+ "n_valid": 40,
+ "n_void": 9,
+ "void": [
+  {
+   "time": "2026-11-05 10:52",
+   "model": "v2",
+   "result_auto": "partial",
+   "note": "배치를 잘못 둠"
+  },
+  {
+   "time": "2026-11-05 11:12",
+   "model": "v2",
+   "result_auto": "partial",
+   "note": "T02-v2-2(빨간 칸에 못 넣음)"
+  },
+  {
+   "time": "2026-11-05 11:16",
+   "model": "v2",
+   "result_auto": "partial",
+   "note": "v1 순서인데 v2로 했음"
+  },
+  {
+   "time": "2026-11-05 11:26",
+   "model": "v2",
+   "result_auto": "partial",
+   "note": "컨트롤러 꺼짐"
+  },
+  {
+   "time": "2026-11-05 11:43",
+   "model": "v2",
+   "result_auto": "partial",
+   "note": "렉 고정 실수로 렉이 들림"
+  },
+  {
+   "time": "2026-11-05 13:57",
+   "model": "v2",
+   "result_auto": "fail",
+   "note": ""
+  },
+  {
+   "time": "2026-11-05 14:08",
+   "model": "v2",
+   "result_auto": "fail",
+   "note": "랙 실수로 고정 잘못함"
+  },
+  {
+   "time": "2026-11-05 14:12",
+   "model": "v2",
+   "result_auto": "fail",
+   "note": "실수로 튜브 위치 잘못 놓았음"
+  },
+  {
+   "time": "2026-11-05 14:14",
+   "model": "v2",
+   "result_auto": "fail",
+   "note": "v1 순서인데 v2로 했음"
+  }
+ ],
+ "models": {
+  "v1": {
+   "n": 20,
+   "success": 1,
+   "partial": 5,
+   "fail": 14,
+   "rate": 0.05,
+   "wilson95": [
+    0.008881448702335523,
+    0.23613119546428119
+   ],
+   "stages_auto": {
+    "grasp": 6,
+    "lift": 6,
+    "above": 4,
+    "insert": 1,
+    "release": 0
+   },
+   "stages": {
+    "grasp": 6,
+    "lift": 6,
+    "above": 4,
+    "insert": 2,
+    "release": 1
+   },
+   "success_time_s": [
+    44.9
+   ],
+   "auto_agree": 19,
+   "by_layout": {
+    "T01": 0,
+    "T02": 0,
+    "T03": 0,
+    "T04": 0,
+    "T05": 0,
+    "T06": 0,
+    "T07": 1,
+    "T08": 0,
+    "T09": 0,
+    "T10": 0
+   },
+   "decoy": [
+    1,
+    8
+   ],
+   "non_decoy": [
+    0,
+    12
+   ]
+  },
+  "v2": {
+   "n": 20,
+   "success": 6,
+   "partial": 8,
+   "fail": 6,
+   "rate": 0.3,
+   "wilson95": [
+    0.14547724402157294,
+    0.518972820052479
+   ],
+   "stages_auto": {
+    "grasp": 15,
+    "lift": 12,
+    "above": 12,
+    "insert": 6,
+    "release": 6
+   },
+   "stages": {
+    "grasp": 15,
+    "lift": 12,
+    "above": 12,
+    "insert": 8,
+    "release": 8
+   },
+   "success_time_s": [
+    27.8,
+    28.7,
+    32.2,
+    32.6,
+    32.9,
+    32.9
+   ],
+   "auto_agree": 12,
+   "by_layout": {
+    "T01": 1,
+    "T02": 1,
+    "T03": 0,
+    "T04": 0,
+    "T05": 0,
+    "T06": 2,
+    "T07": 0,
+    "T08": 0,
+    "T09": 2,
+    "T10": 0
+   },
+   "decoy": [
+    0,
+    8
+   ],
+   "non_decoy": [
+    6,
+    12
+   ]
+  }
+ },
+ "diff_pp": 25.0,
+ "fisher_p": 0.09147609147609148,
+ "perm": {
+  "stat_v2_minus_v1": 5,
+  "p_two_sided": 0.08333333333333333,
+  "n_assignments": 60466176
+ },
+ "layout_bootstrap_diff95_pp": [
+  0.0,
+  55.00000000000001
+ ],
+ "stage_fisher_p": {
+  "grasp": 0.010386702198860637,
+  "lift": 0.1109695370274758,
+  "above": 0.0224774273717544,
+  "insert": 0.06483316160735515,
+  "release": 0.019656019656019656
+ },
+ "v2_decoy_vs_rest_fisher_p": 0.041898864809081525,
+ "label_changes": [
+  {
+   "trial": "T01-v2-1",
+   "auto": "partial",
+   "final": "success",
+   "note": "T01-v2-1"
+  },
+  {
+   "trial": "T01-v2-2",
+   "auto": "success",
+   "final": "partial",
+   "note": "T01-v2-2(빨간 칸에 못 넣었음)"
+  },
+  {
+   "trial": "T02-v2-1",
+   "auto": "partial",
+   "final": "success",
+   "note": "T02-v2-1"
+  },
+  {
+   "trial": "T03-v2-2",
+   "auto": "partial",
+   "final": "fail",
+   "note": "T03-v2-2(빨간 튜브를 잡지 못함)"
+  },
+  {
+   "trial": "T06-v2-2",
+   "auto": "partial",
+   "final": "success",
+   "note": "T06-v2-2"
+  },
+  {
+   "trial": "T07-v1-1",
+   "auto": "partial",
+   "final": "success",
+   "note": "T07-v1-1(옆 칸으로 내려가다가 다시 올라와서 빨간 칸으로 들어감)"
+  },
+  {
+   "trial": "T08-v2-2",
+   "auto": "success",
+   "final": "partial",
+   "note": "T08-v2-2(다른 칸에 넣었음)"
+  },
+  {
+   "trial": "T09-v2-1",
+   "auto": "partial",
+   "final": "success",
+   "note": "T09-v2-1(빨간 칸에 넣었음)"
+  },
+  {
+   "trial": "T09-v2-2",
+   "auto": "partial",
+   "final": "success",
+   "note": "T09-v2-2"
+  }
+ ],
+ "grasp_err_mm_failed": {
+  "v1": [
+   33.6,
+   29.0,
+   62.7,
+   62.7,
+   25.4,
+   35.2,
+   57.0,
+   58.3,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "v2": [
+   5.0,
+   113.0,
+   112.8,
+   15.4,
+   23.5,
+   null
+  ]
+ }
+}
