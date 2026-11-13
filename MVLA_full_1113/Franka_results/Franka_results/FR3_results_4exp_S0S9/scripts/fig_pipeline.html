@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>FR3 실험 파이프라인</title>
+<!-- fig_pipeline.html — 실험 전체 파이프라인 그림 원본. scripts/render_pipeline.py가 figs/fig_pipeline.png(2배 해상도)로 찍는다.
+     값 출처: 스테이션 11-05s(E1–E3)·11-11k(E4) 코드 기본값, 학습 설정(train_config.json), 실행 기록. -->
+<style>
+  :root {
+    --surf: #fcfcfb; --card: #ffffff; --ink: #0b0b0b; --ink2: #3f3e3b; --mute: #6f6e69; --line: #dcdad3;
+    --vla: #1c5cab; --vla-bg: #e8f1fc; --vla-ln: #9cc0ec;
+    --frm: #b8481a; --frm-bg: #fdeee6; --frm-ln: #f0b597;
+    --dat: #3f3e3b; --dat-bg: #f3f2ee; --dat-ln: #cfcdc5;
+    --evl: #127a56; --evl-bg: #e7f6ef; --evl-ln: #9fd8bf;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--surf); color: var(--ink); font-family: 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif;
+         font-size: 15.5px; line-height: 1.5; width: 960px; padding: 22px 20px 20px; }
+  h1 { font-size: 24px; line-height: 1.3; letter-spacing: -0.3px; }
+  .lede { color: var(--ink2); font-size: 15.5px; margin-top: 6px; }
+  .legend { display: flex; gap: 16px; margin-top: 10px; font-size: 14px; color: var(--ink2); flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 14px; height: 14px; border-radius: 4px; border: 1.5px solid; display: inline-block; }
+
+  .stage { margin-top: 16px; border: 1.5px solid var(--line); border-radius: 14px; background: var(--card); padding: 14px 16px 14px; }
+  .stage > .hd { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+  .num { flex: none; width: 30px; height: 30px; border-radius: 50%; color: #fff; font-weight: 700; font-size: 16px;
+         display: inline-flex; align-items: center; justify-content: center; transform: translateY(5px); }
+  .hd h2 { font-size: 20.5px; letter-spacing: -0.2px; }
+  .hd .sub { color: var(--mute); font-size: 14px; }
+  .s-dat { border-color: var(--dat-ln); } .s-dat .num { background: var(--dat); }
+  .s-vla { border-color: var(--vla-ln); } .s-vla .num { background: var(--vla); }
+  .s-evl { border-color: var(--evl-ln); } .s-evl .num { background: var(--evl); }
+  .s-frm { border-color: var(--frm-ln); } .s-frm .num { background: var(--frm); }
+
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .box { border-radius: 10px; padding: 9px 11px 10px; border: 1.3px solid var(--dat-ln); background: var(--dat-bg); }
+  .box h3 { font-size: 16.5px; margin-bottom: 4px; display: flex; align-items: center; gap: 7px; }
+  .box h3 .k { flex: none; font-size: 12px; font-weight: 700; color: #fff; background: var(--ink2); border-radius: 5px; padding: 0 6px; line-height: 19px; }
+  .box ul { list-style: none; }
+  .box li { padding-left: 13px; position: relative; color: var(--ink2); }
+  .box li::before { content: ''; position: absolute; left: 2px; top: 0.72em; width: 5px; height: 5px; border-radius: 50%; background: var(--mute); }
+  .box li b { color: var(--ink); font-weight: 700; }
+  .eq { font-family: 'DejaVu Sans Mono', monospace; font-size: 13.5px; background: rgba(255,255,255,0.75); border: 1px solid var(--line);
+        border-radius: 5px; padding: 0 5px; white-space: nowrap; color: var(--ink); }
+  .frmbox { background: var(--frm-bg); border-color: var(--frm-ln); }
+  .frmbox h3 .k { background: var(--frm); }
+  .vlabox { background: var(--vla-bg); border-color: var(--vla-ln); }
+  .vlabox h3 .k { background: var(--vla); }
+  .evlbox { background: var(--evl-bg); border-color: var(--evl-ln); }
+  .tag { font-size: 12px; font-weight: 700; color: var(--frm); border: 1.2px solid var(--frm-ln); background: #fff; border-radius: 10px; padding: 0 7px; margin-left: auto; line-height: 18px; white-space: nowrap; }
+
+  .out { margin-top: 10px; display: flex; gap: 10px; align-items: stretch; }
+  .out .pill { flex: 1; border-radius: 9px; background: var(--ink); color: #fff; padding: 7px 12px; font-size: 14.5px; }
+  .out .pill b { font-size: 15px; }
+  .down { text-align: center; color: var(--mute); font-size: 14px; margin: 6px 0 -8px; }
+  .down::before { content: '▼'; display: block; color: var(--ink2); font-size: 15px; line-height: 1; margin-bottom: 1px; }
+
+  /* 실행 루프 */
+  .loop { display: flex; align-items: stretch; gap: 0; }
+  .loop .box { flex: 1; padding: 8px 9px 9px; }
+  .loop .box li { font-size: 14.3px; }
+  .loop .box h3 { font-size: 15.5px; }
+  .arr { flex: none; width: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink2); font-size: 20px; }
+  .diamond { flex: 0 0 122px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+             border: 2px solid var(--frm); border-radius: 10px; background: #fff7f2; padding: 6px; }
+  .diamond b { color: var(--frm); font-size: 15px; }
+  .diamond small { color: var(--ink2); font-size: 13px; line-height: 1.35; }
+  .back { margin-top: 6px; font-size: 14px; color: var(--vla); text-align: center; }
+  .note { font-size: 14px; color: var(--mute); margin-top: 8px; }
+
+  .hybrid { margin-top: 12px; border: 1.8px dashed var(--frm-ln); border-radius: 12px; padding: 11px 12px 12px; background: #fffaf7; }
+  .hybrid > .t { font-weight: 700; font-size: 17px; color: var(--frm); }
+  .hybrid > .p { color: var(--ink2); font-size: 14.5px; margin: 2px 0 9px; }
+  .hcol { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .flow { display: flex; flex-direction: column; gap: 0; }
+  .flow .box { margin: 0; }
+  .vdown { text-align: center; color: var(--frm); font-size: 15px; line-height: 1.1; margin: 2px 0; }
+  .vdown span { font-size: 13px; color: var(--ink2); }
+  .result { margin-top: 6px; font-size: 14px; font-weight: 700; color: var(--frm); }
+
+  /* 평가 */
+  .chain { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; margin-bottom: 10px; }
+  .st { border-radius: 8px; background: var(--evl-bg); border: 1.2px solid var(--evl-ln); padding: 5px 4px 6px; text-align: center; }
+  .st b { display: block; color: var(--evl); font-size: 14px; }
+  .st span { display: block; font-size: 13.5px; color: var(--ink); line-height: 1.3; font-weight: 600; }
+  .st small { display: block; font-size: 12px; color: var(--ink2); line-height: 1.3; margin-top: 2px; }
+  .st.s0 { background: #f3f2ee; border-color: var(--dat-ln); } .st.s0 b { color: var(--ink2); }
+  .grp { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; margin: -6px 0 10px; font-size: 12.5px; color: var(--mute); text-align: center; }
+  .grp div { border-top: 1.5px solid var(--evl-ln); padding-top: 1px; }
+  table.res { width: 100%; border-collapse: collapse; font-size: 15px; }
+  table.res th, table.res td { padding: 5px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+  table.res th { font-size: 13px; color: var(--mute); font-weight: 600; }
+  table.res td.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .bar { position: relative; height: 12px; background: #eeede8; border-radius: 6px; overflow: hidden; min-width: 110px; }
+  .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 6px; }
+  .foot { margin-top: 14px; font-size: 13px; color: var(--mute); line-height: 1.45; }
+</style>
+</head>
+<body>
+
+<h1>실험 전체 파이프라인 — 자동 시연 수집 → 학습 → 실행(VLA · VLA + 수식) → 단계 평가</h1>
+<p class="lede">Franka FR3 · 지시문 하나 <b>"put the red tube in the red slot"</b> · 같은 수식(장면 인식 → 좌표 보정 → 궤적 → 역기구학)이 ①에서 학습 데이터를 만들고, ④ E4에서는 실행 중 마지막 mm를 맡는다.</p>
+<div class="legend">
+  <span><i class="sw" style="border-color:var(--dat-ln);background:var(--dat-bg)"></i>데이터 · 학습 · 실행 장치</span>
+  <span><i class="sw" style="border-color:var(--frm-ln);background:var(--frm-bg)"></i>수식 (자동 시연 함수, 학습된 모델 아님)</span>
+  <span><i class="sw" style="border-color:var(--vla-ln);background:var(--vla-bg)"></i>VLA (GR00T N1.7)</span>
+  <span><i class="sw" style="border-color:var(--evl-ln);background:var(--evl-bg)"></i>평가</span>
+</div>
+
+<!-- ① 수집 -->
+<section class="stage s-frm">
+  <div class="hd"><span class="num">1</span><h2>데이터 수집 — 자동 시연 수집기</h2><span class="sub">사람은 배치만 바꾸고, 스테이션이 보고 → 계획하고 → 실물에서 다시 실행하며 녹화 (영상 복제 아님)</span></div>
+  <div class="grid3">
+    <div class="box frmbox"><h3><span class="k">1</span>장면 인식<span class="tag">④에서 다시 씀</span></h3><ul>
+      <li>홈 자세 손목 D405 화면 <b>5장</b>을 따로 검출 → <b>과반수</b>에서 나온 물체만, 위치는 중간값</li>
+      <li>HSV 색: 뚜껑 H 105–125 · 빨강 H ≤ 10 / ≥ 165 · 랙 H 86–102</li>
+      <li>빨간 링 = 랙 안의 <b>링 모양</b>(채움 &lt; 0.55) → 꽂을 칸</li>
+      <li>3인칭 화면으로 <b>어느 튜브가 빨간지</b> 확인 (손목과 맞춤)</li></ul></div>
+    <div class="box frmbox"><h3><span class="k">2</span>화면 → 로봇 좌표<span class="tag">④에서 다시 씀</span></h3><ul>
+      <li>GELLO로 실제로 잡은 자세 <b>5–8점</b> 기록 → 아핀 · 호모그래피 중 <b>하나 빼고 맞춘 오차</b>가 작은 쪽 (실물 8점: 아핀, rms 3.2 mm)</li>
+      <li>구멍은 뚜껑보다 Δh 낮아 원근 보정 <span class="eq">p = C + (H(u) − C)(D + Δh)/D</span></li>
+      <li>꽂은 기록으로 구멍 위치 보정 (릿지, ≤ 20 mm)</li></ul></div>
+    <div class="box frmbox"><h3><span class="k">3</span>목표 계산<span class="tag">④에서 다시 씀</span></h3><ul>
+      <li>잡을 점 <span class="eq">(x, y) = H(u, v)</span> · 잡는 높이 = 보정 점 높이 기준</li>
+      <li>손목은 거의 안 돌림 (7번 관절이 시간상수 약 1 s로 늦음) · 옆 뚜껑에 닿으면 랙 줄과 수직 · <b>30° 넘게 돌려 잡지 않음</b></li>
+      <li>놓는 높이 = 잡는 높이 + 10 mm</li></ul></div>
+    <div class="box frmbox"><h3><span class="k">4</span>궤적<span class="tag">④에서 다시 씀</span></h3><ul>
+      <li>접근 +8 ± 2 cm → 잡기 → 들기 +15 ± 2 cm → 호 → 칸 위 → 수직 꽂기 → 위로 5 cm</li>
+      <li>꼭짓점만 2차 베지어로 둥글게 · 호 길이로 매개화 · 최소 저크 <span class="eq">s = 10τ³ − 15τ⁴ + 6τ⁵</span></li>
+      <li>수평 0.12 · 수직 0.06 m/s × 0.5, 판마다 높이 · 속도 · 호 무작위</li></ul></div>
+    <div class="box frmbox"><h3><span class="k">5</span>역기구학 · 실행<span class="tag">④에서 다시 씀</span></h3><ul>
+      <li>0.05 s 간격 감쇠 최소제곱 <span class="eq">J⁺ = Jᵀ(JJᵀ + λI)⁻¹</span>, λ = 1e-5, 남는 자유도는 홈 자세 쪽</li>
+      <li>관절 ≤ 0.8 rad/s (7번 0.15) · 100 Hz 관절 목표 → 1 kHz 관절 임피던스</li>
+      <li>정착 보정(적분)으로 처짐을 메운 <b>명령</b>을 그대로 기록</li></ul></div>
+    <div class="box"><h3><span class="k">6</span>기록 · 품질 판정 · 배치 안내</h3><ul>
+      <li>10 Hz: 3인칭 · 손목 영상, 관절 실측 · 명령, 손가락 폭</li>
+      <li>헛잡음 · 입력 끊김 · 화면 포화 &gt; 15% → 휴지통</li>
+      <li>배치 계획: 저장된 판에서 <b>먼 배치부터</b> 안내, <b>평가 배치 T01–T10은 떼어 둠</b></li></ul></div>
+  </div>
+  <div class="out">
+    <div class="pill"><b>실물 200판</b> · 69,409 프레임 (115.7분) · 첫 100판(~11-01) + 추가 100판(11-03~05)</div>
+    <div class="pill" style="flex:0.75;background:#5b5a56"><b>시뮬 600판</b> · Isaac Lab 같은 방식 자동 시연 (E3에만)</div>
+  </div>
+</section>
+
+<div class="down">npz + jpg + meta.json (모델에 안 묶인 원본)</div>
+
+<!-- ② ③ -->
+<div class="grid2">
+<section class="stage s-dat" style="margin-top:12px">
+  <div class="hd"><span class="num">2</span><h2>변환 — LeRobot 데이터셋</h2></div>
+  <div class="box"><ul>
+    <li><b>상태 10</b> = 관절 <b>실측</b> FK [손끝 xyz, 회전 6D, 손가락 폭]</li>
+    <li><b>행동 10</b> = 관절 <b>명령</b> FK [손끝 xyz, 회전 6D, 그리퍼 1 열기 / 0 닫기] — 처짐 보정이 들어간 명령이라 실행 때 같은 제어기에 그대로 보내면 수집 때 자리로 감</li>
+    <li>영상 3인칭 · 손목 848 × 480, 10 Hz 격자</li>
+    <li>칸 위 정지 구간 잘라냄 · 나쁨 판 제외</li>
+    <li>시뮬은 받침 높이 차이만큼 <b>z + 23.5 mm</b> 맞춤</li>
+    <li>결과: 100판 34,209 프레임 · 200판 69,409 프레임</li></ul></div>
+</section>
+<section class="stage s-vla" style="margin-top:12px">
+  <div class="hd"><span class="num">3</span><h2>학습 — GR00T N1.7 (3B)</h2></div>
+  <div class="box vlabox"><ul>
+    <li><b>부분 미세조정</b>: 영상·언어 백본(Cosmos-Reason2-2B) 고정, 프로젝터 · DiT 행동 헤드(flow matching) · LayerNorm 학습</li>
+    <li>입력 256 × 256 · 행동 묶음 16칸(1.6 s) · 상대 행동 <span class="eq">a − s</span> (그리퍼 제외)</li>
+    <li>20,000 스텝 · batch 32 × GPU 2 · lr 1e-4 · bf16 · 영상 증강</li></ul>
+    <table class="res" style="margin-top:6px;font-size:14.5px">
+      <tr><th>모델</th><th>학습 데이터</th><th>쓰인 실험</th></tr>
+      <tr><td>v1</td><td>실물 100판</td><td>E1</td></tr>
+      <tr><td>v2</td><td>실물 200판</td><td>E2 · E4</td></tr>
+      <tr><td>v2sim50</td><td>실물 200판 × 3 + 시뮬 600판</td><td>E3</td></tr>
+    </table></div>
+</section>
+</div>
+
+<div class="down">체크포인트 020000 (GPU 서버에 띄움)</div>
+
+<!-- ④ 실행 -->
+<section class="stage s-vla">
+  <div class="hd"><span class="num">4</span><h2>실행 — 스테이션 ⑤ 탭 (E1–E3: VLA만 · E4: VLA + 수식)</h2><span class="sub">모델은 그대로, 같은 홈 · 같은 제어기</span></div>
+  <div class="loop">
+    <div class="box vlabox"><h3><span class="k">a</span>관측</h3><ul>
+      <li>카메라 2대 사진</li><li>손끝 상태 10</li><li>지시문</li></ul></div>
+    <div class="arr">→</div>
+    <div class="box vlabox"><h3><span class="k">b</span>GR00T 서버</h3><ul>
+      <li>HTTP /act</li><li>왕복 151 ms</li><li>(추론 126 ms)</li></ul></div>
+    <div class="arr">→</div>
+    <div class="box vlabox"><h3><span class="k">c</span>행동 묶음</h3><ul>
+      <li>16칸 × 10</li><li>0.1 s 간격</li><li>절대 자세 + g</li></ul></div>
+    <div class="arr">→</div>
+    <div class="diamond"><b>넘길까?</b><small>E4만 · 묶음마다<br>맞으면 ▼ 수식<br>아니면 VLA 그대로</small></div>
+    <div class="arr">→</div>
+    <div class="box"><h3><span class="k">d</span>실행기</h3><ul>
+      <li>역기구학 → 관절</li><li>8칸 실행</li><li>보정 안 더함</li></ul></div>
+    <div class="arr">→</div>
+    <div class="box"><h3><span class="k">e</span>로봇</h3><ul>
+      <li>임피던스 1 kHz</li><li>Franka Hand</li><li>쥐는 힘 70 N</li></ul></div>
+  </div>
+  <div class="back">↺ 남은 궤적이 0.35 s보다 짧아지면 움직이는 채로 다음 관측 (새 묶음 약 1.0 s마다) · 끝: 놓고 2.5 s / 최대 120 s / Space</div>
+  <div class="hybrid">
+    <div class="t">E4 VLA + 수식 (스테이션 11-11k) — VLA가 고른 목표 근처에서 마지막 접촉 구간만 ①의 수식이 넘겨받음</div>
+    <div class="p">시작할 때 홈에서 ①-1·2와 같은 인식으로 뚜껑들과 빨간 칸 위치를 한 번 찾아 둔다(모델 입력 아님). 수식은 <b>VLA가 고른 뚜껑 · 칸을 바꾸지 않고</b>, 조건이 하나라도 안 맞으면 VLA가 그대로 움직인다. 수식 궤적은 홈 정착 보정값에서 출발해 처짐 보정을 이어 받는다.</div>
+    <div class="hcol">
+      <div class="flow">
+        <div class="box vlabox"><h3>넘김 ① 잡기 — 모두 맞아야</h3><ul>
+          <li>아직 안 쥠 + 묶음에 <b>닫기 예측</b>(g &lt; 0.4 두 칸) → 그 칸의 손끝 자리 c</li>
+          <li>c에서 가장 가까운 뚜껑 <b>≤ 25 mm</b>, 두 번째 뚜껑과 <b>≥ 6 mm</b> 차이</li>
+          <li>그리퍼를 <b>30° 넘게</b> 돌리지 않아도 됨</li></ul></div>
+        <div class="vdown">▼ <span>넘김</span></div>
+        <div class="box frmbox"><h3><span class="k">수식</span>잡기</h3><ul>
+          <li>잡는 높이 + 5 cm에서 뚜껑 위로 → <b>수직 하강</b></li>
+          <li>잡는 높이 = 보정 점 높이 평면 + 2.5 mm (책상 기울기 반영)</li>
+          <li>정착: 실측이 계획 0.0003 rad 안 (≤ 1.5 s) → 쥐기</li>
+          <li>처음 6 cm는 0.03 m/s로 천천히, 모두 15 cm 들기 → <b>다시 VLA</b></li>
+          <li>폭이 멈춘 뒤 20 mm 미만이면 헛잡음 → 끝</li></ul>
+          <div class="result">E4: 넘겨받은 20판 모두 쥠 · 19판 들기까지</div></div>
+      </div>
+      <div class="flow">
+        <div class="box vlabox"><h3>넘김 ② 꽂기 — 모두 맞아야</h3><ul>
+          <li>쥔 채 <b>놓는 높이 + 7.5 cm</b> 아래로 내려가려 함 (또는 열기 예측)</li>
+          <li>그 자리에서 빨간 칸까지 <b>≤ 25 mm</b></li>
+          <li>꽂는 방향도 같은 회전 규칙</li></ul></div>
+        <div class="vdown">▼ <span>넘김</span></div>
+        <div class="box frmbox"><h3><span class="k">수식</span>꽂기</h3><ul>
+          <li>칸 위 6 cm에서 1 s 수평 맞춤 (가운데 오차 1.0 mm)</li>
+          <li><b>수직으로 꽂기</b> → 열기 → 위로 5 cm → 끝</li>
+          <li>칸 위치는 ①-2의 원근 보정 + 꽂은 기록 보정</li></ul>
+          <div class="result">E4: 넘겨받은 19판 중 16판 꽂힘 · 3판 걸림</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="grid3" style="margin-top:12px">
+    <div class="box"><h3>그리퍼</h3><ul><li>g &lt; 0.4 / &gt; 0.6이 <b>두 칸 연속</b>일 때만 바꿈</li><li>손끝이 15 mm/s 아래로 멈춘 뒤 쥐기 · 열기</li></ul></div>
+    <div class="box"><h3>안전장치 (행동을 대신 정하지 않음)</h3><ul><li>작업 상자 x 0.33–0.78 · y −0.34–0.40 · z 0.085–0.45 m</li><li>기울기 25° · 0.1 s당 5 cm 넘으면 그 자리 정지</li></ul></div>
+    <div class="box"><h3>기록</h3><ul><li>10 Hz 관절 · 명령 · 폭, 묶음마다 관측과 행동 16칸</li><li>시작 · 끝 장면 사진, 자동 판정 + <b>사람 판정</b></li></ul></div>
+  </div>
+
+</section>
+
+<div class="down">T01–T10 (수집에 쓰지 않은 배치) · 판마다 처음 막힌 단계 하나</div>
+
+<!-- ⑤ 평가 -->
+<section class="stage s-evl">
+  <div class="hd"><span class="num">5</span><h2>평가 — 단계 평가표 S0–S9 · 사람 판정이 최종</h2><span class="sub">앞 단계는 통과, 막힌 단계부터 실패로 셈 · S0은 정책 실패와 따로</span></div>
+  <div class="chain">
+    <div class="st s0"><b>S0</b><span>초기 상태</span><small>장면 검출 · 밝기</small></div>
+    <div class="st"><b>S1</b><span>목표 선택</span><small>빨간 튜브</small></div>
+    <div class="st"><b>S2</b><span>접근</span><small>뚜껑 25 mm 안</small></div>
+    <div class="st"><b>S3</b><span>정렬</span><small>손 앞뒤 −19~+5 mm</small></div>
+    <div class="st"><b>S4</b><span>접촉</span><small>폭 20–50 mm</small></div>
+    <div class="st"><b>S5</b><span>파지</span><small>들 때 폭 ≥ 12 mm</small></div>
+    <div class="st"><b>S6</b><span>들기</span><small>60 mm</small></div>
+    <div class="st"><b>S7</b><span>이탈</span><small>수평 40 mm</small></div>
+    <div class="st"><b>S8</b><span>이송</span><small>칸 20 mm 안</small></div>
+    <div class="st"><b>S9</b><span>꽂힘</span><small>링 구멍에</small></div>
+  </div>
+  <div class="grp"><div>따로 셈</div><div>G</div><div style="grid-column: span 5">P 집기</div><div style="grid-column: span 2">T 옮기기</div><div>L 놓기</div></div>
+  <table class="res">
+    <tr><th>실험</th><th>모델 · 실행</th><th>배치 × 판</th><th>성공 (Wilson 95%)</th><th></th></tr>
+    <tr><td><b>E1</b> 11-05</td><td>v1 실물 100판 · VLA만</td><td>T01–T10 × 2</td><td class="n">1/20 · 5% (1–24)</td><td><div class="bar"><i style="width:5%;background:#8a8984"></i></div></td></tr>
+    <tr><td><b>E2</b> 11-05</td><td>v2 실물 200판 · VLA만</td><td>T01–T10 × 2</td><td class="n">6/20 · 30% (15–52)</td><td><div class="bar"><i style="width:30%;background:#2a78d6"></i></div></td></tr>
+    <tr><td><b>E3</b> 11-11</td><td>v2sim50 실물 + 시뮬 · VLA만</td><td>6개 × 3 (중단)</td><td class="n">2/18 · 11% (3–33)</td><td><div class="bar"><i style="width:11%;background:#8a8984"></i></div></td></tr>
+    <tr><td><b>E4</b> 11-12</td><td>v2 그대로 · <b>VLA + 수식</b></td><td>T01–T10 × 3</td><td class="n"><b>16/30 · 53% (36–70)</b></td><td><div class="bar"><i style="width:53%;background:#c4521f"></i></div></td></tr>
+  </table>
+  <p class="note">E4와 E2의 차이는 통계로 확정되지 않음 (최종 성공 p = 0.15, 날짜가 다름) · E3은 평가 배치를 E2 때와 똑같이 놓지 못해 시뮬 효과를 판단할 수 없음.</p>
+</section>
+
+<p class="foot">값은 스테이션 코드 기본값(E1–E3: 11-05s, E4: 11-11k)과 학습 설정 · 실행 기록에서 가져옴. 왕복 시간은 11-05 평가 850묶음의 가운데값. 수식 = 자동 시연에 쓴 같은 함수(장면 인식 gello_scene · 경로 blended_path · 역기구학 ik_step).</p>
+</body>
+</html>
